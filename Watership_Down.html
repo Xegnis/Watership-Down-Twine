@@ -9,31 +9,77 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Watership_Down.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="" position="385,88" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
+<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="" position="231,35" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
 
 
 [[Try to run -&gt; Run(death)]]
 [[Freeze in place -&gt; Freeze]]
-</tw-passagedata><tw-passagedata pid="2" name=" Run(death)" tags="" position="260,197" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="3" name=" Freeze" tags="" position="501,211" size="100,100">Now that your food collection mission has gone south, you are left to figure out what to do next. You know there is a field nearby where you could probably get more food. But it might be a better idea to find somewhere to hide for the rest of the day. 
+</tw-passagedata><tw-passagedata pid="2" name=" Run(death)" tags="" position="106,144" size="100,100">You were not able to run fast enough and were killed by the creature persuing you.
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="3" name=" Freeze" tags="" position="322,156" size="100,100">Now that your food collection mission has gone south, you are left to figure out what to do next. You know there is a field nearby where you could probably get more food. But it might be a better idea to find somewhere to hide for the rest of the day. 
 
 
 
 [[Hide -&gt; Hide1]]
-[[Go to the field -&gt; Field1]]</tw-passagedata><tw-passagedata pid="4" name=" Hide1" tags="" position="365,310" size="100,100">You find a shallow ditch underneath a large tree root that you consider to be safe enough to sleep for the night and curl up to rest.
+[[Go to the field -&gt; Field1]]</tw-passagedata><tw-passagedata pid="4" name=" Hide1" tags="" position="205,264" size="100,100">You find a shallow ditch underneath a large tree root that you consider to be safe enough to sleep for the night and curl up to rest.
 
 
-[[Sleep -&gt; Hide2]]</tw-passagedata><tw-passagedata pid="5" name=" Field1" tags="" position="585,344" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="6" name=" Hide2" tags="" position="411,445" size="100,100">You wake up before the sun has risen. In the distance you can hear the faint calls of an owl. You are feeling a bit hungry, since your food collection mission was cut short you didn’t eat very well last night. 
+[[Sleep -&gt; Hide2]]</tw-passagedata><tw-passagedata pid="5" name=" Field1" tags="" position="480,199" size="100,100">Are finally able to collect your food
+
+
+[[Stay where you are to eat -&gt; Stay-eat]]
+[[Take it to find a better place to eat -&gt; Second location]]</tw-passagedata><tw-passagedata pid="6" name=" Hide2" tags="" position="346,298" size="100,100">You wake up before the sun has risen. In the distance you can hear the faint calls of an owl. You are feeling a bit hungry, since your food collection mission was cut short you didn’t eat very well last night. 
 You are unsure whether you want to look for food at that field you were thinking about heading to yesterday or looking for something closer.
 
 
 
 [[Go to Field -&gt; Field1]] 
-[[Look around area -&gt; Hide-Look Around]]</tw-passagedata><tw-passagedata pid="7" name=" Hide-Look Around" tags="" position="249,440" size="100,100">As you are looking for food, you start to hear the sounds of the owl coming closer. You turn just in time to see the owl hurling towards you in a swooping dive.
+[[Look around area -&gt; Hide-Look Around]]</tw-passagedata><tw-passagedata pid="7" name=" Hide-Look Around" tags="" position="221,388" size="100,100">As you are looking for food, you start to hear the sounds of the owl coming closer. You turn just in time to see the owl hurling towards you in a swooping dive.
 
 
 
 [[Freeze in Place -&gt; Freeze(death)]]
-[[Try to dodge -&gt; Dodge(death)]]</tw-passagedata><tw-passagedata pid="8" name=" Freeze(death)" tags="" position="109,445" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name=" Dodge(death)" tags="" position="197,576" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Try to dodge -&gt; Dodge(death)]]</tw-passagedata><tw-passagedata pid="8" name=" Freeze(death)" tags="" position="79,322" size="100,100">You froze in place but the owl was already locked on to you. 
+
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="9" name=" Dodge(death)" tags="" position="99,454" size="100,100">You tried to dodge the owl but were unsuccessful. 
+
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="10" name=" Stay-eat" tags="" position="506,346" size="100,100">As you are eating you hear the sounds of large animals coming towards you
+
+
+
+[[Try to dodge out of the way -&gt; Dodge2(death)]]
+[[Run from them -&gt; Run2(death)]]</tw-passagedata><tw-passagedata pid="11" name=" Second location" tags="" position="618,246" size="100,100">You find a couple promising locations to eat, burrow, bushes, tree stump
+
+
+
+[[Burrow -&gt; BurrowEat(death)]]
+[[Bushes -&gt; BushEat(death)]]</tw-passagedata><tw-passagedata pid="12" name=" Dodge2(death)" tags="" position="387,428" size="100,100">There were too many of them for you to dodge. You were killed in the stampede.
+
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="13" name=" Run2(death)" tags="" position="508,495" size="100,100">You could not run fast enough and were caught up in the stampede.
+
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="14" name=" BurrowEat(death)" tags="" position="627,400" size="100,100">Something else was with you. It killed you as you ate.
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="15" name=" BushEat(death)" tags="" position="736,302" size="100,100">Something else was with you. It killed you as you ate.
+
+
+[[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
+(set: $jumping to true)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
