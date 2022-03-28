@@ -213,153 +213,149 @@ You are unsure whether you want to look for food at that field you were thinking
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="42" name="Checkpoint Ability 5: Danger Sense" tags="" position="356,921" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
-
-
-
-[[Wait till dusk -&gt; Dusk]]
-[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="43" name=" Dusk" tags="" position="274,1061" size="100,100">Dog seems to have been brought inside, humans not out either
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="42" name=" Dusk" tags="" position="274,1061" size="100,100">Dog seems to have been brought inside, humans not out either
 
 
 [[Make a run for the barn -&gt; run to barn (death)]]
 [[Wait to see if there are other threats -&gt; wait for threats]]
-(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="44" name=" daytimeBarn" tags="" position="474,1050" size="100,100">Hear the snores of the human’s dog
+(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="43" name=" daytimeBarn" tags="" position="474,1050" size="100,100">Hear the snores of the human’s dog
 
 
 [[Run past dog into barn -&gt; Run Past Dog (death)]]
-[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="45" name=" Run Past Dog (death)" tags="" position="494,1182" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
+[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="44" name=" Run Past Dog (death)" tags="" position="494,1182" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="46" name=" vantagePoint" tags="" position="614,1096" size="100,100">from above dog, you see the cat lurking nearby
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="45" name=" vantagePoint" tags="" position="614,1096" size="100,100">from above dog, you see the cat lurking nearby
 
 
 
 [[Try to outrun cat -&gt; outrunCat(death)]]
-[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="47" name=" outrunCat(death)" tags="" position="632,1224" size="100,100">The cat overtakes you and pins you down before shredding you to bits
+[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="46" name=" outrunCat(death)" tags="" position="613,1247" size="100,100">The cat overtakes you and pins you down before shredding you to bits
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" distractCat(death)" tags="" position="743,1131" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="47" name=" distractCat(death)" tags="" position="743,1131" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="49" name=" run to barn (death)" tags="" position="204,1188" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" run to barn (death)" tags="" position="204,1188" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="50" name=" wait for threats" tags="" position="349,1183" size="100,100">you hear the cat
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="49" name=" wait for threats" tags="" position="349,1183" size="100,100">you hear the cat
 
 
 
 [[Sneak around the cat -&gt; sneak]]
-[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="51" name=" sneak" tags="" position="282,1317" size="100,100">you sneak your way past the cat and make it into the barn
+[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="50" name=" sneak" tags="" position="282,1317" size="100,100">you sneak your way past the cat and make it into the barn
 
 
 
 [[Look around -&gt; look around]]
 [[Listen -&gt; listen]]
 [[Call out to see if anyone is here -&gt; callout(death)]]
-(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="52" name=" distraction" tags="" position="425,1312" size="100,100">you successfully distract the cat and are able to bolt into the barn
+(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="51" name=" distraction" tags="" position="425,1312" size="100,100">you successfully distract the cat and are able to bolt into the barn
 
 
 
 
 [[Look around -&gt; look around]]
 [[Listen -&gt; listen]]
-[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="53" name=" look around" tags="" position="160,1453" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
+[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="52" name=" look around" tags="" position="160,1453" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
 
 
 
 [[Investigate box -&gt; InvestigateBox]]
-[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="54" name=" listen" tags="" position="299,1466" size="100,100">you hear faint sounds of rabbits
+[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="53" name=" listen" tags="" position="299,1466" size="100,100">you hear faint sounds of rabbits
 
 
-[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="55" name=" callout(death)" tags="" position="434,1447" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
+[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="54" name=" callout(death)" tags="" position="434,1447" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="56" name=" go to rabbits" tags="" position="307,1585" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="55" name=" go to rabbits" tags="" position="307,1585" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
 
 
 
 [[Try to find a way to break them out -&gt; breakout]]
-[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="57" name=" breakout" tags="" position="300,1738" size="100,100">you look around to see if there is a way to free the rabbits
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="56" name=" breakout" tags="" position="300,1738" size="100,100">you look around to see if there is a way to free the rabbits
 
 
 [[Leather latches on side of box -&gt; latches(death)]]
 [[Rotting wood -&gt; wood(death)]]
-(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="58" name=" talkToThem" tags="" position="440,1689" size="100,100">what do you want to ask them?
+(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="57" name=" talkToThem" tags="" position="440,1689" size="100,100">what do you want to ask them?
 
 
 [[Do they want to be free? -&gt; freedom]]
 [[How long have they been in there -&gt; how long]]
-[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="59" name=" InvestigateBox" tags="" position="51,1587" size="100,100">as you approach you hear the faint sound of rabbits
+[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="58" name=" InvestigateBox" tags="" position="51,1587" size="100,100">as you approach you hear the faint sound of rabbits
 
 
 
 [[Try to find a way to break them out -&gt; breakout]]
-[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="60" name=" InvestigatePen" tags="" position="179,1594" size="100,100">you find a group of pigs in the pen
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="59" name=" InvestigatePen" tags="" position="179,1594" size="100,100">you find a group of pigs in the pen
 
 
 
 [[Investigate box -&gt; InvestigateBox]]
 [[Ask pigs about rabbits -&gt; ask about rabbits]]
-[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="61" name=" ask about rabbits" tags="" position="156,1742" size="100,100">unsuccessful
+[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="60" name=" ask about rabbits" tags="" position="156,1742" size="100,100">unsuccessful
 
 
-[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="62" name=" latches(death)" tags="" position="245,1873" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
-
-
-[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
-(set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="63" name=" wood(death)" tags="" position="374,1861" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="61" name=" latches(death)" tags="" position="245,1873" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="64" name=" freedom" tags="" position="557,1556" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="62" name=" wood(death)" tags="" position="374,1861" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="63" name=" freedom" tags="" position="557,1556" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" how long" tags="" position="527,1848" size="100,100">for as long as they can remember, they do not remember not being caged
-
-
-
-[[Keep asking questions -&gt; talkToThem]]
-[[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="66" name=" danger" tags="" position="606,1714" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="64" name=" how long" tags="" position="527,1848" size="100,100">for as long as they can remember, they do not remember not being caged
 
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="67" name=" Try to leave (death)" tags="" position="715,1565" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" danger" tags="" position="606,1714" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
+
+
+
+[[Keep asking questions -&gt; talkToThem]]
+[[Try to free them -&gt; breakout]]
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="66" name=" Try to leave (death)" tags="" position="715,1565" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="68" name=" Tranisition1" tags="" position="642,471" size="100,100">Transition to next check point
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="67" name=" Tranisition1" tags="" position="642,471" size="100,100">Transition to next check point
+
+[[Next check point -&gt;Ability 3 Checkpoint: Improved Hearing]]
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="68" name=" transition3" tags="" position="1344,532" size="100,100">Transition to digging check point
 
 
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="69" name=" transition3" tags="" position="1344,532" size="100,100">Transition to digging check point
-
-
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="70" name=" Checkpoint Ability 5: Danger Sense" tags="" position="561,1358" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
+[[Next check point -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="69" name=" Checkpoint Ability 5: Danger Sense" tags="" position="366,934" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
 
 
 
 [[Wait till dusk -&gt; Dusk]]
-[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="71" name=" transition5" tags="" position="114,1878" size="100,100">Transition to check point for attacks
+[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="70" name=" transition5" tags="" position="114,1878" size="100,100">Transition to check point for attacks
 
 
 (set: $deaths to 0)</tw-passagedata></tw-storydata>
