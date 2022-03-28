@@ -9,11 +9,12 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Watership_Down.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="" position="231,35" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
+<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="" position="231,33" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
 
 
 [[Try to run -&gt; Run(death)]]
-[[Freeze in place -&gt; Freeze]]</tw-passagedata><tw-passagedata pid="2" name=" Run(death)" tags="" position="106,144" size="100,100">You were not able to run fast enough and were killed by the creature persuing you.
+[[Freeze in place -&gt; Freeze]]
+(if:$jumping is true)[[Hop over a nearby log and make your escape -&gt; Second location]]</tw-passagedata><tw-passagedata pid="2" name=" Run(death)" tags="" position="111,149" size="100,100">You were not able to run fast enough and were killed by the creature persuing you.
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
@@ -58,12 +59,13 @@ You are unsure whether you want to look for food at that field you were thinking
 
 
 [[Try to dodge out of the way -&gt; Dodge2(death)]]
-[[Run from them -&gt; Run2(death)]]</tw-passagedata><tw-passagedata pid="11" name=" Second location" tags="" position="618,246" size="100,100">You find a couple promising locations to eat, burrow, bushes, tree stump
+[[Run from them -&gt; Run2(death)]]</tw-passagedata><tw-passagedata pid="11" name=" Second location" tags="" position="618,223" size="100,100">You find a couple promising locations to eat, burrow, bushes, tree stump
 
 
 
 [[Burrow -&gt; BurrowEat(death)]]
-[[Bushes -&gt; BushEat(death)]]</tw-passagedata><tw-passagedata pid="12" name=" Dodge2(death)" tags="" position="387,428" size="100,100">There were too many of them for you to dodge. You were killed in the stampede.
+[[Bushes -&gt; BushEat(death)]]
+(if:$jumping is true)[[Tree stump (unlocked with jumping) -&gt; Tranisition1]]</tw-passagedata><tw-passagedata pid="12" name=" Dodge2(death)" tags="" position="387,428" size="100,100">There were too many of them for you to dodge. You were killed in the stampede.
 
 
 
@@ -79,42 +81,288 @@ You are unsure whether you want to look for food at that field you were thinking
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
-(set: $jumping to true)</tw-passagedata><tw-passagedata pid="15" name=" BushEat(death)" tags="" position="744,200" size="100,100">Something else was with you. It killed you as you ate.
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="15" name=" BushEat(death)" tags="" position="744,199" size="100,100">Something else was with you. It killed you as you ate.
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="16" name="Ability 3 Checkpoint: Improved Hearing" tags="" position="244,651" size="100,100">Just past dusk, you have had a successful day, looking for somewhere to sleep
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="16" name="Ability 3 Checkpoint: Improved Hearing" tags="" position="1080,86" size="100,100">Just past dusk, you have had a successful day, looking for somewhere to sleep
 
 
 
 [[Go to forest -&gt; Forest1]]
-[[Go to meadow -&gt; Meadow1]]</tw-passagedata><tw-passagedata pid="17" name=" Forest1" tags="" position="257,780" size="100,100">too late you hear the sound of wings over your head
+[[Go to meadow -&gt; Meadow1]]
+(if:$hearing is true)[[Safely go to meadow -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="17" name=" Forest1" tags="" position="1093,216" size="100,100">too late you hear the sound of wings over your head
 
 
 [[Run -&gt; Run3]]
-[[Stay still -&gt; Freeze1(death)]]</tw-passagedata><tw-passagedata pid="18" name=" Meadow1" tags="" position="380,700" size="100,100">Too late, you hear a dog
+[[Stay still -&gt; Freeze1(death)]]</tw-passagedata><tw-passagedata pid="18" name=" Meadow1" tags="" position="1216,136" size="100,100">Too late, you hear a dog
 
 
 [[Run away -&gt; Run4]]
-[[Freeze in place -&gt; Freeze2(death)]]</tw-passagedata><tw-passagedata pid="19" name=" Run3" tags="" position="195,904" size="100,100">barely manage to dodge the claws
+[[Freeze in place -&gt; Freeze2(death)]]</tw-passagedata><tw-passagedata pid="19" name=" Run3" tags="" position="1031,340" size="100,100">barely manage to dodge the claws
 
 
 
 [[You keep running -&gt; keep Running]]
-[[Freeze/hide -&gt; Freeze/Hide]] </tw-passagedata><tw-passagedata pid="20" name=" Freeze1(death)" tags="" position="333,909" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name=" Run4" tags="" position="456,824" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name=" Freeze2(death)" tags="" position="543,693" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="23" name=" keep Running" tags="" position="142,1026" size="100,100">grow tired, try to see if threat is still following
+[[Freeze/hide -&gt; Freeze/Hide]] </tw-passagedata><tw-passagedata pid="20" name=" Freeze1(death)" tags="" position="1179,353" size="100,100">you freeze in place and pray the bird ignores you, but it has already locked on to you and you are carried away
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="21" name=" Run4" tags="" position="1292,260" size="100,100">barely manage to dodge out of the dog’s jaws
+
+
+
+[[Keep Running -&gt; MeadowRun]]
+[[See if dog is chasing -&gt; Chasing]]</tw-passagedata><tw-passagedata pid="22" name=" Freeze2(death)" tags="" position="1378,129" size="100,100">You try to freeze in place in the vain hope the dog ignores you, but they do not and kill you.
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="23" name=" keep Running" tags="" position="963,463" size="100,100">grow tired, try to see if threat is still following
 
 
 
 [[Hide from Threat -&gt; Freeze/Hide]] 
 [[Stop and look for somewhere to sleep -&gt; Look For Sleep]]
-[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="24" name=" Look For Sleep" tags="" position="100,1157" size="100,100">you go back to looking for somewhere to sleep, find two promising locations
+[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="24" name=" Look For Sleep" tags="" position="936,593" size="100,100">you go back to looking for somewhere to sleep, find two promising locations
 
 
 [[Burrow -&gt; BurrowSleep]]
-[[Hollow in Tree -&gt; HollowSleep(death)]]</tw-passagedata><tw-passagedata pid="25" name=" StrainHear" tags="" position="237,1164" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name=" Freeze/Hide" tags="" position="299,1045" size="100,100">you stay still until you think the threat has left
+[[Hollow in Tree -&gt; HollowSleep(death)]]</tw-passagedata><tw-passagedata pid="25" name=" StrainHear" tags="" position="1073,600" size="100,100">you can’t hear anything, you figure the bird must have lost interest
+</tw-passagedata><tw-passagedata pid="26" name=" Freeze/Hide" tags="" position="1132,477" size="100,100">you stay still until you think the threat has left
 
-</tw-passagedata><tw-passagedata pid="27" name=" BurrowSleep" tags="" position="73,1303" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name=" HollowSleep(death)" tags="" position="199,1283" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+
+
+[[Unfreeze and look for somewhere to sleep -&gt; Look For Sleep]]
+[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="27" name=" BurrowSleep" tags="" position="909,739" size="100,100">you get cozy in your burrow and sleep well through the night
+
+
+
+[[Continue -&gt; BurrowMorning]]</tw-passagedata><tw-passagedata pid="28" name=" HollowSleep(death)" tags="" position="1035,719" size="100,100">Someone else lives here, and they are not happy to find you sleeping in their home.
+
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="29" name=" BurrowMorning" tags="" position="910,889" size="100,100">You wake up
+
+
+
+[[Explore Burrow -&gt; explore (death)]]
+[[Leave Burrow -&gt; leave (death)]]</tw-passagedata><tw-passagedata pid="30" name=" explore (death)" tags="" position="917,1011" size="100,100">You explore the tunnel and find a snake lives here. The cramped space of the tunnel slows you down and you cannot escape the snake
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="31" name=" leave (death)" tags="" position="1054,903" size="100,100">You didn&#39;t hear the hoof beats of cows over you head and were stampeded upon leaving the burrow
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="32" name=" MeadowRun" tags="" position="1456,251" size="100,100">run until you can’t run anymore
+
+
+[[See if dog is chasing -&gt; Chasing]]
+[[Leave to find somewhere to sleep -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="33" name=" Chasing" tags="" position="1395,376" size="100,100">The dog is not chasing you, strayed too close to a farm, dog is straining at end of leash
+
+
+
+[[Taunt the Dog -&gt; taunt(death)]]
+[[Leave to find somewhere to sleep -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="34" name=" taunt(death)" tags="" position="1473,500" size="100,100">You taunt the dog, just barely out of its reach. The dog&#39;s fury gives it strenght and it snaps its leash and comes for you fast than you are able to react
+
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="35" name=" MeadowSleep" tags="" position="1547,362" size="100,100">You search for somewhere to sleep, find 3 promising places
+
+
+
+[[Burrow -&gt; MeadowBurrow]]
+[[Tall patch of grass -&gt; TallGrass(death)]]
+[[Beneath Bushes -&gt; MeadowBushes]]
+(if:$hearing is true)[[A shalllow hole (clear of danger) -&gt; transition3]]</tw-passagedata><tw-passagedata pid="36" name=" MeadowBurrow" tags="" position="1601,527" size="100,100">you sleep fairly well
+
+
+
+[[You are not alone -&gt; alone(death)]]</tw-passagedata><tw-passagedata pid="37" name=" TallGrass(death)" tags="" position="1705,400" size="100,100">A snake lurks in the tall grass. You realize too late and are eaten
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="38" name=" MeadowBushes" tags="" position="1690,275" size="100,100">you have a good rest, figure out where to go next
+
+
+[[Forage for food in meadow -&gt; MeadowForage]]
+[[Explore the burrow you found -&gt; BurrowExplore(death)]]
+[[Tall patch of grass you found -&gt; TallGrass(death)]]</tw-passagedata><tw-passagedata pid="39" name=" MeadowForage" tags="" position="1704,151" size="100,100">You leave to look for food. While looking for food you are ambushed by a fox and are unable to escape.
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="40" name=" BurrowExplore(death)" tags="" position="1812,256" size="100,100">Someone else calls this burrow home. And they do not appreciate you being here
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="41" name=" alone(death)" tags="" position="1760,539" size="100,100">You realize you are not alone....and whoever is in here is not happy
+
+
+
+[[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
+(set: $hearing to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="42" name="Checkpoint Ability 5: Danger Sense" tags="" position="356,921" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
+
+
+
+[[Wait till dusk -&gt; Dusk]]
+[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="43" name=" Dusk" tags="" position="274,1061" size="100,100">Dog seems to have been brought inside, humans not out either
+
+
+[[Make a run for the barn -&gt; run to barn (death)]]
+[[Wait to see if there are other threats -&gt; wait for threats]]
+(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="44" name=" daytimeBarn" tags="" position="474,1050" size="100,100">Hear the snores of the human’s dog
+
+
+[[Run past dog into barn -&gt; Run Past Dog (death)]]
+[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="45" name=" Run Past Dog (death)" tags="" position="494,1182" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
+
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="46" name=" vantagePoint" tags="" position="614,1096" size="100,100">from above dog, you see the cat lurking nearby
+
+
+
+[[Try to outrun cat -&gt; outrunCat(death)]]
+[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="47" name=" outrunCat(death)" tags="" position="632,1224" size="100,100">The cat overtakes you and pins you down before shredding you to bits
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" distractCat(death)" tags="" position="743,1131" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
+
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="49" name=" run to barn (death)" tags="" position="204,1188" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="50" name=" wait for threats" tags="" position="349,1183" size="100,100">you hear the cat
+
+
+
+[[Sneak around the cat -&gt; sneak]]
+[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="51" name=" sneak" tags="" position="282,1317" size="100,100">you sneak your way past the cat and make it into the barn
+
+
+
+[[Look around -&gt; look around]]
+[[Listen -&gt; listen]]
+[[Call out to see if anyone is here -&gt; callout(death)]]
+(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="52" name=" distraction" tags="" position="425,1312" size="100,100">you successfully distract the cat and are able to bolt into the barn
+
+
+
+
+[[Look around -&gt; look around]]
+[[Listen -&gt; listen]]
+[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="53" name=" look around" tags="" position="160,1453" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
+
+
+
+[[Investigate box -&gt; InvestigateBox]]
+[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="54" name=" listen" tags="" position="299,1466" size="100,100">you hear faint sounds of rabbits
+
+
+[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="55" name=" callout(death)" tags="" position="434,1447" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
+
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="56" name=" go to rabbits" tags="" position="307,1585" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
+
+
+
+[[Try to find a way to break them out -&gt; breakout]]
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="57" name=" breakout" tags="" position="300,1738" size="100,100">you look around to see if there is a way to free the rabbits
+
+
+[[Leather latches on side of box -&gt; latches(death)]]
+[[Rotting wood -&gt; wood(death)]]
+(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="58" name=" talkToThem" tags="" position="440,1689" size="100,100">what do you want to ask them?
+
+
+[[Do they want to be free? -&gt; freedom]]
+[[How long have they been in there -&gt; how long]]
+[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="59" name=" InvestigateBox" tags="" position="51,1587" size="100,100">as you approach you hear the faint sound of rabbits
+
+
+
+[[Try to find a way to break them out -&gt; breakout]]
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="60" name=" InvestigatePen" tags="" position="179,1594" size="100,100">you find a group of pigs in the pen
+
+
+
+[[Investigate box -&gt; InvestigateBox]]
+[[Ask pigs about rabbits -&gt; ask about rabbits]]
+[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="61" name=" ask about rabbits" tags="" position="156,1742" size="100,100">unsuccessful
+
+
+[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="62" name=" latches(death)" tags="" position="245,1873" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="63" name=" wood(death)" tags="" position="374,1861" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="64" name=" freedom" tags="" position="557,1556" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
+
+
+[[Keep asking questions -&gt; talkToThem]]
+[[Try to free them -&gt; breakout]]
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" how long" tags="" position="527,1848" size="100,100">for as long as they can remember, they do not remember not being caged
+
+
+
+[[Keep asking questions -&gt; talkToThem]]
+[[Try to free them -&gt; breakout]]
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="66" name=" danger" tags="" position="606,1714" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
+
+
+
+[[Keep asking questions -&gt; talkToThem]]
+[[Try to free them -&gt; breakout]]
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="67" name=" Try to leave (death)" tags="" position="715,1565" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="68" name=" Tranisition1" tags="" position="642,471" size="100,100">Transition to next check point
+
+
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="69" name=" transition3" tags="" position="1344,532" size="100,100">Transition to digging check point
+
+
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="70" name=" Checkpoint Ability 5: Danger Sense" tags="" position="561,1358" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
+
+
+
+[[Wait till dusk -&gt; Dusk]]
+[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="71" name=" transition5" tags="" position="114,1878" size="100,100">Transition to check point for attacks
+
+
+(set: $deaths to 0)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
