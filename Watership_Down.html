@@ -9,7 +9,17 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Watership_Down.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="" position="1427,117" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
+<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%; /* padding-right of the tw-story element. */
+  max-height: 100%;
+  margin-top: 5%; /* padding-top of the tw-story element. */
+  padding: 0 0.5em 0.5em 0.5em;
+  text-align: right;
+  background-color: transparent;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="" position="1427,117" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
 
 
 [[Try to run -&gt; Run(death)]]
@@ -213,132 +223,132 @@ You are unsure whether you want to look for food at that field you were thinking
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="42" name=" Dusk" tags="" position="1464.3333333333333,4358" size="100,100">Dog seems to have been brought inside, humans not out either
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="42" name=" Dusk" tags="" position="1464,4358" size="100,100">Dog seems to have been brought inside, humans not out either
 
 
 [[Make a run for the barn -&gt; run to barn (death)]]
 [[Wait to see if there are other threats -&gt; wait for threats]]
-(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="43" name=" daytimeBarn" tags="" position="1664.3333333333333,4347" size="100,100">Hear the snores of the human’s dog
+(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="43" name=" daytimeBarn" tags="" position="1664,4347" size="100,100">Hear the snores of the human’s dog
 
 
 [[Run past dog into barn -&gt; Run Past Dog (death)]]
-[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="44" name=" Run Past Dog (death)" tags="" position="1684.3333333333333,4479" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
+[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="44" name=" Run Past Dog (death)" tags="" position="1684,4479" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="45" name=" vantagePoint" tags="" position="1804.3333333333333,4393" size="100,100">from above dog, you see the cat lurking nearby
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="45" name=" vantagePoint" tags="" position="1804,4393" size="100,100">from above dog, you see the cat lurking nearby
 
 
 
 [[Try to outrun cat -&gt; outrunCat(death)]]
-[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="46" name=" outrunCat(death)" tags="" position="1803.3333333333333,4544" size="100,100">The cat overtakes you and pins you down before shredding you to bits
+[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="46" name=" outrunCat(death)" tags="" position="1803,4544" size="100,100">The cat overtakes you and pins you down before shredding you to bits
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="47" name=" distractCat(death)" tags="" position="1933.3333333333333,4428" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="47" name=" distractCat(death)" tags="" position="1933,4428" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" run to barn (death)" tags="" position="1394.3333333333333,4485" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" run to barn (death)" tags="" position="1394,4485" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="49" name=" wait for threats" tags="" position="1539.3333333333333,4480" size="100,100">you hear the cat
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="49" name=" wait for threats" tags="" position="1539,4480" size="100,100">you hear the cat
 
 
 
 [[Sneak around the cat -&gt; sneak]]
-[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="50" name=" sneak" tags="" position="1472.3333333333333,4614" size="100,100">you sneak your way past the cat and make it into the barn
+[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="50" name=" sneak" tags="" position="1472,4614" size="100,100">you sneak your way past the cat and make it into the barn
 
 
 
 [[Look around -&gt; look around]]
 [[Listen -&gt; listen]]
 [[Call out to see if anyone is here -&gt; callout(death)]]
-(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="51" name=" distraction" tags="" position="1615.3333333333333,4609" size="100,100">you successfully distract the cat and are able to bolt into the barn
+(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="51" name=" distraction" tags="" position="1615,4609" size="100,100">you successfully distract the cat and are able to bolt into the barn
 
 
 
 
 [[Look around -&gt; look around]]
 [[Listen -&gt; listen]]
-[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="52" name=" look around" tags="" position="1350.3333333333333,4750" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
+[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="52" name=" look around" tags="" position="1350,4750" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
 
 
 
 [[Investigate box -&gt; InvestigateBox]]
-[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="53" name=" listen" tags="" position="1489.3333333333333,4763" size="100,100">you hear faint sounds of rabbits
+[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="53" name=" listen" tags="" position="1489,4763" size="100,100">you hear faint sounds of rabbits
 
 
-[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="54" name=" callout(death)" tags="" position="1624.3333333333333,4744" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
+[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="54" name=" callout(death)" tags="" position="1624,4744" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="55" name=" go to rabbits" tags="" position="1497.3333333333333,4882" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="55" name=" go to rabbits" tags="" position="1497,4882" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
 
 
 
 [[Try to find a way to break them out -&gt; breakout]]
-[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="56" name=" breakout" tags="" position="1490.3333333333333,5035" size="100,100">you look around to see if there is a way to free the rabbits
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="56" name=" breakout" tags="" position="1490,5035" size="100,100">you look around to see if there is a way to free the rabbits
 
 
 [[Leather latches on side of box -&gt; latches(death)]]
 [[Rotting wood -&gt; wood(death)]]
-(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="57" name=" talkToThem" tags="" position="1630.3333333333333,4986" size="100,100">what do you want to ask them?
+(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="57" name=" talkToThem" tags="" position="1630,4986" size="100,100">what do you want to ask them?
 
 
 [[Do they want to be free? -&gt; freedom]]
 [[How long have they been in there -&gt; how long]]
-[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="58" name=" InvestigateBox" tags="" position="1241.3333333333333,4884" size="100,100">as you approach you hear the faint sound of rabbits
+[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="58" name=" InvestigateBox" tags="" position="1241,4884" size="100,100">as you approach you hear the faint sound of rabbits
 
 
 
 [[Try to find a way to break them out -&gt; breakout]]
-[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="59" name=" InvestigatePen" tags="" position="1369.3333333333333,4891" size="100,100">you find a group of pigs in the pen
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="59" name=" InvestigatePen" tags="" position="1369,4891" size="100,100">you find a group of pigs in the pen
 
 
 
 [[Investigate box -&gt; InvestigateBox]]
 [[Ask pigs about rabbits -&gt; ask about rabbits]]
-[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="60" name=" ask about rabbits" tags="" position="1346.3333333333333,5039" size="100,100">unsuccessful
+[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="60" name=" ask about rabbits" tags="" position="1346,5039" size="100,100">unsuccessful
 
 
-[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="61" name=" latches(death)" tags="" position="1435.3333333333333,5170" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
-
-
-[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
-(set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="62" name=" wood(death)" tags="" position="1564.3333333333333,5158" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="61" name=" latches(death)" tags="" position="1435,5170" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="63" name=" freedom" tags="" position="1747.3333333333333,4853" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="62" name=" wood(death)" tags="" position="1564,5158" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="63" name=" freedom" tags="" position="1747,4853" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="64" name=" how long" tags="" position="1717.3333333333333,5145" size="100,100">for as long as they can remember, they do not remember not being caged
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="64" name=" how long" tags="" position="1717,5145" size="100,100">for as long as they can remember, they do not remember not being caged
 
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" danger" tags="" position="1796.3333333333333,5011" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" danger" tags="" position="1796,5011" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
 
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="66" name=" Try to leave (death)" tags="" position="1905.3333333333333,4862" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="66" name=" Try to leave (death)" tags="" position="1905,4862" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
@@ -350,61 +360,61 @@ You are unsure whether you want to look for food at that field you were thinking
 
 
 [[Next check point -&gt;CP_digging]] 
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="69" name=" Checkpoint Ability 5: Danger Sense" tags="" position="1556.3333333333333,4231" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="69" name=" Checkpoint Ability 5: Danger Sense" tags="" position="1556,4231" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
 
 
 
 [[Wait till dusk -&gt; Dusk]]
-[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="70" name=" transition5" tags="" position="1304.3333333333333,5175" size="100,100">Transition to check point for attacks
+[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="70" name=" transition5" tags="" position="1304,5175" size="100,100">Transition to check point for attacks
 
 [[Continue-&gt;CP_attack]]
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="71" name="CP_running_wheretogo" tags="" position="1892.6666666666667,752" size="100,100">After you narrowly escaped your death, you know that this is no longer a safe place to stay. You need to look for a new place.
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="71" name="CP_running_wheretogo" tags="" position="1892,752" size="100,100">After you narrowly escaped your death, you know that this is no longer a safe place to stay. You need to look for a new place.
 
 [[Jump onto a tall rock-&gt;running_jump]]
 [[Check out behind the bush-&gt;running_nojump]]
-(if: $running is true)[[Run around-&gt;running_runenjoy]]</tw-passagedata><tw-passagedata pid="72" name="running_jump" tags="" position="1423.5,917.3333333333334" size="100,100">On top of the rock, you see a coyote in the distance, and it seems to be looking for food.
+(if: $running is true)[[Run around-&gt;running_runenjoy]]</tw-passagedata><tw-passagedata pid="72" name="running_jump" tags="" position="1423,917" size="100,100">On top of the rock, you see a coyote in the distance, and it seems to be looking for food.
 
 [[Keep observing-&gt;D_running_jump]]
 [[Run away immediately-&gt;running_jumpgood]]
-[[Hide behind the rock-&gt;running_jumpbad]]</tw-passagedata><tw-passagedata pid="73" name="running_runenjoy" tags="" position="2155.1666666666665,904" size="100,100">For some reason, feeling the wind brush against your fur, the grass touching your feet, brings happiness to you.
+[[Hide behind the rock-&gt;running_jumpbad]]</tw-passagedata><tw-passagedata pid="73" name="running_runenjoy" tags="" position="2155,904" size="100,100">For some reason, feeling the wind brush against your fur, the grass touching your feet, brings happiness to you.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="74" name="D_running_jump" tags="" position="1238.5,1085.6666666666667" size="100,100">The coyote sees you too and quickly catches you and eats you alive.
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="75" name="running_jumpgood" tags="" position="1406.8333333333333,1084" size="100,100">You are too afraid to look back, but something is definitely chasing you. You can hear its footsteps getting closer and closer.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="74" name="D_running_jump" tags="" position="1238,1085" size="100,100">The coyote sees you too and quickly catches you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="75" name="running_jumpgood" tags="" position="1406,1084" size="100,100">You are too afraid to look back, but something is definitely chasing you. You can hear its footsteps getting closer and closer.
 
 [[Keep running-&gt;SC_running]]
-[[Hide behind a trunk nearby-&gt;D_running_jumpgood]]</tw-passagedata><tw-passagedata pid="76" name="running_jumpbad" tags="" position="1555.1666666666665,1087.3333333333335" size="100,100">You jump off the rock and hide behind it. Although you lose sight of the coyote, you can hear something walking towards your location and sniffing.
+[[Hide behind a trunk nearby-&gt;D_running_jumpgood]]</tw-passagedata><tw-passagedata pid="76" name="running_jumpbad" tags="" position="1555,1087" size="100,100">You jump off the rock and hide behind it. Although you lose sight of the coyote, you can hear something walking towards your location and sniffing.
 
 [[Run immediately-&gt;SC_running]]
 [[Keep hiding-&gt;D_running_jumpbad1]]
-[[Peek again-&gt;D_running_jumpbad2]]</tw-passagedata><tw-passagedata pid="77" name="running_nojump" tags="" position="1781.8333333333335,902" size="100,100">The moment you stick your head outside the bush you see a coyote looking in the opposite direction as you are. It definitely senses your presence as well and it’s only a matter of time before it finds you.
+[[Peek again-&gt;D_running_jumpbad2]]</tw-passagedata><tw-passagedata pid="77" name="running_nojump" tags="" position="1781,902" size="100,100">The moment you stick your head outside the bush you see a coyote looking in the opposite direction as you are. It definitely senses your presence as well and it’s only a matter of time before it finds you.
 
 [[Freeze in place-&gt;D_running_nojump1]]
 [[Hide in the bush-&gt;D_running_nojump2]]
-[[Run immediately-&gt;SC_running]]</tw-passagedata><tw-passagedata pid="78" name="SC_running" tags="" position="2041.8333333333333,1297.3333333333335" size="100,100">You keep running until you can taste the salty blood in your throat and you feel your lungs are about to implode. But your escape route is cut short by a steep river. The water is so turbulent that anything that dares to go near it is engulfed immediately and washed away, leaving no trace behind.
+[[Run immediately-&gt;SC_running]]</tw-passagedata><tw-passagedata pid="78" name="SC_running" tags="" position="2041,1297" size="100,100">You keep running until you can taste the salty blood in your throat and you feel your lungs are about to implode. But your escape route is cut short by a steep river. The water is so turbulent that anything that dares to go near it is engulfed immediately and washed away, leaving no trace behind.
 
 [[Look for ways to cross the river-&gt;D_SC_running1]]
 [[Look back to see if the predator is still chasing you-&gt;D_SC_running2]]
-(if: $running is true)[[Run as fast as you can-&gt;running_end]]</tw-passagedata><tw-passagedata pid="79" name="D_running_jumpgood" tags="" position="1385.1666666666665,1250.6666666666667" size="100,100">The coyote finds you and eats you alive.
+(if: $running is true)[[Run as fast as you can-&gt;running_end]]</tw-passagedata><tw-passagedata pid="79" name="D_running_jumpgood" tags="" position="1385,1250" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="80" name="D_running_jumpbad1" tags="" position="1505.1666666666665,1237.3333333333335" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="80" name="D_running_jumpbad1" tags="" position="1505,1237" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="81" name="D_running_jumpbad2" tags="" position="1630.1666666666665,1237.3333333333335" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="81" name="D_running_jumpbad2" tags="" position="1630,1237" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="82" name="D_running_nojump1" tags="" position="1706.8333333333335,1052" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="82" name="D_running_nojump1" tags="" position="1706,1052" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="83" name="D_running_nojump2" tags="" position="1856.8333333333335,1052" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="83" name="D_running_nojump2" tags="" position="1856,1052" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="84" name="D_SC_running1" tags="" position="1966.8333333333333,1449.3333333333335" size="100,100">You died.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="84" name="D_SC_running1" tags="" position="1966,1449" size="100,100">You died.
 
 Running unlocked
 
 [[Return-&gt;CP_running_wheretogo]]
-(set: $running to true)</tw-passagedata><tw-passagedata pid="85" name="D_SC_running2" tags="" position="2115.833333333333,1447.3333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="86" name="running_end" tags="" position="1672.8333333333333,1462.3333333333335" size="100,100">You lived.
+(set: $running to true)</tw-passagedata><tw-passagedata pid="85" name="D_SC_running2" tags="" position="2115,1447" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="86" name="running_end" tags="" position="1672,1462" size="100,100">You lived.
 
-[[Continue-&gt;Ability 3 Checkpoint: Improved Hearing]]</tw-passagedata><tw-passagedata pid="87" name="CP_digging" tags="" position="1397.6666666666667,2941.666666666667" size="100,100">You’re hungry.
+[[Continue-&gt;Ability 3 Checkpoint: Improved Hearing]]</tw-passagedata><tw-passagedata pid="87" name="CP_digging" tags="" position="1397,2941" size="100,100">You’re hungry.
 
 [[Run to somewhere else-&gt;digging_run]]
-[[Jump on top of a rock-&gt;digging_rock]]</tw-passagedata><tw-passagedata pid="88" name="CP_attack" tags="" position="1504.3333333333333,5461.666666666667" size="100,100">CP_attack_relax
+[[Jump on top of a rock-&gt;digging_rock]]</tw-passagedata><tw-passagedata pid="88" name="CP_attack" tags="" position="1504,5461" size="100,100">CP_attack_relax
 “You are excited about all the abilities you have, but now you question your place in this world. Is this who you really are, forever prey, always running and hiding?”
 
 (click-replace: &quot;Continue&quot;)[You hop along the river bank and look at your reflection in the water, you feel like you have miraculously dodged all the dangers you have encountered; your fur shines brightly without a scratch.
@@ -413,83 +423,86 @@ Running unlocked
 
 (click-replace: &quot;Continue&quot;)[As you contemplate your fate, you sense danger coming your way. A quick glance reveals a hidden shadow in the bush–a feral cat ready to pounce at you at any moment.
 [[Run-&gt;attack_run]]
-[[Don’t run-&gt;attack_fight]]]]]</tw-passagedata><tw-passagedata pid="89" name="attack_run" tags="" position="1429.3333333333333,5611.666666666667" size="100,100">You are very familiar with this now. Just run as fast as you can. Forget about everything else in the world. Feel your heartbeat and the grass brushing your feet.
+[[Don’t run-&gt;attack_fight]]]]]</tw-passagedata><tw-passagedata pid="89" name="attack_run" tags="" position="1429,5611" size="100,100">You are very familiar with this now. Just run as fast as you can. Forget about everything else in the world. Feel your heartbeat and the grass brushing your feet.
 
 (click-replace: &quot;Keep running&quot;)[You look back, and the shadow is still following you. It is more elegant than you, barely breathing heavily when your body is already tired.”
 
 (click-replace: &quot;Keep running&quot;)[You can feel your limbs numb, your heart giving out, but your looming doom is still right behind you, ready for you to collapse at any moment. You can’t run any longer. As your eyelids shut closely, you see that familiar flash of white light once again–”
 
-[[Return-&gt;CP_attack]]]]</tw-passagedata><tw-passagedata pid="90" name="attack_fight" tags="" position="1579.3333333333333,5611.666666666667" size="100,100">This time you decide not to run anymore. You are tired of running as someone else’s prey all the time. This time, you want to fight back.
+[[Return-&gt;CP_attack]]]]</tw-passagedata><tw-passagedata pid="90" name="attack_fight" tags="" position="1579,5611" size="100,100">This time you decide not to run anymore. You are tired of running as someone else’s prey all the time. This time, you want to fight back.
 
 [[Scratch the cat’s eyes-&gt;attack_scratch]]
 [[Look for high ground-&gt;attack_highground]]
-[[Wait for the cat to move first-&gt;D_attack_fight]]</tw-passagedata><tw-passagedata pid="91" name="attack_scratch" tags="" position="1429.3333333333333,5761.666666666667" size="100,100">The cat looks confused, baffled by your unwillingness to run for your life like all others. You decide to use this confusion and jump the cat first. You try to aim for its eyes, but the cat quickly dodges your attack and repositions itself on a rock, hissing aggressively.
+[[Wait for the cat to move first-&gt;D_attack_fight]]</tw-passagedata><tw-passagedata pid="91" name="attack_scratch" tags="" position="1429,5761" size="100,100">The cat looks confused, baffled by your unwillingness to run for your life like all others. You decide to use this confusion and jump the cat first. You try to aim for its eyes, but the cat quickly dodges your attack and repositions itself on a rock, hissing aggressively.
 
 [[Find a place to hide.-&gt;attack_hide]]
-[[Keep on the attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="92" name="attack_highground" tags="" position="1579.3333333333333,5761.666666666667" size="100,100">You jump onto a piece of rock and can see farther now.
+[[Keep on the attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="92" name="attack_highground" tags="" position="1579,5761" size="100,100">You jump onto a piece of rock and can see farther now.
 
 [[Attack the cat from above-&gt;attack_highattack]]
-[[Jump off the other side of the rock-&gt;attack_hide]]</tw-passagedata><tw-passagedata pid="93" name="D_attack_fight" tags="" position="1729.3333333333333,5761.666666666667" size="100,100">The cat quickly decimates you.
+[[Jump off the other side of the rock-&gt;attack_hide]]</tw-passagedata><tw-passagedata pid="93" name="D_attack_fight" tags="" position="1729,5761" size="100,100">The cat quickly decimates you.
 
-[[Return-&gt;CP_attack]]</tw-passagedata><tw-passagedata pid="94" name="attack_hide" tags="" position="1354.3333333333333,5911.666666666667" size="100,100">You hide behind a piece of rock. You can hear and smell the cat approaching. You must make a decision fast.
+[[Return-&gt;CP_attack]]</tw-passagedata><tw-passagedata pid="94" name="attack_hide" tags="" position="1354,5911" size="100,100">You hide behind a piece of rock. You can hear and smell the cat approaching. You must make a decision fast.
 
-[[Surprise attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="95" name="attack_highattack" tags="" position="1624.3333333333333,5911.666666666667" size="100,100">You attack the cat from above and manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
+[[Surprise attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="95" name="attack_highattack" tags="" position="1624,5911" size="100,100">You attack the cat from above and manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
 
-[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="96" name="attack_surprise" tags="" position="1439.3333333333333,6063.333333333334" size="100,100">The cat does it see you coming and you manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
+[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="96" name="attack_surprise" tags="" position="1439,6063" size="100,100">The cat does it see you coming and you manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
 
-[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="97" name="attack_bite" tags="" position="1624.3333333333333,6061.666666666667" size="100,100">You bite the cat in its paw but it violently smashes you on the ground.
+[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="97" name="attack_bite" tags="" position="1624,6061" size="100,100">You bite the cat in its paw but it violently smashes you on the ground.
 
 (click-replace: &quot;Continue&quot;)[Your vision becomes blurry but you keep on going, dragging your claws across its hind leg. The cat tries to bite you in the spine but you manage to dodge it by a narrow margin.
 
 (click-replace: &quot;Continue&quot;)[You start to slowly lose all your senses; you can’t see, can’t hear, can’t feel anything. You draw your final breath and put all your remaining strength into one last bite, and fall to the ground.
 
-[[Continue-&gt;attack_end]]]]</tw-passagedata><tw-passagedata pid="98" name="attack_end" tags="" position="1624.3333333333333,6211.666666666667" size="100,100">You thought you were going to be greeted by that beam of white light again, but you instead woke up to the moon shining in the night sky. Your fur is covered in blood cots and scratch marks, and the cat is nowhere to be seen.
+[[Continue-&gt;attack_end]]]]</tw-passagedata><tw-passagedata pid="98" name="attack_end" tags="" position="1624,6211" size="100,100">You thought you were going to be greeted by that beam of white light again, but you instead woke up to the moon shining in the night sky. Your fur is covered in blood cots and scratch marks, and the cat is nowhere to be seen.
 
 (click-replace: &quot;Continue&quot;)[You drag your body to the river to drink some water. It hurts like hell, but you have never felt more alive before.
 
-(click-replace: &quot;Continue&quot;)You hear the voice for the last time: All the world will be your enemy, Prince of a Thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.]</tw-passagedata><tw-passagedata pid="99" name="digging_run" tags="" position="1322.6666666666667,3091.666666666667" size="100,100">You think you heard something
+(click-replace: &quot;Continue&quot;)You hear the voice for the last time: All the world will be your enemy, Prince of a Thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.]</tw-passagedata><tw-passagedata pid="99" name="digging_run" tags="" position="1322,3091" size="100,100">You think you heard something
 
 [[Improved hearing-&gt;digging_findfood]]
 [[Ignore it-&gt;digging_findfood]]
-[[Go somewhere else-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="100" name="digging_rock" tags="" position="1472.6666666666667,3091.666666666667" size="100,100">You see a field of crops in the distance.
+[[Go somewhere else-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="100" name="digging_rock" tags="" position="1472,3091" size="100,100">You see a field of crops in the distance.
 
-[[Go there-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="101" name="digging_findfood" tags="" position="1322.6666666666667,3241.666666666667" size="100,100">There is so much food.
+[[Go there-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="101" name="digging_findfood" tags="" position="1322,3241" size="100,100">There is so much food.
 
-[[Harvest-&gt;digging_storefood]]</tw-passagedata><tw-passagedata pid="102" name="digging_storefood" tags="" position="1322.6666666666667,3391.666666666667" size="100,100">You look at all the food you harvested, but you don’t have anywhere to store them.
+[[Harvest-&gt;digging_storefood]]</tw-passagedata><tw-passagedata pid="102" name="digging_storefood" tags="" position="1322,3391" size="100,100">You look at all the food you harvested, but you don’t have anywhere to store them.
 
 [[Leave-&gt;digging_scout]]
-(if: $digging is true)[[Dig a hole in the ground-&gt;digging_foodhole]]</tw-passagedata><tw-passagedata pid="103" name="digging_scout" tags="" position="1247.6666666666667,3541.666666666667" size="100,100">There is a lot of food around so you decide to stay for a while longer.
+(if: $digging is true)[[Dig a hole in the ground-&gt;digging_foodhole]]</tw-passagedata><tw-passagedata pid="103" name="digging_scout" tags="" position="1247,3541" size="100,100">There is a lot of food around so you decide to stay for a while longer.
 
-[[Check out the wooden house in the distance-&gt;digging_barn]]</tw-passagedata><tw-passagedata pid="104" name="digging_foodhole" tags="" position="1397.6666666666667,3541.666666666667" size="100,100">You dig a hole under a tree nearby and move all your food there. You take a nap.
+[[Check out the wooden house in the distance-&gt;digging_barn]]</tw-passagedata><tw-passagedata pid="104" name="digging_foodhole" tags="" position="1397,3541" size="100,100">You dig a hole under a tree nearby and move all your food there. You take a nap.
 
 [[Go out-&gt;digging_scout]]
-[[Rest-&gt;digging_nofood]]</tw-passagedata><tw-passagedata pid="105" name="digging_nofood" tags="" position="1347.6666666666667,3686.666666666667" size="100,100">You don&#39;t have food anymore.
+[[Rest-&gt;digging_nofood]]</tw-passagedata><tw-passagedata pid="105" name="digging_nofood" tags="" position="1347,3686" size="100,100">You don&#39;t have food anymore.
 
-[[Go out-&gt;digging_scout]]</tw-passagedata><tw-passagedata pid="106" name="digging_barn" tags="" position="1227.6666666666667,3691.666666666667" size="100,100">You sneak in through a crack and you can’t believe what you see. Stacks of wheat piled up like a mountain.
+[[Go out-&gt;digging_scout]]</tw-passagedata><tw-passagedata pid="106" name="digging_barn" tags="" position="1227,3691" size="100,100">You sneak in through a crack and you can’t believe what you see. Stacks of wheat piled up like a mountain.
 
 [[Keep exploring the barn-&gt;digging_trip]]
 [[Start eating-&gt;digging_human]]
-[[Go away-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="107" name="digging_trip" tags="" position="1152.6666666666667,3841.666666666667" size="100,100">You trip over a glass lamp which falls to the ground and shatters. You hear the barn door crank open behind you.
+[[Go away-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="107" name="digging_trip" tags="" position="1152,3841" size="100,100">You trip over a glass lamp which falls to the ground and shatters. You hear the barn door crank open behind you.
 
-[[Continue-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="108" name="digging_human" tags="" position="1302.6666666666667,3841.666666666667" size="100,100">You hear the door crackling in the distance and you see a two-legged shadow approaching you slowly, the likes of which you’ve never seen before.
+[[Continue-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="108" name="digging_human" tags="" position="1302,3841" size="100,100">You hear the door crackling in the distance and you see a two-legged shadow approaching you slowly, the likes of which you’ve never seen before.
 
 [[Try to run past it-&gt;D_digging_human]]
 [[Hide behind the a stack of hay-&gt;digging_hide]]
-(if: $digging is true)[[Dig your way out-&gt;digging_dig]]</tw-passagedata><tw-passagedata pid="109" name="D_digging_human" tags="" position="1152.6666666666667,3991.666666666667" size="100,100">The human notices you and shot you.
+(if: $digging is true)[[Dig your way out-&gt;digging_dig]]</tw-passagedata><tw-passagedata pid="109" name="D_digging_human" tags="" position="1152,3991" size="100,100">The human notices you and shot you.
 
 [[Return-&gt;CP_digging]]
-(set: $digging to true)</tw-passagedata><tw-passagedata pid="110" name="digging_hide" tags="" position="1302.6666666666667,3991.666666666667" size="100,100">You hide in a corner and hold your breath. You listen closely–the footsteps are getting closer and closer.
+(set: $digging to true)</tw-passagedata><tw-passagedata pid="110" name="digging_hide" tags="" position="1302,3991" size="100,100">You hide in a corner and hold your breath. You listen closely–the footsteps are getting closer and closer.
 
 [[Make a break for it-&gt;D_digging_hide1]]
-[[Keep hiding-&gt;D_digging_hide2]]</tw-passagedata><tw-passagedata pid="111" name="digging_dig" tags="" position="1452.6666666666667,3991.666666666667" size="100,100">You dig your way out of the barn.
+[[Keep hiding-&gt;D_digging_hide2]]</tw-passagedata><tw-passagedata pid="111" name="digging_dig" tags="" position="1452,3991" size="100,100">You dig your way out of the barn.
 
-[[Continue-&gt; Checkpoint Ability 5: Danger Sense]]</tw-passagedata><tw-passagedata pid="112" name="D_digging_hide1" tags="" position="1227.6666666666667,4141.666666666667" size="100,100">The human notices you and shot you.
-
-[[Return-&gt;CP_digging]]
-(set: $digging to true)</tw-passagedata><tw-passagedata pid="113" name="D_digging_hide2" tags="" position="1377.6666666666667,4141.666666666667" size="100,100">The human notices you and shot you.
+[[Continue-&gt; Checkpoint Ability 5: Danger Sense]]</tw-passagedata><tw-passagedata pid="112" name="D_digging_hide1" tags="" position="1227,4141" size="100,100">The human notices you and shot you.
 
 [[Return-&gt;CP_digging]]
-(set: $digging to true)</tw-passagedata></tw-storydata>
+(set: $digging to true)</tw-passagedata><tw-passagedata pid="113" name="D_digging_hide2" tags="" position="1377,4141" size="100,100">The human notices you and shot you.
+
+[[Return-&gt;CP_digging]]
+(set: $digging to true)</tw-passagedata><tw-passagedata pid="114" name="Sidebar_Passage" tags="" position="1296.3333129882812,113" size="100,100">(append: ?SideBar)[\
+Name:
+Location:
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
