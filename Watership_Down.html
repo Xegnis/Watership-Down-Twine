@@ -506,7 +506,103 @@ Running unlocked
 (set: $digging to true)</tw-passagedata><tw-passagedata pid="114" name="Sidebar_Passage" tags="header" position="1300,115" size="100,100">(append: ?SideBar)[\
 Name:
 Location:
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="115" name="Meadow0" tags="" position="594,123" size="100,100">	You are furious. Lord Frith gave all these other animals such powerful and dangerous gifts that they have unleashed on your fellow rabbits. 
+	But you do not want to stand idly by and watch your population dwindle, so you decide to go convince Lord Frith to give you and your people gifts as powerful as those of your foes. 
+	
+	
+[[Find a good place to call upon Lord Frith -&gt; Meadow1.1]]</tw-passagedata><tw-passagedata pid="116" name=" Meadow1.1" tags="" position="594,273" size="100,100">	You go to the middle of a meadow. There are few trees in the way between you and the open sky. 
+	Blazing against the brilliant blue, you see the halo of Lord Frith. And you feel anger burning in your chest. How could he have left you and your fellow rabbits to die? How could he just sit there and watch?
+	
+
+[[You start hurling insults at Lord Frith -&gt; Meadow2.1]]
+[[You start screaming as loud as you can -&gt; Meadow2.2]]
+[[You issue a challenge to Lord Frith -&gt; Meadow2.3]]</tw-passagedata><tw-passagedata pid="117" name=" Meadow2.1" tags="" position="594,423" size="100,100">	Your insults don&#39;t seem to reach that air headed ball of gas. Figures. Maybe you need to come up with better insults...
+	
+
+
+[[You continue to hurl increasingly more vulgar insults at the sky -&gt; Meadow3]]
+(set: $insults to true)</tw-passagedata><tw-passagedata pid="118" name=" Meadow2.2" tags="" position="474,423" size="100,100">	You scream until your lungs ache but to no avail. What does Lord Frith think he&#39;s doing that&#39;s more important than listening to your grivences?
+	Maybe you haven&#39;t drawn enough attention to yourself...
+	
+
+[[You start screaming again, jumping up and down this time -&gt; Meadow3]]
+(set: $scream to true)</tw-passagedata><tw-passagedata pid="119" name=" Meadow2.3" tags="" position="714,423" size="100,100">	&quot;Come down and fight me, Lord Frith!&quot; 
+	Surprisingly he does not come down. 
+	To be fair, that wasn&#39;t your best challenge. You spend some time thinking of some thing better.
+	
+
+[[Issue Lord Frith a challenge he cannot refuse -&gt; Meadow3]]
+(set: $challenge to true)</tw-passagedata><tw-passagedata pid="120" name=" Meadow3" tags="" position="594,573" size="100,100">	Lord Frith finally shows up.
+	&quot;You know there are better ways to get may attention than 
+	(if: $insults is true)[hurling insults at me.]
+	(if: $scream is true)[screaming your lungs out.]
+	(if: $challenge is true)[challenging me to a duel or a bizzare eating contest.]&quot;
+	
+[[What is that way? -&gt; Meadow4.1]]
+[[What took you so long? -&gt; Meadow4.2]]
+[[Where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="121" name=" Meadow4.1" tags="" position="444,723" size="100,100">	&quot;Asking nicely, you know I do respond to kindness&quot;
+
+
+[[Sure you do -&gt; Meadow5.1]]
+[[Anyway, where are my gifts? -&gt; Meadow4.3]]
+[[Is that why it took you so long? -&gt; Meadow4.2]]</tw-passagedata><tw-passagedata pid="122" name=" Meadow4.2" tags="" position="594,723" size="100,100">	&quot;I&#39;ll have you know, I have much more important things to attend to than your grievances&quot;
+	
+
+[[What could possibly be more important than talking to me -&gt; Meadow5.2]]
+[[I don&#39;t care, where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="123" name=" Meadow4.3" tags="" position="744,723" size="100,100">	&quot;It is the balance of all living things, some will live, some will die, those that live will adapt to keep living,&quot; Lord Frith pauses, &quot;What makes you think I did not grant you and your people any gifts?&quot;
+	
+
+
+[[I don&#39;t look or feel and different -&gt; Meadow6.1]]
+[[You were jealous of my rabbits&#39; success -&gt; Meadow6.2]]
+[[Keep the balance, what do you mean? -&gt; Meadow6.3]]</tw-passagedata><tw-passagedata pid="124" name=" Meadow5.1" tags="" position="444,873" size="100,100">	&quot;I&#39;m going to pretend I didn&#39;t hear that, What did you want anyways?&quot;
+
+
+
+[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="125" name=" Meadow5.2" tags="" position="594,873" size="100,100">	&quot;Many things, keeping the balance of life on this planet, attending to the grienvences of more powerful beings,&quot; Lord Frith looks like he could go on but stops, &quot;What did you want anyways?&quot;
+	
+
+
+[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="126" name=" Meadow6.1" tags="" position="714,873" size="100,100">	&quot;Are you sure? Maybe you are thinking about this in the wrong way,&quot; Lord Frith continues, &quot;You were never meant to be a predator, you were built to be prey. Be swift, be clever and you will survive.&quot;
+
+	
+	
+[[Me? Prey! -&gt; Meadow7.1]]
+[[...swift and clever -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="127" name=" Meadow6.2" tags="" position="834,873" size="100,100">	&quot;You really think I would base my decisions off my supposed jealousy of mere mortals? As you know, dear Rabbit Prince, I am a god. My concerns are above yours&quot;
+	&quot;I weakened your people for the sake of the balance. But I did give you the tools to survive. Be swift, be clever, figure out how to use them.&quot;
+	
+	
+[[... -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="128" name=" Meadow6.3" tags="" position="954,873" size="100,100">	&quot;I seek to keep the balance between all animals so one does not over power all the others. You and your rabbits were causing problems by eating all the food you were supposed to share with others, so you needed to be hunted to maintain the balance.&quot;
+	
+
+
+[[Needed is a strong word -&gt; Meadow7.2]]
+[[You think my rabbits deserve to die?! -&gt; Meadow7.2]]
+[[Who do you think you are? -&gt; Meadow7.2]]</tw-passagedata><tw-passagedata pid="129" name=" Meadow7.1" tags="" position="714,1023" size="100,100">	“Now I have more important things to attend to, goodbye Rabbit Prince”
+	
+	
+[[Goodbye? -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="130" name=" Meadow8.1" tags="" position="714,1173" size="100,100">	And with that Lord Frith moves back to his place in the sky. His burning halo scorching your face as you ponder what he said to you.
+
+
+
+[[Start screaming again, maybe he&#39;ll come back and be less cryptic -&gt; Meadow9.1]]
+[[Swift and clever...maybe he&#39;s on to something -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="131" name=" Meadow7.2" tags="" position="874,1016" size="100,100">	&quot;Though you don&#39;t seem to think so, I did give you and your rabbits gifts. Be swift, be clever and you will survive.&quot;
+	
+	
+
+[[You call those gifts?! -&gt; Meadow7.1]]
+[[swift and clever? -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="132" name=" Meadow9.1" tags="" position="639,1323" size="100,100">	You scream for as long as you can, eventually your lungs and throat hurt too much to scream any more. But Frith does not come back.
+	Now that you have tired yourself out, maybe you should consider what Frith told you. 
+	
+
+
+[[hmmm...tools to survive...swift, clever... -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="133" name=" Meadow9.2" tags="" position="789,1323" size="100,100">	Experimentally, you start to run. You go faster than you used to. You keep going, the speed is exciting but a river is approaching. If you can run, you might be able to jump as well. 
+	Soon enough you are at the river’s banks, you take a flying leap and arrive at the other side. You let out a cry of joy, you’ve never felt this alive. 
+	You keep running for as long as you can, eventually reaching the forest.
+
+
+
+[[Into the forest -&gt; Forest0]]</tw-passagedata><tw-passagedata pid="134" name=" Forest0" tags="" position="789,1473" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
