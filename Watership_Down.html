@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Watership_Down.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Watership_Down" startnode="1" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="Watership_Down" startnode="173" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
 <tw-storydata name="Watership_Down" startnode="42" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   position: fixed;
   top: 0;
@@ -18,402 +18,397 @@
 
 tw-story[tags~="Blue"] {
 background-color: blue;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Checkpoint Ability 1: Jumping" tags="Blue" position="2298,123" size="100,100">You are minding your own business, gathering food, when you hear the sound of footsteps approaching. These footsteps sound like they are coming from an animal only slightly larger but much more dangerous than you.
-
-
-[[Try to run -&gt; Run(death)]]
-[[Freeze in place -&gt; Freeze]]
-(if:$jumping is true)[[Hop over a nearby log and make your escape -&gt; Second location]]</tw-passagedata><tw-passagedata pid="2" name=" Run(death)" tags="" position="2159,285" size="100,100">You were not able to run fast enough and were killed by the creature persuing you.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name=" Run(death)" tags="" position="2159,285" size="100,100">You were not able to run fast enough and were killed by the creature persuing you.
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="3" name=" Freeze" tags="" position="2370,292" size="100,100">Now that your food collection mission has gone south, you are left to figure out what to do next. You know there is a field nearby where you could probably get more food. But it might be a better idea to find somewhere to hide for the rest of the day. 
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="2" name=" Freeze" tags="" position="2370,292" size="100,100">Now that your food collection mission has gone south, you are left to figure out what to do next. You know there is a field nearby where you could probably get more food. But it might be a better idea to find somewhere to hide for the rest of the day. 
 
 
 
 [[Hide -&gt; Hide1]]
-[[Go to the field -&gt; Field1]]</tw-passagedata><tw-passagedata pid="4" name=" Hide1" tags="" position="2253,400" size="100,100">You find a shallow ditch underneath a large tree root that you consider to be safe enough to sleep for the night and curl up to rest.
+[[Go to the field -&gt; Field1]]</tw-passagedata><tw-passagedata pid="3" name=" Hide1" tags="" position="2253,400" size="100,100">You find a shallow ditch underneath a large tree root that you consider to be safe enough to sleep for the night and curl up to rest.
 
 
-[[Sleep -&gt; Hide2]]</tw-passagedata><tw-passagedata pid="5" name=" Field1" tags="" position="2528,335" size="100,100">Are finally able to collect your food
+[[Sleep -&gt; Hide2]]</tw-passagedata><tw-passagedata pid="4" name=" Field1" tags="" position="2528,335" size="100,100">Are finally able to collect your food
 
 
 [[Stay where you are to eat -&gt; Stay-eat]]
-[[Take it to find a better place to eat -&gt; Second location]]</tw-passagedata><tw-passagedata pid="6" name=" Hide2" tags="" position="2394,434" size="100,100">You wake up before the sun has risen. In the distance you can hear the faint calls of an owl. You are feeling a bit hungry, since your food collection mission was cut short you didn’t eat very well last night. 
+[[Take it to find a better place to eat -&gt; Second location]]</tw-passagedata><tw-passagedata pid="5" name=" Hide2" tags="" position="2394,434" size="100,100">You wake up before the sun has risen. In the distance you can hear the faint calls of an owl. You are feeling a bit hungry, since your food collection mission was cut short you didn’t eat very well last night. 
 You are unsure whether you want to look for food at that field you were thinking about heading to yesterday or looking for something closer.
 
 
 
 [[Go to Field -&gt; Field1]] 
-[[Look around area -&gt; Hide-Look Around]]</tw-passagedata><tw-passagedata pid="7" name=" Hide-Look Around" tags="" position="2269,524" size="100,100">As you are looking for food, you start to hear the sounds of the owl coming closer. You turn just in time to see the owl hurling towards you in a swooping dive.
+[[Look around area -&gt; Hide-Look Around]]</tw-passagedata><tw-passagedata pid="6" name=" Hide-Look Around" tags="" position="2269,524" size="100,100">As you are looking for food, you start to hear the sounds of the owl coming closer. You turn just in time to see the owl hurling towards you in a swooping dive.
 
 
 
 [[Freeze in Place -&gt; Freeze(death)]]
-[[Try to dodge -&gt; Dodge(death)]]</tw-passagedata><tw-passagedata pid="8" name=" Freeze(death)" tags="" position="2127,458" size="100,100">You froze in place but the owl was already locked on to you. 
+[[Try to dodge -&gt; Dodge(death)]]</tw-passagedata><tw-passagedata pid="7" name=" Freeze(death)" tags="" position="2127,458" size="100,100">You froze in place but the owl was already locked on to you. 
 
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="9" name=" Dodge(death)" tags="" position="2147,590" size="100,100">You tried to dodge the owl but were unsuccessful. 
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="8" name=" Dodge(death)" tags="" position="2147,590" size="100,100">You tried to dodge the owl but were unsuccessful. 
 
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="10" name=" Stay-eat" tags="" position="2554,482" size="100,100">As you are eating you hear the sounds of large animals coming towards you
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="9" name=" Stay-eat" tags="" position="2554,482" size="100,100">As you are eating you hear the sounds of large animals coming towards you
 
 
 
 [[Try to dodge out of the way -&gt; Dodge2(death)]]
-[[Run from them -&gt; Run2(death)]]</tw-passagedata><tw-passagedata pid="11" name=" Second location" tags="" position="2666,359" size="100,100">You find a couple promising locations to eat, burrow, bushes, tree stump
+[[Run from them -&gt; Run2(death)]]</tw-passagedata><tw-passagedata pid="10" name=" Second location" tags="" position="2666,359" size="100,100">You find a couple promising locations to eat, burrow, bushes, tree stump
 
 
 
 [[Burrow -&gt; BurrowEat(death)]]
 [[Bushes -&gt; BushEat(death)]]
-(if:$jumping is true)[[Tree stump (unlocked with jumping) -&gt; Tranisition1]]</tw-passagedata><tw-passagedata pid="12" name=" Dodge2(death)" tags="" position="2435,564" size="100,100">There were too many of them for you to dodge. You were killed in the stampede.
+(if:$jumping is true)[[Tree stump (unlocked with jumping) -&gt; Tranisition1]]</tw-passagedata><tw-passagedata pid="11" name=" Dodge2(death)" tags="" position="2435,564" size="100,100">There were too many of them for you to dodge. You were killed in the stampede.
 
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="13" name=" Run2(death)" tags="" position="2556,631" size="100,100">You could not run fast enough and were caught up in the stampede.
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="12" name=" Run2(death)" tags="" position="2556,631" size="100,100">You could not run fast enough and were caught up in the stampede.
 
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="14" name=" BurrowEat(death)" tags="" position="2796,470" size="100,100">Something else was with you. It killed you as you ate.
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="13" name=" BurrowEat(death)" tags="" position="2796,470" size="100,100">Something else was with you. It killed you as you ate.
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
-(set: $jumping to true)</tw-passagedata><tw-passagedata pid="15" name=" BushEat(death)" tags="" position="2792,335" size="100,100">Something else was with you. It killed you as you ate.
+(set: $jumping to true)</tw-passagedata><tw-passagedata pid="14" name=" BushEat(death)" tags="" position="2792,335" size="100,100">Something else was with you. It killed you as you ate.
 
 
 [[Jumping Unlocked, try again -&gt;Checkpoint Ability 1: Jumping]] 
 (set: $jumping to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="16" name="Ability 3 Checkpoint: Improved Hearing" tags="" position="2362,1740" size="100,100">Just past dusk, you have had a successful day, looking for somewhere to sleep
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="15" name="Ability 3 Checkpoint: Improved Hearing" tags="" position="2362,1740" size="100,100">Just past dusk, you have had a successful day, looking for somewhere to sleep
 
 
 
 [[Go to forest -&gt; Forest1]]
 [[Go to meadow -&gt; Meadow1]]
-(if:$hearing is true)[[Safely go to meadow -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="17" name=" Forest1" tags="" position="2375,1870" size="100,100">too late you hear the sound of wings over your head
+(if:$hearing is true)[[Safely go to meadow -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="16" name=" Forest1" tags="" position="2375,1870" size="100,100">too late you hear the sound of wings over your head
 
 
 [[Run -&gt; Run3]]
-[[Stay still -&gt; Freeze1(death)]]</tw-passagedata><tw-passagedata pid="18" name=" Meadow1" tags="" position="2498,1790" size="100,100">Too late, you hear a dog
+[[Stay still -&gt; Freeze1(death)]]</tw-passagedata><tw-passagedata pid="17" name=" Meadow1" tags="" position="2498,1790" size="100,100">Too late, you hear a dog
 
 
 [[Run away -&gt; Run4]]
-[[Freeze in place -&gt; Freeze2(death)]]</tw-passagedata><tw-passagedata pid="19" name=" Run3" tags="" position="2341,2014" size="100,100">barely manage to dodge the claws
+[[Freeze in place -&gt; Freeze2(death)]]</tw-passagedata><tw-passagedata pid="18" name=" Run3" tags="" position="2341,2014" size="100,100">barely manage to dodge the claws
 
 
 
 [[You keep running -&gt; keep Running]]
-[[Freeze/hide -&gt; Freeze/Hide]] </tw-passagedata><tw-passagedata pid="20" name=" Freeze1(death)" tags="" position="2461,2007" size="100,100">you freeze in place and pray the bird ignores you, but it has already locked on to you and you are carried away
+[[Freeze/hide -&gt; Freeze/Hide]] </tw-passagedata><tw-passagedata pid="19" name=" Freeze1(death)" tags="" position="2461,2007" size="100,100">you freeze in place and pray the bird ignores you, but it has already locked on to you and you are carried away
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="21" name=" Run4" tags="" position="2574,1914" size="100,100">barely manage to dodge out of the dog’s jaws
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="20" name=" Run4" tags="" position="2574,1914" size="100,100">barely manage to dodge out of the dog’s jaws
 
 
 
 [[Keep Running -&gt; MeadowRun]]
-[[See if dog is chasing -&gt; Chasing]]</tw-passagedata><tw-passagedata pid="22" name=" Freeze2(death)" tags="" position="2660,1783" size="100,100">You try to freeze in place in the vain hope the dog ignores you, but they do not and kill you.
+[[See if dog is chasing -&gt; Chasing]]</tw-passagedata><tw-passagedata pid="21" name=" Freeze2(death)" tags="" position="2660,1783" size="100,100">You try to freeze in place in the vain hope the dog ignores you, but they do not and kill you.
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="23" name=" keep Running" tags="" position="2293,2137" size="100,100">grow tired, try to see if threat is still following
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="22" name=" keep Running" tags="" position="2293,2137" size="100,100">grow tired, try to see if threat is still following
 
 
 
 [[Hide from Threat -&gt; Freeze/Hide]] 
 [[Stop and look for somewhere to sleep -&gt; Look For Sleep]]
-[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="24" name=" Look For Sleep" tags="" position="2266,2267" size="100,100">you go back to looking for somewhere to sleep, find two promising locations
+[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="23" name=" Look For Sleep" tags="" position="2266,2267" size="100,100">you go back to looking for somewhere to sleep, find two promising locations
 
 
 [[Burrow -&gt; BurrowSleep]]
-[[Hollow in Tree -&gt; HollowSleep(death)]]</tw-passagedata><tw-passagedata pid="25" name=" StrainHear" tags="" position="2403,2274" size="100,100">you can’t hear anything, you figure the bird must have lost interest
-</tw-passagedata><tw-passagedata pid="26" name=" Freeze/Hide" tags="" position="2462,2151" size="100,100">you stay still until you think the threat has left
+[[Hollow in Tree -&gt; HollowSleep(death)]]</tw-passagedata><tw-passagedata pid="24" name=" StrainHear" tags="" position="2403,2274" size="100,100">you can’t hear anything, you figure the bird must have lost interest
+</tw-passagedata><tw-passagedata pid="25" name=" Freeze/Hide" tags="" position="2462,2151" size="100,100">you stay still until you think the threat has left
 
 
 
 [[Unfreeze and look for somewhere to sleep -&gt; Look For Sleep]]
-[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="27" name=" BurrowSleep" tags="" position="2312,2404" size="100,100">you get cozy in your burrow and sleep well through the night
+[[Strain to Hear -&gt; StrainHear]]</tw-passagedata><tw-passagedata pid="26" name=" BurrowSleep" tags="" position="2312,2404" size="100,100">you get cozy in your burrow and sleep well through the night
 
 
 
-[[Continue -&gt; BurrowMorning]]</tw-passagedata><tw-passagedata pid="28" name=" HollowSleep(death)" tags="" position="2438,2401" size="100,100">Someone else lives here, and they are not happy to find you sleeping in their home.
+[[Continue -&gt; BurrowMorning]]</tw-passagedata><tw-passagedata pid="27" name=" HollowSleep(death)" tags="" position="2438,2401" size="100,100">Someone else lives here, and they are not happy to find you sleeping in their home.
 
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="29" name=" BurrowMorning" tags="" position="2347,2519" size="100,100">You wake up
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="28" name=" BurrowMorning" tags="" position="2347,2519" size="100,100">You wake up
 
 
 
 [[Explore Burrow -&gt; explore (death)]]
-[[Leave Burrow -&gt; leave (death)]]</tw-passagedata><tw-passagedata pid="30" name=" explore (death)" tags="" position="2202,2585" size="100,100">You explore the tunnel and find a snake lives here. The cramped space of the tunnel slows you down and you cannot escape the snake
+[[Leave Burrow -&gt; leave (death)]]</tw-passagedata><tw-passagedata pid="29" name=" explore (death)" tags="" position="2202,2585" size="100,100">You explore the tunnel and find a snake lives here. The cramped space of the tunnel slows you down and you cannot escape the snake
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="31" name=" leave (death)" tags="" position="2491,2533" size="100,100">You didn&#39;t hear the hoof beats of cows over you head and were stampeded upon leaving the burrow
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="30" name=" leave (death)" tags="" position="2491,2533" size="100,100">You didn&#39;t hear the hoof beats of cows over you head and were stampeded upon leaving the burrow
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="32" name=" MeadowRun" tags="" position="2738,1905" size="100,100">run until you can’t run anymore
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="31" name=" MeadowRun" tags="" position="2738,1905" size="100,100">run until you can’t run anymore
 
 
 [[See if dog is chasing -&gt; Chasing]]
-[[Leave to find somewhere to sleep -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="33" name=" Chasing" tags="" position="2677,2030" size="100,100">The dog is not chasing you, strayed too close to a farm, dog is straining at end of leash
+[[Leave to find somewhere to sleep -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="32" name=" Chasing" tags="" position="2677,2030" size="100,100">The dog is not chasing you, strayed too close to a farm, dog is straining at end of leash
 
 
 
 [[Taunt the Dog -&gt; taunt(death)]]
-[[Leave to find somewhere to sleep -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="34" name=" taunt(death)" tags="" position="2755,2154" size="100,100">You taunt the dog, just barely out of its reach. The dog&#39;s fury gives it strenght and it snaps its leash and comes for you fast than you are able to react
+[[Leave to find somewhere to sleep -&gt; MeadowSleep]]</tw-passagedata><tw-passagedata pid="33" name=" taunt(death)" tags="" position="2755,2154" size="100,100">You taunt the dog, just barely out of its reach. The dog&#39;s fury gives it strenght and it snaps its leash and comes for you fast than you are able to react
 
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="35" name=" MeadowSleep" tags="" position="2829,2016" size="100,100">You search for somewhere to sleep, find 3 promising places
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="34" name=" MeadowSleep" tags="" position="2829,2016" size="100,100">You search for somewhere to sleep, find 3 promising places
 
 
 
 [[Burrow -&gt; MeadowBurrow]]
 [[Tall patch of grass -&gt; TallGrass(death)]]
 [[Beneath Bushes -&gt; MeadowBushes]]
-(if:$hearing is true)[[A shalllow hole (clear of danger) -&gt; transition3]]</tw-passagedata><tw-passagedata pid="36" name=" MeadowBurrow" tags="" position="2883,2181" size="100,100">you sleep fairly well
+(if:$hearing is true)[[A shalllow hole (clear of danger) -&gt; transition3]]</tw-passagedata><tw-passagedata pid="35" name=" MeadowBurrow" tags="" position="2883,2181" size="100,100">you sleep fairly well
 
 
 
-[[You are not alone -&gt; alone(death)]]</tw-passagedata><tw-passagedata pid="37" name=" TallGrass(death)" tags="" position="2987,2054" size="100,100">A snake lurks in the tall grass. You realize too late and are eaten
+[[You are not alone -&gt; alone(death)]]</tw-passagedata><tw-passagedata pid="36" name=" TallGrass(death)" tags="" position="2987,2054" size="100,100">A snake lurks in the tall grass. You realize too late and are eaten
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="38" name=" MeadowBushes" tags="" position="2972,1929" size="100,100">you have a good rest, figure out where to go next
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="37" name=" MeadowBushes" tags="" position="2972,1929" size="100,100">you have a good rest, figure out where to go next
 
 
 [[Forage for food in meadow -&gt; MeadowForage]]
 [[Explore the burrow you found -&gt; BurrowExplore(death)]]
-[[Tall patch of grass you found -&gt; TallGrass(death)]]</tw-passagedata><tw-passagedata pid="39" name=" MeadowForage" tags="" position="2986,1805" size="100,100">You leave to look for food. While looking for food you are ambushed by a fox and are unable to escape.
+[[Tall patch of grass you found -&gt; TallGrass(death)]]</tw-passagedata><tw-passagedata pid="38" name=" MeadowForage" tags="" position="2986,1805" size="100,100">You leave to look for food. While looking for food you are ambushed by a fox and are unable to escape.
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="40" name=" BurrowExplore(death)" tags="" position="3094,1910" size="100,100">Someone else calls this burrow home. And they do not appreciate you being here
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="39" name=" BurrowExplore(death)" tags="" position="3094,1910" size="100,100">Someone else calls this burrow home. And they do not appreciate you being here
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="41" name=" alone(death)" tags="" position="3042,2193" size="100,100">You realize you are not alone....and whoever is in here is not happy
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="40" name=" alone(death)" tags="" position="3042,2193" size="100,100">You realize you are not alone....and whoever is in here is not happy
 
 
 
 [[Improved Hearing Unlocked, try again -&gt;Ability 3 Checkpoint: Improved Hearing]] 
 (set: $hearing to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="42" name=" Dusk" tags="" position="2804,2930" size="100,100">Dog seems to have been brought inside, humans not out either
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="41" name=" Dusk" tags="" position="2804,2930" size="100,100">Dog seems to have been brought inside, humans not out either
 
 
 [[Make a run for the barn -&gt; run to barn (death)]]
 [[Wait to see if there are other threats -&gt; wait for threats]]
-(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="43" name=" daytimeBarn" tags="" position="3004,2919" size="100,100">Hear the snores of the human’s dog
+(if:$dangerSense is true)[[You know the cat is around and have to be careful -&gt; sneak]]</tw-passagedata><tw-passagedata pid="42" name=" daytimeBarn" tags="" position="3004,2919" size="100,100">Hear the snores of the human’s dog
 
 
 [[Run past dog into barn -&gt; Run Past Dog (death)]]
-[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="44" name=" Run Past Dog (death)" tags="" position="3024,3051" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
+[[Hop on top of dog house for better vantage point -&gt; vantagePoint]]</tw-passagedata><tw-passagedata pid="43" name=" Run Past Dog (death)" tags="" position="3024,3051" size="100,100">You try to run past the dog, but it wakes up as you pass and it catches you
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="45" name=" vantagePoint" tags="" position="3144,2965" size="100,100">from above dog, you see the cat lurking nearby
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="44" name=" vantagePoint" tags="" position="3144,2965" size="100,100">from above dog, you see the cat lurking nearby
 
 
 
 [[Try to outrun cat -&gt; outrunCat(death)]]
-[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="46" name=" outrunCat(death)" tags="" position="3143,3116" size="100,100">The cat overtakes you and pins you down before shredding you to bits
+[[Get dog to distract cat -&gt; distractCat(death)]]</tw-passagedata><tw-passagedata pid="45" name=" outrunCat(death)" tags="" position="3143,3116" size="100,100">The cat overtakes you and pins you down before shredding you to bits
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="47" name=" distractCat(death)" tags="" position="3273,3000" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="46" name=" distractCat(death)" tags="" position="3273,3000" size="100,100">You try to distract the cat but are unsuccessful as you distraction back fires on you
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" run to barn (death)" tags="" position="2734,3057" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="47" name=" run to barn (death)" tags="" position="2734,3057" size="100,100">you try to make a break for the barn but fail to take into accound the cat&#39;s presence and are caught before you can make it there
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="49" name=" wait for threats" tags="" position="2879,3052" size="100,100">you hear the cat
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="48" name=" wait for threats" tags="" position="2879,3052" size="100,100">you hear the cat
 
 
 
 [[Sneak around the cat -&gt; sneak]]
-[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="50" name=" sneak" tags="" position="2812,3186" size="100,100">you sneak your way past the cat and make it into the barn
+[[Cause a distraction -&gt; distraction]]</tw-passagedata><tw-passagedata pid="49" name=" sneak" tags="" position="2812,3186" size="100,100">you sneak your way past the cat and make it into the barn
 
 
 
 [[Look around -&gt; look around]]
 [[Listen -&gt; listen]]
 [[Call out to see if anyone is here -&gt; callout(death)]]
-(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="51" name=" distraction" tags="" position="2955,3181" size="100,100">you successfully distract the cat and are able to bolt into the barn
+(if:$dangerSense is true)[[You know there is a box with rabbits in the corner -&gt; go to rabbits]] </tw-passagedata><tw-passagedata pid="50" name=" distraction" tags="" position="2955,3181" size="100,100">you successfully distract the cat and are able to bolt into the barn
 
 
 
 
 [[Look around -&gt; look around]]
 [[Listen -&gt; listen]]
-[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="52" name=" look around" tags="" position="2690,3322" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
+[[Call out to see if anyone is here -&gt; callout(death)]]</tw-passagedata><tw-passagedata pid="51" name=" look around" tags="" position="2690,3322" size="100,100">it’s a bit dark but you can make out the shadow of a large box in one corner and a pen in another
 
 
 
 [[Investigate box -&gt; InvestigateBox]]
-[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="53" name=" listen" tags="" position="2829,3335" size="100,100">you hear faint sounds of rabbits
+[[Investigate pen -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="52" name=" listen" tags="" position="2829,3335" size="100,100">you hear faint sounds of rabbits
 
 
-[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="54" name=" callout(death)" tags="" position="2964,3316" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
+[[Go to them -&gt; go to rabbits]]</tw-passagedata><tw-passagedata pid="53" name=" callout(death)" tags="" position="2964,3316" size="100,100">You try to call out to the rabbit but alert the cat to your presence and they hunt you down
 
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="55" name=" go to rabbits" tags="" position="2837,3454" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="54" name=" go to rabbits" tags="" position="2837,3454" size="100,100">you make your way over to the sound of the rabbits, find they are in a cage
 
 
 
 [[Try to find a way to break them out -&gt; breakout]]
-[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="56" name=" breakout" tags="" position="2830,3607" size="100,100">you look around to see if there is a way to free the rabbits
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="55" name=" breakout" tags="" position="2830,3607" size="100,100">you look around to see if there is a way to free the rabbits
 
 
 [[Leather latches on side of box -&gt; latches(death)]]
 [[Rotting wood -&gt; wood(death)]]
-(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="57" name=" talkToThem" tags="" position="2970,3558" size="100,100">what do you want to ask them?
+(if:$dangerSense is true)[[You leave, the rabbits won&#39;t come with you and you are wasting time -&gt; transition5]]</tw-passagedata><tw-passagedata pid="56" name=" talkToThem" tags="" position="2970,3558" size="100,100">what do you want to ask them?
 
 
 [[Do they want to be free? -&gt; freedom]]
 [[How long have they been in there -&gt; how long]]
-[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="58" name=" InvestigateBox" tags="" position="2581,3456" size="100,100">as you approach you hear the faint sound of rabbits
+[[Are they in danger -&gt; danger]]</tw-passagedata><tw-passagedata pid="57" name=" InvestigateBox" tags="" position="2581,3456" size="100,100">as you approach you hear the faint sound of rabbits
 
 
 
 [[Try to find a way to break them out -&gt; breakout]]
-[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="59" name=" InvestigatePen" tags="" position="2709,3463" size="100,100">you find a group of pigs in the pen
+[[Talk to them -&gt; talkToThem]]</tw-passagedata><tw-passagedata pid="58" name=" InvestigatePen" tags="" position="2709,3463" size="100,100">you find a group of pigs in the pen
 
 
 
 [[Investigate box -&gt; InvestigateBox]]
 [[Ask pigs about rabbits -&gt; ask about rabbits]]
-[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="60" name=" ask about rabbits" tags="" position="2686,3611" size="100,100">unsuccessful
+[[Listen -&gt; listen]]</tw-passagedata><tw-passagedata pid="59" name=" ask about rabbits" tags="" position="2686,3611" size="100,100">unsuccessful
 
 
-[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="61" name=" latches(death)" tags="" position="2775,3742" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
-
-
-[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
-(set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="62" name=" wood(death)" tags="" position="2904,3730" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+[[Come up with something else -&gt; InvestigatePen]]</tw-passagedata><tw-passagedata pid="60" name=" latches(death)" tags="" position="2775,3742" size="100,100">You manage to chew through the latches and try to get the rabbits to come with you, but it takes too long and the humans have come outside to check on the rabbits, they recage you as well as the rest of the rabbits.
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="63" name=" freedom" tags="" position="3087,3425" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="61" name=" wood(death)" tags="" position="2904,3730" size="100,100">You kick in the rotten wood but it makes a really loud sound, alerting the cat to your presence. They hunt you down
+
+
+[[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
+(set: $dangerSense to true)
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="62" name=" freedom" tags="" position="3087,3425" size="100,100">not particularly, they don’t know anything but the cage, the cage is safe
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="64" name=" how long" tags="" position="3057,3717" size="100,100">for as long as they can remember, they do not remember not being caged
-
-
-
-[[Keep asking questions -&gt; talkToThem]]
-[[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" danger" tags="" position="3136,3583" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="63" name=" how long" tags="" position="3057,3717" size="100,100">for as long as they can remember, they do not remember not being caged
 
 
 
 [[Keep asking questions -&gt; talkToThem]]
 [[Try to free them -&gt; breakout]]
-[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="66" name=" Try to leave (death)" tags="" position="3245,3434" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="64" name=" danger" tags="" position="3136,3583" size="100,100">not immediate, the farmer sometimes takes one and that rabbit is never seen again
+
+
+
+[[Keep asking questions -&gt; talkToThem]]
+[[Try to free them -&gt; breakout]]
+[[Leave -&gt; Try to leave (death)]]</tw-passagedata><tw-passagedata pid="65" name=" Try to leave (death)" tags="" position="3245,3434" size="100,100">You try to leave but the humans have finished their dinner and are out and about with their dog. You are captured and killed
 
 
 [[Danger Sense Unlocked, try again -&gt; Checkpoint Ability 5: Danger Sense]] 
 (set: $dangerSense to true)
-(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="67" name=" Tranisition1" tags="" position="2690,607" size="100,100">Transition to next check point
+(set: $deaths to $deaths + 1)</tw-passagedata><tw-passagedata pid="66" name=" Tranisition1" tags="" position="2690,607" size="100,100">Transition to next check point
 
 [[Next check point -&gt;CP_running_wheretogo]]
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="68" name=" transition3" tags="" position="2626,2186" size="100,100">Transition to digging check point
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="67" name=" transition3" tags="" position="2626,2186" size="100,100">Transition to digging check point
 
 
 [[Next check point -&gt;CP_digging]] 
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="69" name=" Checkpoint Ability 5: Danger Sense" tags="" position="2896,2803" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="68" name=" Checkpoint Ability 5: Danger Sense" tags="" position="2896,2803" size="100,100">You heard there were other creatures like you being kept by humans, you want to try to find them
 
 
 
 [[Wait till dusk -&gt; Dusk]]
-[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="70" name=" transition5" tags="" position="2644,3747" size="100,100">Transition to check point for attacks
+[[Try to go to barn during day -&gt; daytimeBarn]]</tw-passagedata><tw-passagedata pid="69" name=" transition5" tags="" position="2644,3747" size="100,100">Transition to check point for attacks
 
 [[Continue-&gt;CP_attack]]
-(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="71" name="CP_running_wheretogo" tags="" position="2724,800" size="100,100">After you narrowly escaped your death, you know that this is no longer a safe place to stay. You need to look for a new place.
+(set: $deaths to 0)</tw-passagedata><tw-passagedata pid="70" name="CP_running_wheretogo" tags="" position="2724,800" size="100,100">After you narrowly escaped your death, you know that this is no longer a safe place to stay. You need to look for a new place.
 
 [[Jump onto a tall rock-&gt;running_jump]]
 [[Check out behind the bush-&gt;running_nojump]]
-(if: $running is true)[[Run around-&gt;running_runenjoy]]</tw-passagedata><tw-passagedata pid="72" name="running_jump" tags="" position="2255,965" size="100,100">On top of the rock, you see a coyote in the distance, and it seems to be looking for food.
+(if: $running is true)[[Run around-&gt;running_runenjoy]]</tw-passagedata><tw-passagedata pid="71" name="running_jump" tags="" position="2255,965" size="100,100">On top of the rock, you see a coyote in the distance, and it seems to be looking for food.
 
 [[Keep observing-&gt;D_running_jump]]
 [[Run away immediately-&gt;running_jumpgood]]
-[[Hide behind the rock-&gt;running_jumpbad]]</tw-passagedata><tw-passagedata pid="73" name="running_runenjoy" tags="" position="2987,952" size="100,100">For some reason, feeling the wind brush against your fur, the grass touching your feet, brings happiness to you.
+[[Hide behind the rock-&gt;running_jumpbad]]</tw-passagedata><tw-passagedata pid="72" name="running_runenjoy" tags="" position="2987,952" size="100,100">For some reason, feeling the wind brush against your fur, the grass touching your feet, brings happiness to you.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="74" name="D_running_jump" tags="" position="2070,1133" size="100,100">The coyote sees you too and quickly catches you and eats you alive.
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="75" name="running_jumpgood" tags="" position="2238,1132" size="100,100">You are too afraid to look back, but something is definitely chasing you. You can hear its footsteps getting closer and closer.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="73" name="D_running_jump" tags="" position="2070,1133" size="100,100">The coyote sees you too and quickly catches you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="74" name="running_jumpgood" tags="" position="2238,1132" size="100,100">You are too afraid to look back, but something is definitely chasing you. You can hear its footsteps getting closer and closer.
 
 [[Keep running-&gt;SC_running]]
-[[Hide behind a trunk nearby-&gt;D_running_jumpgood]]</tw-passagedata><tw-passagedata pid="76" name="running_jumpbad" tags="" position="2387,1135" size="100,100">You jump off the rock and hide behind it. Although you lose sight of the coyote, you can hear something walking towards your location and sniffing.
+[[Hide behind a trunk nearby-&gt;D_running_jumpgood]]</tw-passagedata><tw-passagedata pid="75" name="running_jumpbad" tags="" position="2387,1135" size="100,100">You jump off the rock and hide behind it. Although you lose sight of the coyote, you can hear something walking towards your location and sniffing.
 
 [[Run immediately-&gt;SC_running]]
 [[Keep hiding-&gt;D_running_jumpbad1]]
-[[Peek again-&gt;D_running_jumpbad2]]</tw-passagedata><tw-passagedata pid="77" name="running_nojump" tags="" position="2613,950" size="100,100">The moment you stick your head outside the bush you see a coyote looking in the opposite direction as you are. It definitely senses your presence as well and it’s only a matter of time before it finds you.
+[[Peek again-&gt;D_running_jumpbad2]]</tw-passagedata><tw-passagedata pid="76" name="running_nojump" tags="" position="2613,950" size="100,100">The moment you stick your head outside the bush you see a coyote looking in the opposite direction as you are. It definitely senses your presence as well and it’s only a matter of time before it finds you.
 
 [[Freeze in place-&gt;D_running_nojump1]]
 [[Hide in the bush-&gt;D_running_nojump2]]
-[[Run immediately-&gt;SC_running]]</tw-passagedata><tw-passagedata pid="78" name="SC_running" tags="" position="2873,1345" size="100,100">You keep running until you can taste the salty blood in your throat and you feel your lungs are about to implode. But your escape route is cut short by a steep river. The water is so turbulent that anything that dares to go near it is engulfed immediately and washed away, leaving no trace behind.
+[[Run immediately-&gt;SC_running]]</tw-passagedata><tw-passagedata pid="77" name="SC_running" tags="" position="2873,1345" size="100,100">You keep running until you can taste the salty blood in your throat and you feel your lungs are about to implode. But your escape route is cut short by a steep river. The water is so turbulent that anything that dares to go near it is engulfed immediately and washed away, leaving no trace behind.
 
 [[Look for ways to cross the river-&gt;D_SC_running1]]
 [[Look back to see if the predator is still chasing you-&gt;D_SC_running2]]
-(if: $running is true)[[Run as fast as you can-&gt;running_end]]</tw-passagedata><tw-passagedata pid="79" name="D_running_jumpgood" tags="" position="2217,1298" size="100,100">The coyote finds you and eats you alive.
+(if: $running is true)[[Run as fast as you can-&gt;running_end]]</tw-passagedata><tw-passagedata pid="78" name="D_running_jumpgood" tags="" position="2217,1298" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="80" name="D_running_jumpbad1" tags="" position="2337,1285" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="79" name="D_running_jumpbad1" tags="" position="2337,1285" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="81" name="D_running_jumpbad2" tags="" position="2462,1285" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="80" name="D_running_jumpbad2" tags="" position="2462,1285" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="82" name="D_running_nojump1" tags="" position="2538,1100" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="81" name="D_running_nojump1" tags="" position="2538,1100" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="83" name="D_running_nojump2" tags="" position="2688,1100" size="100,100">The coyote finds you and eats you alive.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="82" name="D_running_nojump2" tags="" position="2688,1100" size="100,100">The coyote finds you and eats you alive.
 
-[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="84" name="D_SC_running1" tags="" position="2798,1497" size="100,100">You died.
+[[Return-&gt;CP_running_wheretogo]]</tw-passagedata><tw-passagedata pid="83" name="D_SC_running1" tags="" position="2798,1497" size="100,100">You died.
 
 Running unlocked
 
 [[Return-&gt;CP_running_wheretogo]]
-(set: $running to true)</tw-passagedata><tw-passagedata pid="85" name="D_SC_running2" tags="" position="2947,1495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="86" name="running_end" tags="" position="2504,1510" size="100,100">You lived.
+(set: $running to true)</tw-passagedata><tw-passagedata pid="84" name="D_SC_running2" tags="" position="2947,1495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="85" name="running_end" tags="" position="2504,1510" size="100,100">You lived.
 
-[[Continue-&gt;Ability 3 Checkpoint: Improved Hearing]]</tw-passagedata><tw-passagedata pid="87" name="CP_digging" tags="" position="2313,2745" size="100,100">You’re hungry.
+[[Continue-&gt;Ability 3 Checkpoint: Improved Hearing]]</tw-passagedata><tw-passagedata pid="86" name="CP_digging" tags="" position="2313,2745" size="100,100">You’re hungry.
 
 [[Run to somewhere else-&gt;digging_run]]
-[[Jump on top of a rock-&gt;digging_rock]]</tw-passagedata><tw-passagedata pid="88" name="CP_attack" tags="" position="2660,3961" size="100,100">CP_attack_relax
+[[Jump on top of a rock-&gt;digging_rock]]</tw-passagedata><tw-passagedata pid="87" name="CP_attack" tags="" position="2660,3961" size="100,100">CP_attack_relax
 “You are excited about all the abilities you have, but now you question your place in this world. Is this who you really are, forever prey, always running and hiding?”
 
 (click-replace: &quot;Continue&quot;)[You hop along the river bank and look at your reflection in the water, you feel like you have miraculously dodged all the dangers you have encountered; your fur shines brightly without a scratch.
@@ -422,112 +417,112 @@ Running unlocked
 
 (click-replace: &quot;Continue&quot;)[As you contemplate your fate, you sense danger coming your way. A quick glance reveals a hidden shadow in the bush–a feral cat ready to pounce at you at any moment.
 [[Run-&gt;attack_run]]
-[[Don’t run-&gt;attack_fight]]]]]</tw-passagedata><tw-passagedata pid="89" name="attack_run" tags="" position="2585,4111" size="100,100">You are very familiar with this now. Just run as fast as you can. Forget about everything else in the world. Feel your heartbeat and the grass brushing your feet.
+[[Don’t run-&gt;attack_fight]]]]]</tw-passagedata><tw-passagedata pid="88" name="attack_run" tags="" position="2585,4111" size="100,100">You are very familiar with this now. Just run as fast as you can. Forget about everything else in the world. Feel your heartbeat and the grass brushing your feet.
 
 (click-replace: &quot;Keep running&quot;)[You look back, and the shadow is still following you. It is more elegant than you, barely breathing heavily when your body is already tired.”
 
 (click-replace: &quot;Keep running&quot;)[You can feel your limbs numb, your heart giving out, but your looming doom is still right behind you, ready for you to collapse at any moment. You can’t run any longer. As your eyelids shut closely, you see that familiar flash of white light once again–”
 
-[[Return-&gt;CP_attack]]]]</tw-passagedata><tw-passagedata pid="90" name="attack_fight" tags="" position="2735,4111" size="100,100">This time you decide not to run anymore. You are tired of running as someone else’s prey all the time. This time, you want to fight back.
+[[Return-&gt;CP_attack]]]]</tw-passagedata><tw-passagedata pid="89" name="attack_fight" tags="" position="2735,4111" size="100,100">This time you decide not to run anymore. You are tired of running as someone else’s prey all the time. This time, you want to fight back.
 
 [[Scratch the cat’s eyes-&gt;attack_scratch]]
 [[Look for high ground-&gt;attack_highground]]
-[[Wait for the cat to move first-&gt;D_attack_fight]]</tw-passagedata><tw-passagedata pid="91" name="attack_scratch" tags="" position="2585,4261" size="100,100">The cat looks confused, baffled by your unwillingness to run for your life like all others. You decide to use this confusion and jump the cat first. You try to aim for its eyes, but the cat quickly dodges your attack and repositions itself on a rock, hissing aggressively.
+[[Wait for the cat to move first-&gt;D_attack_fight]]</tw-passagedata><tw-passagedata pid="90" name="attack_scratch" tags="" position="2585,4261" size="100,100">The cat looks confused, baffled by your unwillingness to run for your life like all others. You decide to use this confusion and jump the cat first. You try to aim for its eyes, but the cat quickly dodges your attack and repositions itself on a rock, hissing aggressively.
 
 [[Find a place to hide.-&gt;attack_hide]]
-[[Keep on the attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="92" name="attack_highground" tags="" position="2735,4261" size="100,100">You jump onto a piece of rock and can see farther now.
+[[Keep on the attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="91" name="attack_highground" tags="" position="2735,4261" size="100,100">You jump onto a piece of rock and can see farther now.
 
 [[Attack the cat from above-&gt;attack_highattack]]
-[[Jump off the other side of the rock-&gt;attack_hide]]</tw-passagedata><tw-passagedata pid="93" name="D_attack_fight" tags="" position="2885,4261" size="100,100">The cat quickly decimates you.
+[[Jump off the other side of the rock-&gt;attack_hide]]</tw-passagedata><tw-passagedata pid="92" name="D_attack_fight" tags="" position="2885,4261" size="100,100">The cat quickly decimates you.
 
-[[Return-&gt;CP_attack]]</tw-passagedata><tw-passagedata pid="94" name="attack_hide" tags="" position="2510,4411" size="100,100">You hide behind a piece of rock. You can hear and smell the cat approaching. You must make a decision fast.
+[[Return-&gt;CP_attack]]</tw-passagedata><tw-passagedata pid="93" name="attack_hide" tags="" position="2510,4411" size="100,100">You hide behind a piece of rock. You can hear and smell the cat approaching. You must make a decision fast.
 
-[[Surprise attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="95" name="attack_highattack" tags="" position="2780,4411" size="100,100">You attack the cat from above and manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
+[[Surprise attack-&gt;attack_surprise]]</tw-passagedata><tw-passagedata pid="94" name="attack_highattack" tags="" position="2780,4411" size="100,100">You attack the cat from above and manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
 
-[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="96" name="attack_surprise" tags="" position="2595,4563" size="100,100">The cat does it see you coming and you manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
+[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="95" name="attack_surprise" tags="" position="2595,4563" size="100,100">The cat does it see you coming and you manage to hurt it this time. It screams and fights back, leaving a deep claw mark on your back.
 
-[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="97" name="attack_bite" tags="" position="2780,4561" size="100,100">You bite the cat in its paw but it violently smashes you on the ground.
+[[Bite the cat-&gt;attack_bite]]</tw-passagedata><tw-passagedata pid="96" name="attack_bite" tags="" position="2780,4561" size="100,100">You bite the cat in its paw but it violently smashes you on the ground.
 
 (click-replace: &quot;Continue&quot;)[Your vision becomes blurry but you keep on going, dragging your claws across its hind leg. The cat tries to bite you in the spine but you manage to dodge it by a narrow margin.
 
 (click-replace: &quot;Continue&quot;)[You start to slowly lose all your senses; you can’t see, can’t hear, can’t feel anything. You draw your final breath and put all your remaining strength into one last bite, and fall to the ground.
 
-[[Continue-&gt;attack_end]]]]</tw-passagedata><tw-passagedata pid="98" name="attack_end" tags="" position="2780,4711" size="100,100">You thought you were going to be greeted by that beam of white light again, but you instead woke up to the moon shining in the night sky. Your fur is covered in blood cots and scratch marks, and the cat is nowhere to be seen.
+[[Continue-&gt;attack_end]]]]</tw-passagedata><tw-passagedata pid="97" name="attack_end" tags="" position="2780,4711" size="100,100">You thought you were going to be greeted by that beam of white light again, but you instead woke up to the moon shining in the night sky. Your fur is covered in blood cots and scratch marks, and the cat is nowhere to be seen.
 
 (click-replace: &quot;Continue&quot;)[You drag your body to the river to drink some water. It hurts like hell, but you have never felt more alive before.
 
-(click-replace: &quot;Continue&quot;)You hear the voice for the last time: All the world will be your enemy, Prince of a Thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.]</tw-passagedata><tw-passagedata pid="99" name="digging_run" tags="" position="2238,2895" size="100,100">You think you heard something
+(click-replace: &quot;Continue&quot;)You hear the voice for the last time: All the world will be your enemy, Prince of a Thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.]</tw-passagedata><tw-passagedata pid="98" name="digging_run" tags="" position="2238,2895" size="100,100">You think you heard something
 
 [[Improved hearing-&gt;digging_findfood]]
 [[Ignore it-&gt;digging_findfood]]
-[[Go somewhere else-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="100" name="digging_rock" tags="" position="2388,2895" size="100,100">You see a field of crops in the distance.
+[[Go somewhere else-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="99" name="digging_rock" tags="" position="2388,2895" size="100,100">You see a field of crops in the distance.
 
-[[Go there-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="101" name="digging_findfood" tags="" position="2238,3045" size="100,100">There is so much food.
+[[Go there-&gt;digging_findfood]]</tw-passagedata><tw-passagedata pid="100" name="digging_findfood" tags="" position="2238,3045" size="100,100">There is so much food.
 
-[[Harvest-&gt;digging_storefood]]</tw-passagedata><tw-passagedata pid="102" name="digging_storefood" tags="" position="2238,3195" size="100,100">You look at all the food you harvested, but you don’t have anywhere to store them.
+[[Harvest-&gt;digging_storefood]]</tw-passagedata><tw-passagedata pid="101" name="digging_storefood" tags="" position="2238,3195" size="100,100">You look at all the food you harvested, but you don’t have anywhere to store them.
 
 [[Leave-&gt;digging_scout]]
-(if: $digging is true)[[Dig a hole in the ground-&gt;digging_foodhole]]</tw-passagedata><tw-passagedata pid="103" name="digging_scout" tags="" position="2163,3345" size="100,100">There is a lot of food around so you decide to stay for a while longer.
+(if: $digging is true)[[Dig a hole in the ground-&gt;digging_foodhole]]</tw-passagedata><tw-passagedata pid="102" name="digging_scout" tags="" position="2163,3345" size="100,100">There is a lot of food around so you decide to stay for a while longer.
 
-[[Check out the wooden house in the distance-&gt;digging_barn]]</tw-passagedata><tw-passagedata pid="104" name="digging_foodhole" tags="" position="2313,3345" size="100,100">You dig a hole under a tree nearby and move all your food there. You take a nap.
+[[Check out the wooden house in the distance-&gt;digging_barn]]</tw-passagedata><tw-passagedata pid="103" name="digging_foodhole" tags="" position="2313,3345" size="100,100">You dig a hole under a tree nearby and move all your food there. You take a nap.
 
 [[Go out-&gt;digging_scout]]
-[[Rest-&gt;digging_nofood]]</tw-passagedata><tw-passagedata pid="105" name="digging_nofood" tags="" position="2263,3490" size="100,100">You don&#39;t have food anymore.
+[[Rest-&gt;digging_nofood]]</tw-passagedata><tw-passagedata pid="104" name="digging_nofood" tags="" position="2263,3490" size="100,100">You don&#39;t have food anymore.
 
-[[Go out-&gt;digging_scout]]</tw-passagedata><tw-passagedata pid="106" name="digging_barn" tags="" position="2102,3523" size="100,100">You sneak in through a crack and you can’t believe what you see. Stacks of wheat piled up like a mountain.
+[[Go out-&gt;digging_scout]]</tw-passagedata><tw-passagedata pid="105" name="digging_barn" tags="" position="2102,3523" size="100,100">You sneak in through a crack and you can’t believe what you see. Stacks of wheat piled up like a mountain.
 
 [[Keep exploring the barn-&gt;digging_trip]]
 [[Start eating-&gt;digging_human]]
-[[Go away-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="107" name="digging_trip" tags="" position="1944,3653" size="100,100">You trip over a glass lamp which falls to the ground and shatters. You hear the barn door crank open behind you.
+[[Go away-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="106" name="digging_trip" tags="" position="1944,3653" size="100,100">You trip over a glass lamp which falls to the ground and shatters. You hear the barn door crank open behind you.
 
-[[Continue-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="108" name="digging_human" tags="" position="2218,3645" size="100,100">You hear the door crackling in the distance and you see a two-legged shadow approaching you slowly, the likes of which you’ve never seen before.
+[[Continue-&gt;digging_human]]</tw-passagedata><tw-passagedata pid="107" name="digging_human" tags="" position="2218,3645" size="100,100">You hear the door crackling in the distance and you see a two-legged shadow approaching you slowly, the likes of which you’ve never seen before.
 
 [[Try to run past it-&gt;D_digging_human]]
 [[Hide behind the a stack of hay-&gt;digging_hide]]
-(if: $digging is true)[[Dig your way out-&gt;digging_dig]]</tw-passagedata><tw-passagedata pid="109" name="D_digging_human" tags="" position="1944,3803" size="100,100">The human notices you and shot you.
+(if: $digging is true)[[Dig your way out-&gt;digging_dig]]</tw-passagedata><tw-passagedata pid="108" name="D_digging_human" tags="" position="1944,3803" size="100,100">The human notices you and shot you.
 
 [[Return-&gt;CP_digging]]
-(set: $digging to true)</tw-passagedata><tw-passagedata pid="110" name="digging_hide" tags="" position="2218,3795" size="100,100">You hide in a corner and hold your breath. You listen closely–the footsteps are getting closer and closer.
+(set: $digging to true)</tw-passagedata><tw-passagedata pid="109" name="digging_hide" tags="" position="2218,3795" size="100,100">You hide in a corner and hold your breath. You listen closely–the footsteps are getting closer and closer.
 
 [[Make a break for it-&gt;D_digging_hide1]]
-[[Keep hiding-&gt;D_digging_hide2]]</tw-passagedata><tw-passagedata pid="111" name="digging_dig" tags="" position="2368,3795" size="100,100">You dig your way out of the barn.
+[[Keep hiding-&gt;D_digging_hide2]]</tw-passagedata><tw-passagedata pid="110" name="digging_dig" tags="" position="2368,3795" size="100,100">You dig your way out of the barn.
 
-[[Continue-&gt; Checkpoint Ability 5: Danger Sense]]</tw-passagedata><tw-passagedata pid="112" name="D_digging_hide1" tags="" position="2131,3973" size="100,100">The human notices you and shot you.
-
-[[Return-&gt;CP_digging]]
-(set: $digging to true)</tw-passagedata><tw-passagedata pid="113" name="D_digging_hide2" tags="" position="2293,3945" size="100,100">The human notices you and shot you.
+[[Continue-&gt; Checkpoint Ability 5: Danger Sense]]</tw-passagedata><tw-passagedata pid="111" name="D_digging_hide1" tags="" position="2131,3973" size="100,100">The human notices you and shot you.
 
 [[Return-&gt;CP_digging]]
-(set: $digging to true)</tw-passagedata><tw-passagedata pid="114" name="Sidebar_Passage" tags="header" position="2152,167" size="100,100">(append: ?SideBar)[\
+(set: $digging to true)</tw-passagedata><tw-passagedata pid="112" name="D_digging_hide2" tags="" position="2293,3945" size="100,100">The human notices you and shot you.
+
+[[Return-&gt;CP_digging]]
+(set: $digging to true)</tw-passagedata><tw-passagedata pid="113" name="Sidebar_Passage" tags="header" position="2152,167" size="100,100">(append: ?SideBar)[\
 Name:
 Location:
-]</tw-passagedata><tw-passagedata pid="115" name="Meadow0" tags="" position="594,123" size="100,100">	You are furious. Lord Frith gave all these other animals such powerful and dangerous gifts that they have unleashed on your fellow rabbits. 
+]</tw-passagedata><tw-passagedata pid="114" name="Meadow0" tags="" position="594,123" size="100,100">	You are furious. Lord Frith gave all these other animals such powerful and dangerous gifts that they have unleashed on your fellow rabbits. 
 	But you do not want to stand idly by and watch your population dwindle, so you decide to go convince Lord Frith to give you and your people gifts as powerful as those of your foes. 
 
 
-[[Find a good place to call upon Lord Frith -&gt; Meadow1.1]]</tw-passagedata><tw-passagedata pid="116" name=" Meadow1.1" tags="" position="594,273" size="100,100">	You go to the middle of a meadow. There are few trees in the way between you and the open sky. 
+[[Find a good place to call upon Lord Frith -&gt; Meadow1.1]]</tw-passagedata><tw-passagedata pid="115" name=" Meadow1.1" tags="" position="594,273" size="100,100">	You go to the middle of a meadow. There are few trees in the way between you and the open sky. 
 	Blazing against the brilliant blue, you see the halo of Lord Frith. And you feel anger burning in your chest. How could he have left you and your fellow rabbits to die? How could he just sit there and watch?
 
 
 [[You start hurling insults at Lord Frith -&gt; Meadow2.1]]
 [[You start screaming as loud as you can -&gt; Meadow2.2]]
-[[You issue a challenge to Lord Frith -&gt; Meadow2.3]]</tw-passagedata><tw-passagedata pid="117" name=" Meadow2.1" tags="" position="594,423" size="100,100">	Your insults don&#39;t seem to reach that air headed ball of gas. Figures. Maybe you need to come up with better insults...
+[[You issue a challenge to Lord Frith -&gt; Meadow2.3]]</tw-passagedata><tw-passagedata pid="116" name=" Meadow2.1" tags="" position="594,423" size="100,100">	Your insults don&#39;t seem to reach that air headed ball of gas. Figures. Maybe you need to come up with better insults...
 
 
 
 [[You continue to hurl increasingly more vulgar insults at the sky -&gt; Meadow3]]
-(set: $insults to true)</tw-passagedata><tw-passagedata pid="118" name=" Meadow2.2" tags="" position="474,423" size="100,100">	You scream until your lungs ache but to no avail. What does Lord Frith think he&#39;s doing that&#39;s more important than listening to your grivences?
+(set: $insults to true)</tw-passagedata><tw-passagedata pid="117" name=" Meadow2.2" tags="" position="474,423" size="100,100">	You scream until your lungs ache but to no avail. What does Lord Frith think he&#39;s doing that&#39;s more important than listening to your grivences?
 	Maybe you haven&#39;t drawn enough attention to yourself...
 
 
 [[You start screaming again, jumping up and down this time -&gt; Meadow3]]
-(set: $scream to true)</tw-passagedata><tw-passagedata pid="119" name=" Meadow2.3" tags="" position="714,423" size="100,100">	&quot;Come down and fight me, Lord Frith!&quot; 
+(set: $scream to true)</tw-passagedata><tw-passagedata pid="118" name=" Meadow2.3" tags="" position="714,423" size="100,100">	&quot;Come down and fight me, Lord Frith!&quot; 
 	Surprisingly he does not come down. 
 	To be fair, that wasn&#39;t your best challenge. You spend some time thinking of some thing better.
 
 
 [[Issue Lord Frith a challenge he cannot refuse -&gt; Meadow3]]
-(set: $challenge to true)</tw-passagedata><tw-passagedata pid="120" name=" Meadow3" tags="" position="594,573" size="100,100">	Lord Frith finally shows up.
+(set: $challenge to true)</tw-passagedata><tw-passagedata pid="119" name=" Meadow3" tags="" position="594,573" size="100,100">	Lord Frith finally shows up.
 	&quot;You know there are better ways to get may attention than 
 	(if: $insults is true)[hurling insults at me.]
 	(if: $scream is true)[screaming your lungs out.]
@@ -535,215 +530,229 @@ Location:
 
 [[What is that way? -&gt; Meadow4.1]]
 [[What took you so long? -&gt; Meadow4.2]]
-[[Where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="121" name=" Meadow4.1" tags="" position="444,723" size="100,100">	&quot;Asking nicely, you know I do respond to kindness&quot;
+[[Where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="120" name=" Meadow4.1" tags="" position="444,723" size="100,100">	&quot;Asking nicely, you know I do respond to kindness&quot;
 
 
 [[Sure you do -&gt; Meadow5.1]]
 [[Anyway, where are my gifts? -&gt; Meadow4.3]]
-[[Is that why it took you so long? -&gt; Meadow4.2]]</tw-passagedata><tw-passagedata pid="122" name=" Meadow4.2" tags="" position="594,723" size="100,100">	&quot;I&#39;ll have you know, I have much more important things to attend to than your grievances&quot;
+[[Is that why it took you so long? -&gt; Meadow4.2]]</tw-passagedata><tw-passagedata pid="121" name=" Meadow4.2" tags="" position="594,723" size="100,100">	&quot;I&#39;ll have you know, I have much more important things to attend to than your grievances&quot;
 
 
 [[What could possibly be more important than talking to me -&gt; Meadow5.2]]
-[[I don&#39;t care, where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="123" name=" Meadow4.3" tags="" position="744,723" size="100,100">	&quot;It is the balance of all living things, some will live, some will die, those that live will adapt to keep living,&quot; Lord Frith pauses, &quot;What makes you think I did not grant you and your people any gifts?&quot;
+[[I don&#39;t care, where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="122" name=" Meadow4.3" tags="" position="744,723" size="100,100">	&quot;It is the balance of all living things, some will live, some will die, those that live will adapt to keep living,&quot; Lord Frith pauses, &quot;What makes you think I did not grant you and your people any gifts?&quot;
 
 
 
 [[I don&#39;t look or feel and different -&gt; Meadow6.1]]
 [[You were jealous of my rabbits&#39; success -&gt; Meadow6.2]]
-[[Keep the balance, what do you mean? -&gt; Meadow6.3]]</tw-passagedata><tw-passagedata pid="124" name=" Meadow5.1" tags="" position="463,859" size="100,100">	&quot;I&#39;m going to pretend I didn&#39;t hear that, What did you want anyways?&quot;
+[[Keep the balance, what do you mean? -&gt; Meadow6.3]]</tw-passagedata><tw-passagedata pid="123" name=" Meadow5.1" tags="" position="463,859" size="100,100">	&quot;I&#39;m going to pretend I didn&#39;t hear that, What did you want anyways?&quot;
 
 
 
-[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="125" name=" Meadow5.2" tags="" position="596,865" size="100,100">	&quot;Many things, keeping the balance of life on this planet, attending to the grienvences of more powerful beings,&quot; Lord Frith looks like he could go on but stops, &quot;What did you want anyways?&quot;
+[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="124" name=" Meadow5.2" tags="" position="596,865" size="100,100">	&quot;Many things, keeping the balance of life on this planet, attending to the grienvences of more powerful beings,&quot; Lord Frith looks like he could go on but stops, &quot;What did you want anyways?&quot;
 
 
 
-[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="126" name=" Meadow6.1" tags="" position="708,863" size="100,100">	&quot;Are you sure? Maybe you are thinking about this in the wrong way,&quot; Lord Frith continues, &quot;You were never meant to be a predator, you were built to be prey. Be swift, be clever and you will survive.&quot;
+[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="125" name=" Meadow6.1" tags="" position="708,863" size="100,100">	&quot;Are you sure? Maybe you are thinking about this in the wrong way,&quot; Lord Frith continues, &quot;You were never meant to be a predator, you were built to be prey. Be swift, be clever and you will survive.&quot;
 
 
 
 [[Me? Prey! -&gt; Meadow7.1]]
-[[...swift and clever -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="127" name=" Meadow6.2" tags="" position="828,861" size="100,100">	&quot;You really think I would base my decisions off my supposed jealousy of mere mortals? As you know, dear Rabbit Prince, I am a god. My concerns are above yours&quot;
+[[...swift and clever -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="126" name=" Meadow6.2" tags="" position="828,861" size="100,100">	&quot;You really think I would base my decisions off my supposed jealousy of mere mortals? As you know, dear Rabbit Prince, I am a god. My concerns are above yours&quot;
 	&quot;I weakened your people for the sake of the balance. But I did give you the tools to survive. Be swift, be clever, figure out how to use them.&quot;
 
 
-[[... -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="128" name=" Meadow6.3" tags="" position="946,844" size="100,100">	&quot;I seek to keep the balance between all animals so one does not over power all the others. You and your rabbits were causing problems by eating all the food you were supposed to share with others, so you needed to be hunted to maintain the balance.&quot;
+[[... -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="127" name=" Meadow6.3" tags="" position="946,844" size="100,100">	&quot;I seek to keep the balance between all animals so one does not over power all the others. You and your rabbits were causing problems by eating all the food you were supposed to share with others, so you needed to be hunted to maintain the balance.&quot;
 
 
 
 [[Needed is a strong word -&gt; Meadow7.2]]
 [[You think my rabbits deserve to die?! -&gt; Meadow7.2]]
-[[Who do you think you are? -&gt; Meadow7.2]]</tw-passagedata><tw-passagedata pid="129" name=" Meadow7.1" tags="" position="658,992" size="100,100">	“Now I have more important things to attend to, goodbye Rabbit Prince”
+[[Who do you think you are? -&gt; Meadow7.2]]</tw-passagedata><tw-passagedata pid="128" name=" Meadow7.1" tags="" position="658,992" size="100,100">	“Now I have more important things to attend to, goodbye Rabbit Prince”
 
 
-[[Goodbye? -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="130" name=" Meadow8.1" tags="" position="718,1105" size="100,100">	And with that Lord Frith moves back to his place in the sky. His burning halo scorching your face as you ponder what he said to you.
+[[Goodbye? -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="129" name=" Meadow8.1" tags="" position="718,1105" size="100,100">	And with that Lord Frith moves back to his place in the sky. His burning halo scorching your face as you ponder what he said to you.
 
 
 
 [[Start screaming again, maybe he&#39;ll come back and be less cryptic -&gt; Meadow9.1]]
-[[Swift and clever...maybe he&#39;s on to something -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="131" name=" Meadow7.2" tags="" position="847,985" size="100,100">	&quot;Though you don&#39;t seem to think so, I did give you and your rabbits gifts. Be swift, be clever and you will survive.&quot;
+[[Swift and clever...maybe he&#39;s on to something -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="130" name=" Meadow7.2" tags="" position="847,985" size="100,100">	&quot;Though you don&#39;t seem to think so, I did give you and your rabbits gifts. Be swift, be clever and you will survive.&quot;
 
 
 
 [[You call those gifts?! -&gt; Meadow7.1]]
-[[swift and clever? -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="132" name=" Meadow9.1" tags="" position="606,1225" size="100,100">	You scream for as long as you can, eventually your lungs and throat hurt too much to scream any more. But Frith does not come back.
+[[swift and clever? -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="131" name=" Meadow9.1" tags="" position="606,1225" size="100,100">	You scream for as long as you can, eventually your lungs and throat hurt too much to scream any more. But Frith does not come back.
 	Now that you have tired yourself out, maybe you should consider what Frith told you. 
 
 
 
-[[hmmm...tools to survive...swift, clever... -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="133" name=" Meadow9.2" tags="" position="740,1229" size="100,100">	Experimentally, you start to run. You go faster than you used to. You keep going, the speed is exciting but a river is approaching. If you can run, you might be able to jump as well.  
+[[hmmm...tools to survive...swift, clever... -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="132" name=" Meadow9.2" tags="" position="740,1229" size="100,100">	Experimentally, you start to run. You go faster than you used to. You keep going, the speed is exciting but a river is approaching. If you can run, you might be able to jump as well.  
 	Soon enough you are at the river’s banks, you take a flying leap and arrive at the other side. You let out a cry of joy, you’ve never felt this alive. 
 	You keep running for as long as you can, eventually reaching the forest.
 
 
 
-[[Into the forest -&gt; Forest0]]</tw-passagedata><tw-passagedata pid="134" name=" Forest0" tags="" position="648,1344" size="100,100">	In your elation upon discovering the increased speed Lord Frith granted you, you don’t realize how far into the forest you have strayed. As you grow tired and start to slow down you start to pay more attention to your surroundings. You slow to a stop and look around. All the trees look the same, it’s much darker than you are used to. You aren’t sure if you’ve seen that group of shrubs before.
+[[Into the forest -&gt; Forest0]]</tw-passagedata><tw-passagedata pid="133" name=" Forest0" tags="" position="648,1344" size="100,100">	In your elation upon discovering the increased speed Lord Frith granted you, you don’t realize how far into the forest you have strayed. As you grow tired and start to slow down you start to pay more attention to your surroundings. You slow to a stop and look around. All the trees look the same, it’s much darker than you are used to. You aren’t sure if you’ve seen that group of shrubs before.
 
 
-[[Where am I? -&gt; Forest1.1]]</tw-passagedata><tw-passagedata pid="135" name=" Forest1.1" tags="" position="617,1470" size="100,100">	You figure if you turn around and go back in the same direction you came, you can probably make it back to the meadow.
+[[Where am I? -&gt; Forest1.1]]</tw-passagedata><tw-passagedata pid="134" name=" Forest1.1" tags="" position="617,1470" size="100,100">	You figure if you turn around and go back in the same direction you came, you can probably make it back to the meadow.
 
 
-[[Go back -&gt; Forest2]]</tw-passagedata><tw-passagedata pid="136" name=" Forest2" tags="" position="754,1500" size="100,100">	You start making your way back towards the meadow, moving much slower than before, keeping an eye out for any threats that may come for you. 
+[[Go back -&gt; Forest2]]</tw-passagedata><tw-passagedata pid="135" name=" Forest2" tags="" position="754,1500" size="100,100">	You start making your way back towards the meadow, moving much slower than before, keeping an eye out for any threats that may come for you. 
 	Out of the corner of your eye, you see a flash of movement.
 
 
 [[&quot;Who&#39;s there!&quot; -&gt; Forest3.1]]
 [[Stay silent -&gt; Forest3.2]]
-[[Start running -&gt; Forest3.3]]</tw-passagedata><tw-passagedata pid="137" name=" Forest3.1" tags="" position="559,1633" size="100,100">	&quot;An old...friend&quot;
+[[Start running -&gt; Forest3.3]]</tw-passagedata><tw-passagedata pid="136" name=" Forest3.1" tags="" position="559,1633" size="100,100">	&quot;An old...friend&quot;
 	The unknown creature ponces in a flash of orange. You dodge, their jaws snap shut on the spot you just were. Foxy is back to finish you off. 
 
 
-[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="138" name=" Forest3.2" tags="" position="692,1636" size="100,100">	&quot;Fancy seeing you so far from the meadow, El-Ahrairah. I&#39;ll make you you don&#39;t go back&quot;
+[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="137" name=" Forest3.2" tags="" position="692,1636" size="100,100">	&quot;Fancy seeing you so far from the meadow, El-Ahrairah. I&#39;ll make you you don&#39;t go back&quot;
 	The unknown creature ponces in a flash of orange. You dodge, their jaws snap shut on the spot you just were. Foxy is back to finish you off. 
 
 
-[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="139" name=" Forest3.3" tags="" position="828,1632" size="100,100">	You take off running, not bothering to see who is chasing you. You hear a growl of frustration as the unknown creature gives chase. But they aren&#39;t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
+[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="138" name=" Forest3.3" tags="" position="828,1632" size="100,100">	You take off running, not bothering to see who is chasing you. You hear a growl of frustration as the unknown creature gives chase. But they aren&#39;t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
 
 
-[[Keep running -&gt; Forest4.1]]</tw-passagedata><tw-passagedata pid="140" name=" Forest4" tags="" position="623,1760" size="100,100">	You start running, your heartbeat thundering in your ears. You think you can hear Foxy giving chase, but she isn’t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
+[[Keep running -&gt; Forest4.1]]</tw-passagedata><tw-passagedata pid="139" name=" Forest4" tags="" position="623,1760" size="100,100">	You start running, your heartbeat thundering in your ears. You think you can hear Foxy giving chase, but she isn’t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
 
 
-[[Run faster -&gt; Forest5.0]]</tw-passagedata><tw-passagedata pid="141" name=" Forest4.1" tags="" position="776,1757" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. The unknown creature lets out a frustrated huff as you are carried away. 
+[[Run faster -&gt; Forest5.0]]</tw-passagedata><tw-passagedata pid="140" name=" Forest4.1" tags="" position="776,1757" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. The unknown creature lets out a frustrated huff as you are carried away. 
 	As you are held in the air, you feel the talons digging deeper and deeper as you start to flicker in and out of consciousness. When you finally black out, the face of a black rabbit looms before you.
 
 
-[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="142" name=" Forest5" tags="" position="799,1882" size="100,100">	&quot;Not mortal...interesting...you should not be able to meet me&quot;
+[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="141" name=" Forest5" tags="" position="799,1882" size="100,100">	&quot;Not mortal...interesting...you should not be able to meet me&quot;
 
 
 [[Not mortal? -&gt; Forest6.1]]
 [[Who are you? -&gt; Forest6.2]]
 [[What is this place? -&gt; Forest6.3]]
 
-(set: $notmortal to true)</tw-passagedata><tw-passagedata pid="143" name=" Forest5.0" tags="" position="660,1891" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. Foxy lets out a frustrated huff as you are carried away. 
+(set: $notmortal to true)</tw-passagedata><tw-passagedata pid="142" name=" Forest5.0" tags="" position="660,1891" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. Foxy lets out a frustrated huff as you are carried away. 
 As you are held in the air, you feel the talons digging deeper and deeper as you start to flicker in and out of consciousness. When you finally black out, the face of a black rabbit looms before you.
 
 
-[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="144" name=" Forest6.1" tags="" position="693,2020" size="100,100">	&quot;Your soul is not mortal, you are the first rabbit, the Rabbit Prince, you do not have a mortal soul like your fellow rabbits, so I cannot take you away&quot;
+[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="143" name=" Forest6.1" tags="" position="693,2020" size="100,100">	&quot;Your soul is not mortal, you are the first rabbit, the Rabbit Prince, you do not have a mortal soul like your fellow rabbits, so I cannot take you away&quot;
 
 
 [[Who are you? -&gt; Forest6.2]]
-[[Where do you take those who have died? -&gt; Forest7.2]]</tw-passagedata><tw-passagedata pid="145" name=" Forest6.2" tags="" position="832,2030" size="100,100">	&quot;I am the Black Rabbit of Inle, I take rabbits away at their time of death. But you cannot die.&quot;
+[[Where do you take those who have died? -&gt; Forest7.2]]</tw-passagedata><tw-passagedata pid="144" name=" Forest6.2" tags="" position="832,2030" size="100,100">	&quot;I am the Black Rabbit of Inle, I take rabbits away at their time of death. But you cannot die.&quot;
 
 
 [[If I cannot die how can I meet you? -&gt; Forest7.1]]
-[[What do you mean, I cannot die? -&gt; Forest6.1]]</tw-passagedata><tw-passagedata pid="146" name=" Forest6.3" tags="" position="956,1977" size="100,100">	&quot;This is a sort of inbetween space between the realm of the living and the realm of the dead. Neither of us can stay here for very long since living or dead souls are not meant to stay here.&quot;
+[[What do you mean, I cannot die? -&gt; Forest6.1]]</tw-passagedata><tw-passagedata pid="145" name=" Forest6.3" tags="" position="956,1977" size="100,100">	&quot;This is a sort of inbetween space between the realm of the living and the realm of the dead. Neither of us can stay here for very long since living or dead souls are not meant to stay here.&quot;
 
 
 (if: $notmortal is true)[[[Who are you? -&gt; Forest6.2]]]
 [[How long can we stay here? -&gt; Forest7.3]]
-[[Why am I here anyways? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="147" name=" Forest7.1" tags="" position="855,2157" size="100,100">	&quot;I&#39;m not really sure. I assume because you are close to what would be considered death for a creature with a mortal soul is what allows you to meet me.&quot;
+[[Why am I here anyways? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="146" name=" Forest7.1" tags="" position="855,2157" size="100,100">	&quot;I&#39;m not really sure. I assume because you are close to what would be considered death for a creature with a mortal soul is what allows you to meet me.&quot;
 
 
 [[Why am I here anyways? -&gt; Forest8.2]]
-[[What is this place? -&gt; Forest6.3]]</tw-passagedata><tw-passagedata pid="148" name=" Forest7.2" tags="" position="722,2147" size="100,100">	&quot;They come with me to join my Owsla, there they no longer have to fight for survival, they are safe and protected by me for the rest of eterninty&quot;
+[[What is this place? -&gt; Forest6.3]]</tw-passagedata><tw-passagedata pid="147" name=" Forest7.2" tags="" position="722,2147" size="100,100">	&quot;They come with me to join my Owsla, there they no longer have to fight for survival, they are safe and protected by me for the rest of eterninty&quot;
 
 
 [[How can you protect them? -&gt; Forest8.1]]
 [[So I can&#39;t join because I am not mortal? -&gt; Forest8.1]]
-[[How can I meet you if I am not mortal? -&gt; Forest8.1]]</tw-passagedata><tw-passagedata pid="149" name=" Forest8.1" tags="" position="771,2287" size="100,100">	&quot;I&#39;m not here to answer questions about my ability to protect the souls of the dead nor do I know why exactly you can meet me, I have something to tell you about our gifts, Rabbit Prince.&quot; 
+[[How can I meet you if I am not mortal? -&gt; Forest8.1]]</tw-passagedata><tw-passagedata pid="148" name=" Forest8.1" tags="" position="771,2287" size="100,100">	&quot;I&#39;m not here to answer questions about my ability to protect the souls of the dead nor do I know why exactly you can meet me, I have something to tell you about our gifts, Rabbit Prince.&quot; 
 
 
-[[What do you know? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="150" name=" Forest8.2" tags="" position="914,2293" size="100,100">	&quot;I am a rabbit, just as you are and I know what Lord Frith refuses to tell you about our gifts.&quot;
+[[What do you know? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="149" name=" Forest8.2" tags="" position="914,2293" size="100,100">	&quot;I am a rabbit, just as you are and I know what Lord Frith refuses to tell you about our gifts.&quot;
 
 
 [[Why couldn&#39;t you have told me before I was picked up by a bird? -&gt; Forest9.1]]
 [[Why does Lord Frith refuse to tell me about our gifts? -&gt; Forest9.2]]
-[[What do you know about our gifts? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="151" name=" Forest7.3" tags="" position="975,2132" size="100,100">	&quot;Time is hard in this place. I&#39;m not exactly sure how much longer we can stay here, but I imagine we don&#39;t have much longer.&quot;
+[[What do you know about our gifts? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="150" name=" Forest7.3" tags="" position="975,2132" size="100,100">	&quot;Time is hard in this place. I&#39;m not exactly sure how much longer we can stay here, but I imagine we don&#39;t have much longer.&quot;
 
 
-[[Ok, so why am I here anyways? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="152" name=" Forest9.1" tags="" position="793,2420" size="100,100">	&quot;I can only appear to those close to death. Also Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;
+[[Ok, so why am I here anyways? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="151" name=" Forest9.1" tags="" position="793,2420" size="100,100">	&quot;I can only appear to those close to death. Also Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;
 
 
-[[Lord Frith was just jealous of my rabbits&#39; success -&gt; Forest10.2]]</tw-passagedata><tw-passagedata pid="153" name=" Forest9.2" tags="" position="917,2419" size="100,100">	&quot;Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;
+[[Lord Frith was just jealous of my rabbits&#39; success -&gt; Forest10.2]]</tw-passagedata><tw-passagedata pid="152" name=" Forest9.2" tags="" position="917,2419" size="100,100">	&quot;Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;
 
 
 [[We were the greatest species, why should our population be reigned in -&gt; Forest10.2]]
-[[Wait, what do you know about our gifts? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="154" name=" Forest9.3" tags="" position="1044,2395" size="100,100">	&quot;Well he gifted us improved abilities to run and jump, as you already know. But he gave use a couple other gifts as well&quot;
+[[Wait, what do you know about our gifts? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="153" name=" Forest9.3" tags="" position="1044,2395" size="100,100">	&quot;Well he gifted us improved abilities to run and jump, as you already know. But he gave use a couple other gifts as well&quot;
 
 
-[[Go on -&gt; Forest10.1]]</tw-passagedata><tw-passagedata pid="155" name=" Forest10.1" tags="" position="1039,2534" size="100,100">	&quot;He also granted up improved hearing and-,&quot; the Black Rabbit abruptly stops, &quot;We&#39;re out of time.&quot;
+[[Go on -&gt; Forest10.1]]</tw-passagedata><tw-passagedata pid="154" name=" Forest10.1" tags="" position="1039,2534" size="100,100">	&quot;He also granted up improved hearing and-,&quot; the Black Rabbit abruptly stops, &quot;We&#39;re out of time.&quot;
 
 
-[[Wait! What other gifts did we get, tell me! -&gt; Forest11.1]]</tw-passagedata><tw-passagedata pid="156" name=" Forest11.1" tags="" position="938,2672" size="100,100">	But it is too late, the Black Rabbit fades into the shadows of your conciousness and you awake, falling. 
+[[Wait! What other gifts did we get, tell me! -&gt; Forest11.1]]</tw-passagedata><tw-passagedata pid="155" name=" Forest11.1" tags="" position="938,2672" size="100,100">	But it is too late, the Black Rabbit fades into the shadows of your conciousness and you awake, falling. 
 	You cannot see the bird who must have dropped you, but you do see the ground rapidly apporaching. 
 
 
-[[Brace for impact -&gt; Forest12.1]]</tw-passagedata><tw-passagedata pid="157" name=" Forest10.2" tags="" position="916,2550" size="100,100">	&quot;...this is why Lord Frith doesn&#39;t like you&quot;
+[[Brace for impact -&gt; Forest12.1]]</tw-passagedata><tw-passagedata pid="156" name=" Forest10.2" tags="" position="916,2550" size="100,100">	&quot;...this is why Lord Frith doesn&#39;t like you&quot;
 
 
-[[So, what were the gifts you wanted to tell me about? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="158" name=" Forest12.1" tags="" position="915,2793" size="100,100">	You brace for impact, but it doesn&#39;t come. In front of you, you see Lord Frith again. 
+[[So, what were the gifts you wanted to tell me about? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="157" name=" Forest12.1" tags="" position="915,2793" size="100,100">	You brace for impact, but it doesn&#39;t come. In front of you, you see Lord Frith again. 
 
 
 [[&quot;What do you want&quot; -&gt; Forest13.1]]
-[[Oh! look who it is! -&gt; Forest13.1]] </tw-passagedata><tw-passagedata pid="159" name=" Forest13.1" tags="" position="1045,2835" size="100,100">	&quot;I know you talked to the Black Rabbit&quot;
+[[Oh! look who it is! -&gt; Forest13.1]] </tw-passagedata><tw-passagedata pid="158" name=" Forest13.1" tags="" position="1045,2835" size="100,100">	&quot;I know you talked to the Black Rabbit&quot;
 
 [[Why do you care? -&gt; Forest14.1]]
 [[They were much more helpful than you -&gt; Forest14.2]]
-[[...why are you really here? -&gt; Forest14.3]]</tw-passagedata><tw-passagedata pid="160" name=" Forest14.1" tags="" position="857,2927" size="100,100">	&quot;They weren’t supposed to help you&quot;
+[[...why are you really here? -&gt; Forest14.3]]</tw-passagedata><tw-passagedata pid="159" name=" Forest14.1" tags="" position="857,2927" size="100,100">	&quot;They weren’t supposed to help you&quot;
 
 
 [[I guess they like me better since they helped me -&gt; Forest15.1]]
-[[They were far more helpful than you&#39;ve ever been -&gt; Forest15.1]]</tw-passagedata><tw-passagedata pid="161" name=" Forest14.2" tags="" position="992,2956" size="100,100">	&quot;...I did help you, I told you about one of your gifts.&quot;
+[[They were far more helpful than you&#39;ve ever been -&gt; Forest15.1]]</tw-passagedata><tw-passagedata pid="160" name=" Forest14.2" tags="" position="992,2956" size="100,100">	&quot;...I did help you, I told you about one of your gifts.&quot;
 
 
 [[Why couldn&#39;t you have told me about all of my gifts? -&gt; Forest15.1]]
-[[Why are you really here? -&gt; Forest14.3]]</tw-passagedata><tw-passagedata pid="162" name=" Forest14.3" tags="" position="1124,2950" size="100,100">	&quot;I need you to check on something.&quot;
+[[Why are you really here? -&gt; Forest14.3]]</tw-passagedata><tw-passagedata pid="161" name=" Forest14.3" tags="" position="1124,2950" size="100,100">	&quot;I need you to check on something.&quot;
 
 
-[[What do you want me to check on? -&gt; Forest15.2]]</tw-passagedata><tw-passagedata pid="163" name=" Forest15.1" tags="" position="872,3056" size="100,100">	&quot;I&#39;m not here to debate with you. I need you to check on something.&quot;
+[[What do you want me to check on? -&gt; Forest15.2]]</tw-passagedata><tw-passagedata pid="162" name=" Forest15.1" tags="" position="872,3056" size="100,100">	&quot;I&#39;m not here to debate with you. I need you to check on something.&quot;
 
 
-[[What do you want me to check on? -&gt; Forest15.2]]</tw-passagedata><tw-passagedata pid="164" name=" Forest15.2" tags="" position="1022,3076" size="100,100">	&quot;There are these larger 2-legged creatures that seem like they might upset the balance in the future. I need you to check them out, see what they’re up to.&quot;
+[[What do you want me to check on? -&gt; Forest15.2]]</tw-passagedata><tw-passagedata pid="163" name=" Forest15.2" tags="" position="1022,3076" size="100,100">	&quot;There are these larger 2-legged creatures that seem like they might upset the balance in the future. I need you to check them out, see what they’re up to.&quot;
 
 
 [[Why would I do that for you? -&gt; Forest16.1]]
-[[What makes you think I want to help you? -&gt; Forest16.2]]</tw-passagedata><tw-passagedata pid="165" name=" Forest16.1" tags="" position="957,3207" size="100,100">	&quot;Because if you don’t, you won’t learn about the rest of your gifts,&quot; Lord Frith continues, &quot;Your rabbits’ population will slowly dwindle until there are none left since they don’t know all the tools that are available to them to protect themselves.&quot;
+[[What makes you think I want to help you? -&gt; Forest16.2]]</tw-passagedata><tw-passagedata pid="164" name=" Forest16.1" tags="" position="957,3207" size="100,100">	&quot;Because if you don’t, you won’t learn about the rest of your gifts,&quot; Lord Frith continues, &quot;Your rabbits’ population will slowly dwindle until there are none left since they don’t know all the tools that are available to them to protect themselves.&quot;
 
 
-[[You won&#39;t protect them for the sake of the balanced? -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="166" name=" Forest16.2" tags="" position="1159,3139" size="100,100">	&quot;You want to know what the rest of your gifts are so you can help your rabbits, I can tell you. But I won&#39;t if you don&#39;t check on the two-legged ones for me.&quot;
+[[You won&#39;t protect them for the sake of the balanced? -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="165" name=" Forest16.2" tags="" position="1159,3139" size="100,100">	&quot;You want to know what the rest of your gifts are so you can help your rabbits, I can tell you. But I won&#39;t if you don&#39;t check on the two-legged ones for me.&quot;
 
 
 [[I can just ask the Black Rabbit -&gt; Forest17.2]]
-[[Why can&#39;t you check on them yourself? -&gt; Forest17.3]]</tw-passagedata><tw-passagedata pid="167" name=" Forest17.1" tags="" position="945,3338" size="100,100">	&quot;Do you really want to bank on that?&quot;
+[[Why can&#39;t you check on them yourself? -&gt; Forest17.3]]</tw-passagedata><tw-passagedata pid="166" name=" Forest17.1" tags="" position="945,3338" size="100,100">	&quot;Do you really want to bank on that?&quot;
 
 
-[[... -&gt; Forest18.1]]</tw-passagedata><tw-passagedata pid="168" name=" Forest18.1" tags="" position="1052,3448" size="100,100">	&quot;So, will you do it?&quot;
+[[... -&gt; Forest18.1]]</tw-passagedata><tw-passagedata pid="167" name=" Forest18.1" tags="" position="1052,3448" size="100,100">	&quot;So, will you do it?&quot;
 
 
-[[Fine -&gt; Forest19.1]]</tw-passagedata><tw-passagedata pid="169" name=" Forest19.1" tags="" position="1006,3572" size="100,100">	&quot;Good, I need you to go to the big red structure, I sense there are animals that have been trapped in there by the two-legged creatures.&quot;
+[[Fine -&gt; Forest19.1]]</tw-passagedata><tw-passagedata pid="168" name=" Forest19.1" tags="" position="1006,3572" size="100,100">	&quot;Good, I need you to go to the big red structure, I sense there are animals that have been trapped in there by the two-legged creatures.&quot;
 
 
-[[... -&gt; Forest20]]</tw-passagedata><tw-passagedata pid="170" name=" Forest17.2" tags="" position="1078,3253" size="100,100">	&quot;You had to get as close to death as you can get to see the Black Rabbit this time. Any attempts you make to see them now will be even harder for you.&quot;
+[[... -&gt; Forest20]]</tw-passagedata><tw-passagedata pid="169" name=" Forest17.2" tags="" position="1078,3253" size="100,100">	&quot;You had to get as close to death as you can get to see the Black Rabbit this time. Any attempts you make to see them now will be even harder for you.&quot;
 
 
-[[Don&#39;t you need to protect my rabbits for the sake of the &quot;balance&quot; -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="171" name=" Forest17.3" tags="" position="1164,3363" size="100,100">	&quot;Just because I am an all powerful god does not mean I get to go where I want. There are certain locations that are harder for me to access and this is one of them.&quot;
+[[Don&#39;t you need to protect my rabbits for the sake of the &quot;balance&quot; -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="170" name=" Forest17.3" tags="" position="1164,3363" size="100,100">	&quot;Just because I am an all powerful god does not mean I get to go where I want. There are certain locations that are harder for me to access and this is one of them.&quot;
 
 
-[[Shouldn&#39;t you protect my rabbits for the sake of the &quot;balance&quot; -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="172" name=" Forest20" tags="" position="1006,3706" size="100,100">	Lord Frith disappears and you are left sitting alone on a hill overlooking a farm. His light seems to taunt you from his place far above you. 
+[[Shouldn&#39;t you protect my rabbits for the sake of the &quot;balance&quot; -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="171" name=" Forest20" tags="" position="1006,3706" size="100,100">	Lord Frith disappears and you are left sitting alone on a hill overlooking a farm. His light seems to taunt you from his place far above you. 
 
 
 
-[[Start the mission Lord Frith sent you on -&gt; Barn0]]</tw-passagedata><tw-passagedata pid="173" name=" Barn0" tags="" position="1006,3856" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="174" name="prologue_intro" tags="" position="1041.6666666666665,15.833333333333329" size="100,100">Long ago, the Great Frith created the world. He made all the stars, and the world lived among the stars. “Apparently he also made all the animals,” you think to yourself, looking up at the bright orb in the sky that is Lord Frith, “and how can something such as him create something so powerful like us rabbits?”
+[[Start the mission Lord Frith sent you on -&gt; BarnIntro]]</tw-passagedata><tw-passagedata pid="172" name=" BarnIntro" tags="" position="1006,3856" size="100,100">	Unwilling to prove Lord Frith right, you march directly towards the red building in the center of the farm.
+	Continue
+(click-replace:&quot;Continue&quot;)[Oh how plentiful the wheat is! The grass is green and the water is plenty. The only thing that prevents this place from being a paradise for all rabbits is a mythical creature–the most deadly of them all. They walk on two legs and have the power to create structures out of wood, bricks, and stones. More importantly, they wield powerful weapons, ferocious steel sticks that shriek and breathe fire, killing their prey from hundreds of feet away.
+
+And now you are walking straight into their lair.
+
+Continue
+(click-replace:&quot;Continue&quot;)[You walk past acres of crops and stand in front of the barn. Two gigantic sheets of metal shut the barn closed so that no creatures can enter it. In fact, no creature has ever gone this deep into the farm and lived to tell the tale.
+
+[[Try to squeeze in through between the metal sheets.-&gt;barn-squeeze]]
+[[Look around the barn-&gt;barn-lookaround]]
+[[Look above the barn-&gt;barn-lookabove]]]]
+
+(set:$barnLookAbove to false)
+(set:$barnLookAround to false)</tw-passagedata><tw-passagedata pid="173" name="prologue_intro" tags="" position="1041.6666666666665,15.833333333333329" size="100,100">Long ago, the Great Frith created the world. He made all the stars, and the world lived among the stars. “Apparently he also made all the animals,” you think to yourself, looking up at the bright orb in the sky that is Lord Frith, “and how can something such as him create something so powerful like us rabbits?”
 
 Continue
 (click-replace: &quot;Continue&quot;)[You are El-Ahrairah, the prince of rabbits. For generations, your people have run wild in this world, ruled the world even, for your kind bests all the other animals by your sheer number. You occupy all the land and eat all the food. Other animals have talked to you about this, but what are you gonna do, just tell your people to stop eating? If they can’t survive on their own, it’s their problem!
@@ -754,38 +763,38 @@ Continue
 
 [[“Control my people? Why, my people are the greatest in the world, and all the world should be ruled by us rabbits!”-&gt;prologue-intro1]]
 
-[[“I’m afraid I can’t do that. My people shall do as they please.”-&gt;prologue-intro2]]]]</tw-passagedata><tw-passagedata pid="175" name="prologue-intro1" tags="" position="1015,170.83333333333337" size="100,100">	Lord Frith doesn&#39;t seem to be annoyed by your attitude at all. “El-Ahrairah, if you are unwilling to do as I say, I will find ways to take matters into my own hand.”
+[[“I’m afraid I can’t do that. My people shall do as they please.”-&gt;prologue-intro2]]]]</tw-passagedata><tw-passagedata pid="174" name="prologue-intro1" tags="" position="1015,170.83333333333337" size="100,100">	Lord Frith doesn&#39;t seem to be annoyed by your attitude at all. “El-Ahrairah, if you are unwilling to do as I say, I will find ways to take matters into my own hand.”
 	“I’d like to see you try!” You leave this angry comment and continue with your morning walk.
 		
-[[Continue-&gt;prologue-reveal]]</tw-passagedata><tw-passagedata pid="176" name="prologue-intro2" tags="" position="1230,165.83333333333337" size="100,100">	“El-Ahrairah, if you are unwilling to do as I say, I will find ways to take matters into my own hand.”
+[[Continue-&gt;prologue-reveal]]</tw-passagedata><tw-passagedata pid="175" name="prologue-intro2" tags="" position="1230,165.83333333333337" size="100,100">	“El-Ahrairah, if you are unwilling to do as I say, I will find ways to take matters into my own hand.”
 	“If that&#39;s what you desire, then so be it.” You leave this comment and continue with your morning walk.
 		
-	[[Continue-&gt;prologue-reveal]]</tw-passagedata><tw-passagedata pid="177" name="prologue-reveal" tags="" position="1210,304.1666666666667" size="100,100">	The forest feels particularly quiet today. Usually your walk along the creek is filled with deers and birds of all kinds, but today you see nothing but bushes and trees. Where has everybody gone?
+	[[Continue-&gt;prologue-reveal]]</tw-passagedata><tw-passagedata pid="176" name="prologue-reveal" tags="" position="1210,304.1666666666667" size="100,100">	The forest feels particularly quiet today. Usually your walk along the creek is filled with deers and birds of all kinds, but today you see nothing but bushes and trees. Where has everybody gone?
 
 [[Continue with your walk-&gt;prologue-reveal-1]]
 [[Ask Lord Frith where everybody is-&gt;prologue-reveal-2]]
-[[Pull a few pranks while nobody is here-&gt;prologue-reveal-3]]</tw-passagedata><tw-passagedata pid="178" name="prologue-reveal-1" tags="" position="1005,341.33333333333326" size="100,100">	You are not letting this bizarre occurrence disturb your excellent mood; in fact, you enjoy the absence of the other animals because now you can have the forest all to yourself. You inhale deeply and let a stream of fresh air fill your lungs. You keep walking along the creek, listening to the tumbling streams hitting the rocks, the smell of grass mixed with moist dirt. So this is what it feels like to be the king of the world!
+[[Pull a few pranks while nobody is here-&gt;prologue-reveal-3]]</tw-passagedata><tw-passagedata pid="177" name="prologue-reveal-1" tags="" position="1005,341.33333333333326" size="100,100">	You are not letting this bizarre occurrence disturb your excellent mood; in fact, you enjoy the absence of the other animals because now you can have the forest all to yourself. You inhale deeply and let a stream of fresh air fill your lungs. You keep walking along the creek, listening to the tumbling streams hitting the rocks, the smell of grass mixed with moist dirt. So this is what it feels like to be the king of the world!
 		
 	Continue
 	(click-replace: &quot;Continue&quot;)[In the far distance, you see a familiar shadow approaching you. The contour suggests that it’s Foxy the fox, her fur shining brightly under the sunlight, even more so than usual. How jealous you are of that beautiful fur! Driven by curiosity, you walk towards her to inquire about what you are missing out on, but something eerie attracts your attention. Her teeth shine even brighter than her fur, sharp and deadly like a lion’s claws. The way that she gazes at you sends shivers down your spine.
 		
 	[[“Foxy? Where is everybody?”-&gt;prologue-foxy-1]]
 	[[“Is everything alright with you?”-&gt;prologue-foxy-2]]
-	[[Start running away immediately-&gt;prologue-foxy-3]]</tw-passagedata><tw-passagedata pid="179" name="prologue-reveal-2" tags="" position="1390,302.49999999999983" size="100,100">	You look up into the sky and shouts, “Do you know where everybody has gone, Frith?” But only silence ensues. All you hear is your own echo swirling in the forest. No matter, you think to yourself, you are not letting this bizarre occurrence disturb your excellent mood; in fact, you enjoy the absence of the other animals because now you can have the forest all to yourself. You inhale deeply and let a stream of fresh air fill your lungs. So this is what it feels like to be the king of the world!
+	[[Start running away immediately-&gt;prologue-foxy-3]]</tw-passagedata><tw-passagedata pid="178" name="prologue-reveal-2" tags="" position="1390,302.49999999999983" size="100,100">	You look up into the sky and shouts, “Do you know where everybody has gone, Frith?” But only silence ensues. All you hear is your own echo swirling in the forest. No matter, you think to yourself, you are not letting this bizarre occurrence disturb your excellent mood; in fact, you enjoy the absence of the other animals because now you can have the forest all to yourself. You inhale deeply and let a stream of fresh air fill your lungs. So this is what it feels like to be the king of the world!
 		
 	Continue
 	(click-replace: &quot;Continue&quot;)[In the far distance, you see a familiar shadow approaching you. The contour suggests that it’s Foxy the fox, her fur shining brightly under the sunlight, even more so than usual. How jealous you are of that beautiful fur! Driven by curiosity, you walk towards her to inquire about what you are missing out on, but something eerie attracts your attention. Her teeth shine even brighter than her fur, sharp and deadly like a lion’s claws. The way that she gazes at you sends shivers down your spine.
 		
 	[[“Foxy? Where is everybody?”-&gt;prologue-foxy-1]]
 	[[“Is everything alright with you?”-&gt;prologue-foxy-2]]
-	[[Start running away immediately-&gt;prologue-foxy-3]]]</tw-passagedata><tw-passagedata pid="180" name="prologue-reveal-3" tags="" position="1358.3333333333335,442.4999999999999" size="100,100">	You replace the acorns that Squirly collected in his nest with rocks and pebbles, and use those acorns to make the shape of a bear trap in front of Grizzly’s lair. Oh imagine the looks on their faces when they see it! You hide in a bush nearby and wait for a while to see if they are coming back, but the only moving things you see are leaves falling from the trees.
+	[[Start running away immediately-&gt;prologue-foxy-3]]]</tw-passagedata><tw-passagedata pid="179" name="prologue-reveal-3" tags="" position="1358.3333333333335,442.4999999999999" size="100,100">	You replace the acorns that Squirly collected in his nest with rocks and pebbles, and use those acorns to make the shape of a bear trap in front of Grizzly’s lair. Oh imagine the looks on their faces when they see it! You hide in a bush nearby and wait for a while to see if they are coming back, but the only moving things you see are leaves falling from the trees.
 		
 	Continue
 	(click-replace: &quot;Continue&quot;)[In the far distance, you see a familiar shadow approaching you. The contour suggests that it’s Foxy the fox, her fur shining brightly under the sunlight, even more so than usual. How jealous you are of that beautiful fur! Driven by curiosity, you walk towards her to inquire about what you are missing out on, but something eerie attracts your attention. Her teeth shine even brighter than her fur, sharp and deadly like a lion’s claws. The way that she gazes at you sends shivers down your spine.
 		
 	[[“Foxy? Where is everybody?”-&gt;prologue-foxy-1]]
 	[[“Is everything alright with you?”-&gt;prologue-foxy-2]]
-	[[Start running away immediately-&gt;prologue-foxy-3]]]</tw-passagedata><tw-passagedata pid="181" name="prologue-foxy-1" tags="" position="911.6666666666666,501.33333333333326" size="100,100">	“Everybody has been blessed by the good Lord Frith,” she answers with a smirk, “Do you see how magnificent my fur has become? But more importantly, he gave us the desire to hunt you down, little rabbit!”
+	[[Start running away immediately-&gt;prologue-foxy-3]]]</tw-passagedata><tw-passagedata pid="180" name="prologue-foxy-1" tags="" position="911.6666666666666,501.33333333333326" size="100,100">	“Everybody has been blessed by the good Lord Frith,” she answers with a smirk, “Do you see how magnificent my fur has become? But more importantly, he gave us the desire to hunt you down, little rabbit!”
 		
 	Continue
 	(click-replace: &quot;Continue&quot;)[Before you can even react, she pounces at you and pins you down with her claws. “How about you be my lunch? I heard that rabbits taste extra juicy when they are scared!”
@@ -796,7 +805,7 @@ Continue
 	Continue
 	(click-replace: &quot;Continue&quot;)[“Is this … death? Am I about to die?” But you are not ready to give up yet, for you are the prince of rabbits, and you are destined for greatness, at least that’s what you tell yourself. You have contemplated the concept of death but when death finally comes, you fear him, so much that it has reignited your will to live.
 		
-	[[Continue-&gt;prologue-frith]]]]]</tw-passagedata><tw-passagedata pid="182" name="prologue-foxy-2" tags="" position="1056.6666666666667,506.3333333333333" size="100,100">	“More than alright, my love,” she answers with a smirk, “Everybody has been blessed by the good Lord Frith! Do you see how magnificent my fur has become? But more importantly, he gave us the desire to hunt you down, little rabbit!”
+	[[Continue-&gt;prologue-frith]]]]]</tw-passagedata><tw-passagedata pid="181" name="prologue-foxy-2" tags="" position="1056.6666666666667,506.3333333333333" size="100,100">	“More than alright, my love,” she answers with a smirk, “Everybody has been blessed by the good Lord Frith! Do you see how magnificent my fur has become? But more importantly, he gave us the desire to hunt you down, little rabbit!”
 		
 	Continue
 	(click-replace: &quot;Continue&quot;)[Before you can even react, she pounces at you and pins you down with her claws. “How about you be my lunch? I heard that rabbits taste extra juicy when they are scared!”
@@ -807,7 +816,7 @@ Continue
 	Continue
 	(click-replace: &quot;Continue&quot;)[“Is this … death? Am I about to die?” But you are not ready to give up yet, for you are the prince of rabbits, and you are destined for greatness, at least that’s what you tell yourself. You have contemplated the concept of death but when death finally comes, you fear him, so much that it has reignited your will to live.
 		
-	[[Continue-&gt;prologue-frith]]]]]</tw-passagedata><tw-passagedata pid="183" name="prologue-foxy-3" tags="" position="1196.6666666666667,574.1666666666665" size="100,100">	“Where are you going, dear? Have you seen how magnificent my fur has become?” Foxy starts prancing towards you. “Everybody has been blessed by the good Lord Frith! Boary’s got his tusks and Grizzly’s got his claws. But more importantly, he gave us the desire to hunt you down, little rabbit!”
+	[[Continue-&gt;prologue-frith]]]]]</tw-passagedata><tw-passagedata pid="182" name="prologue-foxy-3" tags="" position="1196.6666666666667,574.1666666666665" size="100,100">	“Where are you going, dear? Have you seen how magnificent my fur has become?” Foxy starts prancing towards you. “Everybody has been blessed by the good Lord Frith! Boary’s got his tusks and Grizzly’s got his claws. But more importantly, he gave us the desire to hunt you down, little rabbit!”
 		
 	Continue
 	(click-replace: &quot;Continue&quot;)[Before you can even react, she pounces at you and pins you down with her claws. “How about you be my lunch? I heard that rabbits taste extra juicy when they are scared!”
@@ -818,7 +827,7 @@ Continue
 	Continue
 	(click-replace: &quot;Continue&quot;)[“Is this … death? Am I about to die?” But you are not ready to give up yet, for you are the prince of rabbits, and you are destined for greatness, at least that’s what you tell yourself. You have contemplated the concept of death but when death finally comes, you fear him, so much that it has reignited your will to live.
 		
-	[[Continue-&gt;prologue-frith]]]]]</tw-passagedata><tw-passagedata pid="184" name="prologue-frith" tags="" position="1048.3333333333333,658" size="100,100">	You kick Foxy in her eyes and as she is screeching in pain, you shake violently to escape from her tight grip. You start running, looking for a place to hide, but predators have started to emerge from the forest everywhere. Dogs, cats, weasels, eagles, everywhere.
+	[[Continue-&gt;prologue-frith]]]]]</tw-passagedata><tw-passagedata pid="183" name="prologue-frith" tags="" position="1048.3333333333333,658" size="100,100">	You kick Foxy in her eyes and as she is screeching in pain, you shake violently to escape from her tight grip. You start running, looking for a place to hide, but predators have started to emerge from the forest everywhere. Dogs, cats, weasels, eagles, everywhere.
 		
 	DANGERS EVERYWHERE.
 		
@@ -833,12 +842,12 @@ Continue
 		
 	[[“No, I have not seen him.”-&gt;prologue-frith-1]]
 	[[“Yes, he went that way, to my right.”-&gt;prologue-frith-2]]
-	[[“That will be me. What do you want?”-&gt;prologue-frith-admit]]]</tw-passagedata><tw-passagedata pid="185" name="prologue-frith-1" tags="" position="1096.3333333333335,863" size="100,100">	“That is a shame, for I wished to bless him with a gift. Come out then, I shall bless you instead.”
+	[[“That will be me. What do you want?”-&gt;prologue-frith-admit]]]</tw-passagedata><tw-passagedata pid="184" name="prologue-frith-1" tags="" position="1096.3333333333335,863" size="100,100">	“That is a shame, for I wished to bless him with a gift. Come out then, I shall bless you instead.”
 		
 	[[“No, I’m afraid I cannot. If you want to bless me, you would have to bless my bottom.”-&gt;prologue-frith-hide]]
-	[[“Well, if that’s the case, then I’m El-Ahrairah.”-&gt;prologue-frith-admit]]</tw-passagedata><tw-passagedata pid="186" name="prologue-frith-2" tags="" position="1261.6666666666665,824.6666666666669" size="100,100">	“That is most strange, I just came from there and I saw no trace of him. I must have missed him. Come out then, I shall bless you instead.”
+	[[“Well, if that’s the case, then I’m El-Ahrairah.”-&gt;prologue-frith-admit]]</tw-passagedata><tw-passagedata pid="185" name="prologue-frith-2" tags="" position="1261.6666666666665,824.6666666666669" size="100,100">	“That is most strange, I just came from there and I saw no trace of him. I must have missed him. Come out then, I shall bless you instead.”
 		
-	[[“No, I’m afraid I cannot. If you want to bless me, you would have to bless my bottom.”-&gt;prologue-frith-hide]]</tw-passagedata><tw-passagedata pid="187" name="prologue-frith-admit" tags="" position="1363.3333333333333,648" size="100,100">	“Oh there you are! I was just looking for you, for I wished to bless him with a gift like I did to all the others.” And then Lord Frith shines upon you. You feel power flowing through your hind legs, and all the wounds on your body heal immediately. “Live strong, El-Ahrairah.”
+	[[“No, I’m afraid I cannot. If you want to bless me, you would have to bless my bottom.”-&gt;prologue-frith-hide]]</tw-passagedata><tw-passagedata pid="186" name="prologue-frith-admit" tags="" position="1363.3333333333333,648" size="100,100">	“Oh there you are! I was just looking for you, for I wished to bless him with a gift like I did to all the others.” And then Lord Frith shines upon you. You feel power flowing through your hind legs, and all the wounds on your body heal immediately. “Live strong, El-Ahrairah.”
 		
 	Continue
 	(click-replace:&quot;Continue&quot;)[You try to unleash your powers, but what they are you do not know. The only thing that you notice is that your tails, which used to be the same color as dirt, is now white as snow. Is that it? Is that all Lord Frith gives you while he gives the other animals sharp claws and deadly fangs on top of the desire to kill you?
@@ -846,7 +855,7 @@ Continue
 	Continue
 	(click-replace:&quot;Continue&quot;)[“All the world will be your enemy, Prince of a Thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.”
 		
-	[[Next Chapter-&gt;Meadow0]]]]</tw-passagedata><tw-passagedata pid="188" name="prologue-frith-hide" tags="" position="1241.3333333333335,958" size="100,100">	“Very well then. Be it so,” says Lord Frith, and you feel power flowing through your hind legs, and all the wounds on your body heal immediately. “Live strong, creature.”
+	[[Next Chapter-&gt;Meadow0]]]]</tw-passagedata><tw-passagedata pid="187" name="prologue-frith-hide" tags="" position="1241.3333333333335,958" size="100,100">	“Very well then. Be it so,” says Lord Frith, and you feel power flowing through your hind legs, and all the wounds on your body heal immediately. “Live strong, creature.”
 		
 	Continue
 	(click-replace:&quot;Continue&quot;)[You try to unleash your powers, but what they are you do not know. The only thing that you notice is that your tails, which used to be the same color as dirt, is now white as snow. Is that it? Is that all Lord Frith gives you while he gives the other animals sharp claws and deadly fangs on top of the desire to kill you?
@@ -854,7 +863,110 @@ Continue
 	Continue
 	(click-replace:&quot;Continue&quot;)[“All the world will be your enemy, Prince of a Thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.”
 	
-	[[Next Chapter-&gt;Meadow0]]]]</tw-passagedata></tw-storydata>
+	[[Next Chapter-&gt;Meadow0]]]]</tw-passagedata><tw-passagedata pid="188" name="barn-squeeze" tags="" position="856,4006" size="100,100">	You push yourself against the crack in between the two sheets as hard as possible but not even your head can fit in. Also your head hurts.
+
+[[Return-&gt;barn-door]]</tw-passagedata><tw-passagedata pid="189" name="barn-lookaround" tags="" position="1006,4006" size="100,100">	The barn is surrounded by gigantic metal monsters that are laying dormant for now. You have never seen one in action, and you hope you never will. The back of the barn has wood planks and haystacks piled as high as a mountain. (if:$barnLookAbove is true)[Maybe you can climb onto that to reach the windows?](else:)[You wonder if that leads anywhere.]
+
+[[Return-&gt;barn-door]]
+(set:$barnLookAround to true)</tw-passagedata><tw-passagedata pid="190" name="barn-lookabove" tags="" position="1156,4006" size="100,100">	You look up and you can hardly see the top of the barn, so there is no way for you to know if you can enter from above, not that you can get there anyway. There are, however, holes in the top half of the barn covered in transparent panels, and some of them seem to be open. (if:$barnLookAround is true)[You think you might be able to climb up there from the back of the barn.](else:)[Maybe there is path to one of these windows?]
+
+[[Return-&gt;barn-door]]
+(set:$barnLookAbove to true)</tw-passagedata><tw-passagedata pid="191" name="barn-door" tags="" position="1004.3333333333334,4146" size="100,100">	You walk past acres of crops and stand in front of the barn. Two gigantic sheets of metal shut the barn closed so that no creatures can enter it. In fact, no creature has ever gone this deep into the farm and lived to tell the tale.
+
+[[Try to squeeze in through between the metal sheets.-&gt;barn-squeeze]]
+[[Look around the barn-&gt;barn-lookaround]]
+[[Look above the barn-&gt;barn-lookabove]]
+(if:$barnLookAbove is true)[(if:$barnLookAround is true)[[[Go in through the open holes-&gt;barn-enter]]]]</tw-passagedata><tw-passagedata pid="192" name="barn-enter" tags="" position="1016,4267.666666666667" size="100,100">	You climb on top of the pile of wood and hay to reach one of the panels that is open. Even the rays of Lord Frith cannot reach the inside of the barn, where it is as dark and dry as a rabbit can imagine. After dropping down onto the ground, you hear a faint sizzle coming from the deep end of the barn.
+
+[[Investigate the sound-&gt;barn-dog]]
+[[Explore the barn first-&gt;barn-explore]]
+(set:$barnKnowRabbit to false)
+(set:$barnDogFinished to false)</tw-passagedata><tw-passagedata pid="193" name="barn-dog" tags="" position="941,4417.666666666667" size="100,100">	It is so dark that you can’t really see anything. Tinkling and crackling. You think you might have knocked over some things and stepped on some others.
+
+Keep walking
+(click-replace:&quot;Keep walking&quot;)[You follow the sound and reach the end of the barn. To your surprise, the sound is not coming from some animal in distress, no; it is a dog, five times the size as you, enjoying his nap. If there are any other animals kept in here, the dog must be the warden then. Now you just need to find…
+
+“Watch out, El-Ahrairah, he’s faking!”
+
+You turn towards the dog and just as the (if:$barnKnowRabbit)[rabbit](else:)[voice] warns you, the dog wakes from his “nap” and swings his claws at you. Luckily, you managed to dodge the attack in time.
+
+“Well, well, well. What a treat! Thank you, Lord Frith, for giving me this excellent snack!”
+
+Continue
+(click-replace:&quot;Continue&quot;)[You quickly back off to see if there’s anywhere out of the barn and worry about that secret voice later.
+
+“Oh and don’t say I didn’t warn you, the only way out of here is for my masters to open the door, but they are not coming anytime soon, definitely not in time to save you!”
+
+[[Ask for help-&gt;barn-leash]]
+[[Run as fast as you can-&gt;barn-run]]]]</tw-passagedata><tw-passagedata pid="194" name="barn-explore" tags="" position="1091,4417.666666666667" size="100,100">(if: $barnKnowRabbit is false)[You decide to stay clear of the sound and explore other parts of the barn first.]
+
+Old and dusty, the barn doesn’t have many things in it other than more haystacks and some weirdly shaped melds made with iron and wood.
+
+“Is that you, El-Ahrairah?”
+
+A voice coming from the corner of the barn catches your attention. You follow the voice and see a cage holding another rabbit.
+
+Open the cage
+(click-replace:&quot;Open the cage&quot;)[You bite open the lock on the cage and release your fellow rabbit. “Oh you shouldn’t have come here, El-Ahrairah. There is no way out of here! Without you all the rabbits are doomed!”
+
+“Don’t worry, my child. I will find a way to get us out of here!”
+(if:$barnDogFinished is false)[
+[[Investigate the sound-&gt;barn-dog]]]
+[[Look for other ways out-&gt;barn-dig]]
+(set: $barnKnowRabbit to true)]</tw-passagedata><tw-passagedata pid="195" name="barn-leash" tags="" position="866,4566" size="100,100">	You turn to the (if:$barnKnowRabbit)[rabbit](else:)[secret voice in the dark], hoping that it can save your life again.
+
+“Just run! He’s on a leash!”
+
+Keep running
+(click-replace:&quot;Keep running&quot;)[That’s right! There is no light in the barn but you can still faintly see the metal chain tied to the dog’s neck, and not a particularly long one. You immediately turn back and run as fast as you could, until you are out of the dog’s reach.
+
+Seeing that he can’t possibly get you know, the dog goes back to his lair, wagging its tail in defeat.
+
+(if:$barnKnowRabbit is false)[[[Go to the secret voice-&gt;barn-explore]]](else:)[[[Look for other ways out-&gt;barn-dig]]]]
+(set: $barnDogFinished to true)</tw-passagedata><tw-passagedata pid="196" name="barn-run" tags="" position="1016,4564.333333333333" size="100,100">	You immediately turn back and run as fast as you could, hoping that this age-old trick may help you again this time. Suddenly, you hear a loud bang coming from behind you, followed by relentless barkings that don’t seem to be coming any closer.
+
+Look back
+(click-replace:&quot;Look back&quot;)[You turn around, and although there is no light in the barn, you can still faintly see a metal chain tied to the dog’s neck, and not a particularly long one.
+
+Seeing that he can’t possibly get you know, the dog goes back to his lair, wagging its tail in defeat.
+
+(if:$barnKnowRabbit is false)[[[Go to the secret voice-&gt;barn-explore]]](else:)[[[Look for other ways out-&gt;barn-dig]]]]
+(set: $barnDogFinished to true)</tw-passagedata><tw-passagedata pid="197" name="barn-dig" tags="" position="1189.3333333333335,4566.000000000001" size="100,100">	After a thorough search of the barn, you come to the conclusion that the barn is completely sealed off from the outside world. There is simply no way for you to easily get out of here.
+
+Look beneath you
+(click-replace:&quot;Look beneath you&quot;)[You are standing on dirt. The source of life, where grass grows on, where trees stand upon. You run on dirt all day, but what if you can… dig?
+
+Start digging
+(click-replace:&quot;Start digging&quot;)[“El-Ahrairah, what are you doing?”
+
+“Getting us out of here.”
+
+[[Keep digging-&gt;barn-out]]]]</tw-passagedata><tw-passagedata pid="198" name="barn-out" tags="" position="1089.3333333333335,4682.666666666667" size="100,100">	As you run your front legs through the dirt, you create a path underneath you, all the way to outside of the barn. The night sky lies quietly above you, and the stars smile at you, the prince of rabbits.
+
+Continue
+(click-replace:&quot;Continue&quot;)[“Must be quite an adventure, huh?” Foxy emerges elegantly from the crop field. “You are the first to ever return from that place, must be horrible! And you know what they say about a rabbit who is scared…”
+
+[[...-&gt;barn-outro]]]</tw-passagedata><tw-passagedata pid="199" name="barn-outro" tags="" position="1064.3333333333335,4821.000000000001" size="100,100">	“All the world will be your enemy,
+(click-append:&quot;“All the world will be your enemy,&quot;)[
+
+Prince of a Thousand enemies.
+(click-append:&quot;Prince of a Thousand enemies.&quot;)[
+
+And when they catch you, they will kill you.
+(click-append:&quot;And when they catch you, they will kill you.&quot;)[
+
+But first they must catch you;
+(click-append:&quot;But first they must catch you;&quot;)[
+
+digger, listener, runner,
+(click-append:&quot;digger, listener, runner,&quot;)[
+
+Prince with the swift warning.
+(click-append:&quot;Prince with the swift warning.&quot;)[
+
+Be cunning, and full of tricks, and your people will never be destroyed.”
+
+[[Epilogue-&gt;epilogue-intro]]]]]]]]</tw-passagedata><tw-passagedata pid="200" name="epilogue-intro" tags="" position="1071.0000000000002,4956.000000000001" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
