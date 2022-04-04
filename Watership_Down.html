@@ -9,254 +9,275 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Watership_Down.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Watership_Down" startnode="60" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="Watership_Down" startnode="60" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
 <tw-storydata name="Watership_Down" startnode="42" creator="Twine" creator-version="2.3.16" ifid="A2068225-8877-40D4-A923-CF1AB416780D" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   position: fixed;
   top: 0;
   left: 0;}
 @@ -23,733 +23,301 @@
+  }
 
-tw-story[tags~="Blue"] {
-background-color: blue;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Meadow0" tags="" position="594,123" size="100,100">	You are furious. Lord Frith gave all these other animals such powerful and dangerous gifts that they have unleashed on your fellow rabbits. 
+tw-story[tags~="Frith"]{
+  background-image:       url("https://awculture.files.wordpress.com/2015/04/frith.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  font-weight: bold;
+}
+
+tw-story[tags~="BlackRabbit"]{
+background-image: url("https://i.pinimg.com/originals/38/5d/c7/385dc77e0280a934801d2f8e921d70c7.png");
+background-repeat: no-repeat;
+background-size: cover;
+  background-position: center;
+}
+
+tw-story[tags~="Forest"]{
+ background-color: #003300; 
+}
+
+tw-story[tags~="Meadow"]{
+  background-color: #ccff99;
+  color: #003300;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Meadow0" tags="Meadow" position="594,123" size="100,100">	You are furious. Lord Frith gave all these other animals such powerful and dangerous gifts that they have unleashed on your fellow rabbits. 
 	But you do not want to stand idly by and watch your population dwindle, so you decide to go convince Lord Frith to give you and your people gifts as powerful as those of your foes. 
 
 
-[[Find a good place to call upon Lord Frith -&gt; Meadow1.1]]</tw-passagedata><tw-passagedata pid="2" name=" Meadow1.1" tags="" position="594,273" size="100,100">	You go to the middle of a meadow. There are few trees in the way between you and the open sky. 
+[[Find a good place to call upon Lord Frith -&gt; Meadow1.1]]</tw-passagedata><tw-passagedata pid="2" name=" Meadow1.1" tags="Meadow" position="594,271.3333333333333" size="100,100">	You go to the middle of a meadow. There are few trees in the way between you and the open sky. 
 	Blazing against the brilliant blue, you see the halo of Lord Frith. And you feel anger burning in your chest. How could he have left you and your fellow rabbits to die? How could he just sit there and watch?
 
 
 [[You start hurling insults at Lord Frith -&gt; Meadow2.1]]
 [[You start screaming as loud as you can -&gt; Meadow2.2]]
-[[You issue a challenge to Lord Frith -&gt; Meadow2.3]]</tw-passagedata><tw-passagedata pid="3" name=" Meadow2.1" tags="" position="594,423" size="100,100">	Your insults don&#39;t seem to reach that air headed ball of gas. Figures. Maybe you need to come up with better insults...
+[[You issue a challenge to Lord Frith -&gt; Meadow2.3]]</tw-passagedata><tw-passagedata pid="3" name=" Meadow2.1" tags="Meadow" position="594,423" size="100,100">	Your insults don&#39;t seem to reach that air headed ball of gas. Figures. Maybe you need to come up with better insults...
 
 
 
 [[You continue to hurl increasingly more vulgar insults at the sky -&gt; Meadow3]]
-(set: $insults to true)</tw-passagedata><tw-passagedata pid="4" name=" Meadow2.2" tags="" position="474,423" size="100,100">	You scream until your lungs ache but to no avail. What does Lord Frith think he&#39;s doing that&#39;s more important than listening to your grivences?
+(set: $insults to true)</tw-passagedata><tw-passagedata pid="4" name=" Meadow2.2" tags="Meadow" position="474,423" size="100,100">	You scream until your lungs ache but to no avail. What does Lord Frith think he&#39;s doing that&#39;s more important than listening to your grivences?
 	Maybe you haven&#39;t drawn enough attention to yourself...
 
 
 [[You start screaming again, jumping up and down this time -&gt; Meadow3]]
-(set: $scream to true)</tw-passagedata><tw-passagedata pid="5" name=" Meadow2.3" tags="" position="714,423" size="100,100">	&quot;Come down and fight me, Lord Frith!&quot; 
+(set: $scream to true)</tw-passagedata><tw-passagedata pid="5" name=" Meadow2.3" tags="Meadow" position="714,421.3333333333333" size="100,100">	&quot;Come down and fight me, Lord Frith!&quot; 
 	Surprisingly he does not come down. 
 	To be fair, that wasn&#39;t your best challenge. You spend some time thinking of some thing better.
 
 
 [[Issue Lord Frith a challenge he cannot refuse -&gt; Meadow3]]
-(set: $challenge to true)</tw-passagedata><tw-passagedata pid="6" name=" Meadow3" tags="" position="594,573" size="100,100">	Lord Frith finally shows up.
+(set: $challenge to true)</tw-passagedata><tw-passagedata pid="6" name=" Meadow3" tags="Frith" position="594,571.3333333333334" size="100,100">	(bg:white)[Lord Frith finally shows up.
 	&quot;You know there are better ways to get may attention than 
-	(if: $insults is true)[hurling insults at me.]
-	(if: $scream is true)[screaming your lungs out.]
-	(if: $challenge is true)[challenging me to a duel or a bizzare eating contest.]&quot;
+	(if: $insults is true)[hurling insults at me.&quot;]
+	(if: $scream is true)[screaming your lungs out.&quot;]
+	(if: $challenge is true)[challenging me to a duel or a bizzare eating contest.&quot;]]
 
-[[What is that way? -&gt; Meadow4.1]]
-[[What took you so long? -&gt; Meadow4.2]]
-[[Where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="7" name=" Meadow4.1" tags="" position="444,723" size="100,100">	&quot;Asking nicely, you know I do respond to kindness&quot;
-
-
-[[Sure you do -&gt; Meadow5.1]]
-[[Anyway, where are my gifts? -&gt; Meadow4.3]]
-[[Is that why it took you so long? -&gt; Meadow4.2]]</tw-passagedata><tw-passagedata pid="8" name=" Meadow4.2" tags="" position="594,723" size="100,100">	&quot;I&#39;ll have you know, I have much more important things to attend to than your grievances&quot;
+(bg:white)[[[&quot;What is that way?&quot; -&gt; Meadow4.1]]
+[[&quot;What took you so long?&quot; -&gt; Meadow4.2]]
+[[&quot;Where are my gifts?&quot; -&gt; Meadow4.3]]]</tw-passagedata><tw-passagedata pid="7" name=" Meadow4.1" tags="Frith" position="444,723" size="100,100">	(bg:white)[&quot;Asking nicely, you know I do respond to kindness&quot;]
 
 
-[[What could possibly be more important than talking to me -&gt; Meadow5.2]]
-[[I don&#39;t care, where are my gifts? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="9" name=" Meadow4.3" tags="" position="744,723" size="100,100">	&quot;It is the balance of all living things, some will live, some will die, those that live will adapt to keep living,&quot; Lord Frith pauses, &quot;What makes you think I did not grant you and your people any gifts?&quot;
+(bg:white)[[[&quot;Sure you do&quot; -&gt; Meadow5.1]]
+[[&quot;Anyway, where are my gifts?&quot; -&gt; Meadow4.3]]
+[[&quot;Is that why it took you so long?&quot; -&gt; Meadow4.2]]]</tw-passagedata><tw-passagedata pid="8" name=" Meadow4.2" tags="Frith" position="594,718.0000000000001" size="100,100">	(bg:white)[&quot;I&#39;ll have you know, I have much more important things to attend to than your grievances&quot;]
 
 
-
-[[I don&#39;t look or feel and different -&gt; Meadow6.1]]
-[[You were jealous of my rabbits&#39; success -&gt; Meadow6.2]]
-[[Keep the balance, what do you mean? -&gt; Meadow6.3]]</tw-passagedata><tw-passagedata pid="10" name=" Meadow5.1" tags="" position="463,859" size="100,100">	&quot;I&#39;m going to pretend I didn&#39;t hear that, What did you want anyways?&quot;
+(bg:white)[[[&quot;What could possibly be more important than talking to me&quot; -&gt; Meadow5.2]]
+[[&quot;I don&#39;t care, where are my gifts?&quot; -&gt; Meadow4.3]]]</tw-passagedata><tw-passagedata pid="9" name=" Meadow4.3" tags="Frith" position="744,719.6666666666667" size="100,100">	(bg:white)[&quot;It is the balance of all living things, some will live, some will die, those that live will adapt to keep living,&quot; Lord Frith pauses, &quot;What makes you think I did not grant you and your people any gifts?&quot;]
 
 
 
-[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="11" name=" Meadow5.2" tags="" position="596,865" size="100,100">	&quot;Many things, keeping the balance of life on this planet, attending to the grienvences of more powerful beings,&quot; Lord Frith looks like he could go on but stops, &quot;What did you want anyways?&quot;
+(bg:white)[[[&quot;I don&#39;t look or feel and different&quot; -&gt; Meadow6.1]]
+[[&quot;You were jealous of my rabbits&#39; success&quot; -&gt; Meadow6.2]]
+[[&quot;Keep the balance, what do you mean?&quot; -&gt; Meadow6.3]]]</tw-passagedata><tw-passagedata pid="10" name=" Meadow5.1" tags="Frith" position="463,859" size="100,100">	(bg:white)[&quot;I&#39;m going to pretend I didn&#39;t hear that, What did you want anyways?&quot;]
 
 
 
-[[My people&#39;s gifts, where are they? -&gt; Meadow4.3]]</tw-passagedata><tw-passagedata pid="12" name=" Meadow6.1" tags="" position="708,863" size="100,100">	&quot;Are you sure? Maybe you are thinking about this in the wrong way,&quot; Lord Frith continues, &quot;You were never meant to be a predator, you were built to be prey. Be swift, be clever and you will survive.&quot;
+(bg:white)[[[&quot;My people&#39;s gifts, where are they?&quot; -&gt; Meadow4.3]]]</tw-passagedata><tw-passagedata pid="11" name=" Meadow5.2" tags="Frith" position="596,865" size="100,100">	(bg:white)[&quot;Many things, keeping the balance of life on this planet, attending to the grienvences of more powerful beings,&quot; Lord Frith looks like he could go on but stops, &quot;What did you want anyways?&quot;]
 
 
 
-[[Me? Prey! -&gt; Meadow7.1]]
-[[...swift and clever -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="13" name=" Meadow6.2" tags="" position="828,861" size="100,100">	&quot;You really think I would base my decisions off my supposed jealousy of mere mortals? As you know, dear Rabbit Prince, I am a god. My concerns are above yours&quot;
-	&quot;I weakened your people for the sake of the balance. But I did give you the tools to survive. Be swift, be clever, figure out how to use them.&quot;
-
-
-[[... -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="14" name=" Meadow6.3" tags="" position="946,844" size="100,100">	&quot;I seek to keep the balance between all animals so one does not over power all the others. You and your rabbits were causing problems by eating all the food you were supposed to share with others, so you needed to be hunted to maintain the balance.&quot;
+(bg:white)[[[&quot;My people&#39;s gifts, where are they?&quot; -&gt; Meadow4.3]]]</tw-passagedata><tw-passagedata pid="12" name=" Meadow6.1" tags="Frith" position="708,862" size="100,100">	(bg:white)[&quot;Are you sure? Maybe you are thinking about this in the wrong way,&quot; Lord Frith continues, &quot;You were never meant to be a predator, you were built to be prey. Be swift, be clever and you will survive.&quot;]
 
 
 
-[[Needed is a strong word -&gt; Meadow7.2]]
-[[You think my rabbits deserve to die?! -&gt; Meadow7.2]]
-[[Who do you think you are? -&gt; Meadow7.2]]</tw-passagedata><tw-passagedata pid="15" name=" Meadow7.1" tags="" position="658,992" size="100,100">	“Now I have more important things to attend to, goodbye Rabbit Prince”
+(bg:white)[[[&quot;Me? Prey!&quot; -&gt; Meadow7.1]]
+[[&quot;...swift and clever&quot; -&gt; Meadow7.1]]]</tw-passagedata><tw-passagedata pid="13" name=" Meadow6.2" tags="Frith" position="828,861" size="100,100">	(bg:white)[&quot;You really think I would base my decisions off my supposed jealousy of mere mortals? As you know, dear Rabbit Prince, I am a god. My concerns are above yours&quot;
+	&quot;I weakened your people for the sake of the balance. But I did give you the tools to survive. Be swift, be clever, figure out how to use them.&quot;]
 
 
-[[Goodbye? -&gt; Meadow8.1]]</tw-passagedata><tw-passagedata pid="16" name=" Meadow8.1" tags="" position="718,1105" size="100,100">	And with that Lord Frith moves back to his place in the sky. His burning halo scorching your face as you ponder what he said to you.
+(bg:white)[[[&quot;...&quot; -&gt; Meadow8.1]]]</tw-passagedata><tw-passagedata pid="14" name=" Meadow6.3" tags="Frith" position="946,844" size="100,100">	(bg:white)[&quot;I seek to keep the balance between all animals so one does not over power all the others. You and your rabbits were causing problems by eating all the food you were supposed to share with others, so you needed to be hunted to maintain the balance.&quot;]
+
+
+
+(bg:white)[[[&quot;Needed is a strong word&quot; -&gt; Meadow7.2]]
+[[&quot;You think my rabbits deserve to die?!&quot; -&gt; Meadow7.2]]
+[[&quot;Who do you think you are?&quot; -&gt; Meadow7.2]]]</tw-passagedata><tw-passagedata pid="15" name=" Meadow7.1" tags="Frith" position="658,990.3333333333334" size="100,100">	(bg:white)[“Now I have more important things to attend to, goodbye Rabbit Prince”]
+
+
+(bg:white)[[[&quot;Goodbye?&quot; -&gt; Meadow8.1]]]</tw-passagedata><tw-passagedata pid="16" name=" Meadow8.1" tags="Meadow" position="753.6666666666666,1100.6666666666665" size="100,100">	And with that Lord Frith moves back to his place in the sky. His burning halo scorching your face as you ponder what he said to you.
 
 
 
 [[Start screaming again, maybe he&#39;ll come back and be less cryptic -&gt; Meadow9.1]]
-[[Swift and clever...maybe he&#39;s on to something -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="17" name=" Meadow7.2" tags="" position="847,985" size="100,100">	&quot;Though you don&#39;t seem to think so, I did give you and your rabbits gifts. Be swift, be clever and you will survive.&quot;
+[[Swift and clever...maybe he&#39;s on to something -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="17" name=" Meadow7.2" tags="Frith" position="847,986" size="100,100">	(bg:white)[&quot;Though you don&#39;t seem to think so, I did give you and your rabbits gifts. Be swift, be clever and you will survive.&quot;]
 
 
 
-[[You call those gifts?! -&gt; Meadow7.1]]
-[[swift and clever? -&gt; Meadow7.1]]</tw-passagedata><tw-passagedata pid="18" name=" Meadow9.1" tags="" position="606,1225" size="100,100">	You scream for as long as you can, eventually your lungs and throat hurt too much to scream any more. But Frith does not come back.
+(bg:white)[[[&quot;You call those gifts?!&quot; -&gt; Meadow7.1]]
+[[&quot;swift and clever?&quot; -&gt; Meadow7.1]]]</tw-passagedata><tw-passagedata pid="18" name=" Meadow9.1" tags="Meadow" position="606,1225" size="100,100">	You scream for as long as you can, eventually your lungs and throat hurt too much to scream any more. But Frith does not come back.
 	Now that you have tired yourself out, maybe you should consider what Frith told you. 
 
 
 
-[[hmmm...tools to survive...swift, clever... -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="19" name=" Meadow9.2" tags="" position="740,1229" size="100,100">	Experimentally, you start to run. You go faster than you used to. You keep going, the speed is exciting but a river is approaching. If you can run, you might be able to jump as well.  
+[[hmmm...tools to survive...swift, clever... -&gt; Meadow9.2]]</tw-passagedata><tw-passagedata pid="19" name=" Meadow9.2" tags="Meadow" position="740,1228" size="100,100">	Experimentally, you start to run. You go faster than you used to. You keep going, the speed is exciting but a river is approaching. If you can run, you might be able to jump as well.  
 	Soon enough you are at the river’s banks, you take a flying leap and arrive at the other side. You let out a cry of joy, you’ve never felt this alive. 
 	You keep running for as long as you can, eventually reaching the forest.
 
 
-
-[[Into the forest -&gt; Forest0]]</tw-passagedata><tw-passagedata pid="20" name=" Forest0" tags="" position="648,1344" size="100,100">	In your elation upon discovering the increased speed Lord Frith granted you, you don’t realize how far into the forest you have strayed. As you grow tired and start to slow down you start to pay more attention to your surroundings. You slow to a stop and look around. All the trees look the same, it’s much darker than you are used to. You aren’t sure if you’ve seen that group of shrubs before.
-
-
-[[Where am I? -&gt; Forest1.1]]</tw-passagedata><tw-passagedata pid="21" name=" Forest1.1" tags="" position="617,1470" size="100,100">	You figure if you turn around and go back in the same direction you came, you can probably make it back to the meadow.
+[[Into the forest -&gt; Forest0]]</tw-passagedata><tw-passagedata pid="20" name=" Forest0" tags="Forest" position="648,1341.3333333333333" size="100,100">	In your elation upon discovering the increased speed Lord Frith granted you, you don’t realize how far into the forest you have strayed. As you grow tired and start to slow down you start to pay more attention to your surroundings. You slow to a stop and look around. All the trees look the same, it’s much darker than you are used to. You aren’t sure if you’ve seen that group of shrubs before.
 
 
-[[Go back -&gt; Forest2]]</tw-passagedata><tw-passagedata pid="22" name=" Forest2" tags="" position="754,1500" size="100,100">	You start making your way back towards the meadow, moving much slower than before, keeping an eye out for any threats that may come for you. 
+[[Where am I? -&gt; Forest1.1]]</tw-passagedata><tw-passagedata pid="21" name=" Forest1.1" tags="Forest" position="617,1470" size="100,100">	You figure if you turn around and go back in the same direction you came, you can probably make it back to the meadow.
+
+
+[[Go back -&gt; Forest2]]</tw-passagedata><tw-passagedata pid="22" name=" Forest2" tags="Forest" position="754,1500" size="100,100">	You start making your way back towards the meadow, moving much slower than before, keeping an eye out for any threats that may come for you. 
 	Out of the corner of your eye, you see a flash of movement.
 
 
 [[&quot;Who&#39;s there!&quot; -&gt; Forest3.1]]
 [[Stay silent -&gt; Forest3.2]]
-[[Start running -&gt; Forest3.3]]</tw-passagedata><tw-passagedata pid="23" name=" Forest3.1" tags="" position="559,1633" size="100,100">	&quot;An old...friend&quot;
+[[Start running -&gt; Forest3.3]]</tw-passagedata><tw-passagedata pid="23" name=" Forest3.1" tags="Forest" position="559,1633" size="100,100">	(text-style:&quot;italic&quot;)[&quot;An old...friend&quot;]
 	The unknown creature ponces in a flash of orange. You dodge, their jaws snap shut on the spot you just were. Foxy is back to finish you off. 
 
 
-[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="24" name=" Forest3.2" tags="" position="692,1636" size="100,100">	&quot;Fancy seeing you so far from the meadow, El-Ahrairah. I&#39;ll make you you don&#39;t go back&quot;
+[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="24" name=" Forest3.2" tags="Forest" position="692,1633.3333333333333" size="100,100">	(text-style:&quot;italic&quot;)[&quot;Fancy seeing you so far from the meadow, El-Ahrairah. I&#39;ll make you you don&#39;t go back&quot;]
 	The unknown creature ponces in a flash of orange. You dodge, their jaws snap shut on the spot you just were. Foxy is back to finish you off. 
 
 
-[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="25" name=" Forest3.3" tags="" position="828,1632" size="100,100">	You take off running, not bothering to see who is chasing you. You hear a growl of frustration as the unknown creature gives chase. But they aren&#39;t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
+[[Run -&gt; Forest4]]</tw-passagedata><tw-passagedata pid="25" name=" Forest3.3" tags="Forest" position="828,1631" size="100,100">	You take off running, not bothering to see who is chasing you. You hear a growl of frustration as the unknown creature gives chase. But they aren&#39;t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
 
 
-[[Keep running -&gt; Forest4.1]]</tw-passagedata><tw-passagedata pid="26" name=" Forest4" tags="" position="623,1760" size="100,100">	You start running, your heartbeat thundering in your ears. You think you can hear Foxy giving chase, but she isn’t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
+[[Keep running -&gt; Forest4.1]]</tw-passagedata><tw-passagedata pid="26" name=" Forest4" tags="Forest" position="623,1760" size="100,100">	You start running, your heartbeat thundering in your ears. You think you can hear Foxy giving chase, but she isn’t the only one. You hear the whoosh of wings above your head and barely manage to dodge away from a set of razor sharp talons.
 
 
-[[Run faster -&gt; Forest5.0]]</tw-passagedata><tw-passagedata pid="27" name=" Forest4.1" tags="" position="776,1757" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. The unknown creature lets out a frustrated huff as you are carried away. 
+[[Run faster -&gt; Forest5.0]]</tw-passagedata><tw-passagedata pid="27" name=" Forest4.1" tags="Forest" position="776,1757" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. The unknown creature lets out a frustrated huff as you are carried away. 
 	As you are held in the air, you feel the talons digging deeper and deeper as you start to flicker in and out of consciousness. When you finally black out, the face of a black rabbit looms before you.
 
 
-[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="28" name=" Forest5" tags="" position="799,1882" size="100,100">	&quot;Not mortal...interesting...you should not be able to meet me&quot;
+[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="28" name=" Forest5" tags="BlackRabbit" position="799,1882" size="100,100">	(text-style:&quot;smear&quot;)[&quot;Not mortal...interesting...you should not be able to meet me&quot;]
 
 
-[[Not mortal? -&gt; Forest6.1]]
-[[Who are you? -&gt; Forest6.2]]
-[[What is this place? -&gt; Forest6.3]]
+[[&quot;Not mortal?&quot; -&gt; Forest6.1]]
+[[&quot;Who are you?&quot; -&gt; Forest6.2]]
+[[&quot;What is this place?&quot; -&gt; Forest6.3]]
 
-(set: $notmortal to true)</tw-passagedata><tw-passagedata pid="29" name=" Forest5.0" tags="" position="660,1891" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. Foxy lets out a frustrated huff as you are carried away. 
+(set: $notmortal to true)</tw-passagedata><tw-passagedata pid="29" name=" Forest5.0" tags="Forest" position="660,1891" size="100,100">	The next time you hear the whoosh of wings you are not so lucky and miss-time your dodge. You feel the talons digging into your back as you are lifted off the ground. Foxy lets out a frustrated huff as you are carried away. 
 As you are held in the air, you feel the talons digging deeper and deeper as you start to flicker in and out of consciousness. When you finally black out, the face of a black rabbit looms before you.
 
 
-[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="30" name=" Forest6.1" tags="" position="693,2020" size="100,100">	&quot;Your soul is not mortal, you are the first rabbit, the Rabbit Prince, you do not have a mortal soul like your fellow rabbits, so I cannot take you away&quot;
+[[Unconciousness -&gt; Forest5]]</tw-passagedata><tw-passagedata pid="30" name=" Forest6.1" tags="BlackRabbit" position="693,2020" size="100,100">	(text-style:&quot;smear&quot;)[&quot;Your soul is not mortal, you are the first rabbit, the Rabbit Prince, you do not have a mortal soul like your fellow rabbits, so I cannot take you away&quot;]
 
 
-[[Who are you? -&gt; Forest6.2]]
-[[Where do you take those who have died? -&gt; Forest7.2]]</tw-passagedata><tw-passagedata pid="31" name=" Forest6.2" tags="" position="832,2030" size="100,100">	&quot;I am the Black Rabbit of Inle, I take rabbits away at their time of death. But you cannot die.&quot;
+[[&quot;Who are you?&quot; -&gt; Forest6.2]]
+[[&quot;Where do you take those who have died?&quot; -&gt; Forest7.2]]</tw-passagedata><tw-passagedata pid="31" name=" Forest6.2" tags="BlackRabbit" position="832,2029" size="100,100">	(text-style:&quot;smear&quot;)[&quot;I am the Black Rabbit of Inle, I take rabbits away at their time of death. But you cannot die.&quot;]
 
 
-[[If I cannot die how can I meet you? -&gt; Forest7.1]]
-[[What do you mean, I cannot die? -&gt; Forest6.1]]</tw-passagedata><tw-passagedata pid="32" name=" Forest6.3" tags="" position="956,1977" size="100,100">	&quot;This is a sort of inbetween space between the realm of the living and the realm of the dead. Neither of us can stay here for very long since living or dead souls are not meant to stay here.&quot;
+[[&quot;If I cannot die how can I meet you?&quot; -&gt; Forest7.1]]
+[[&quot;What do you mean, I cannot die?&quot; -&gt; Forest6.1]]</tw-passagedata><tw-passagedata pid="32" name=" Forest6.3" tags="BlackRabbit" position="956,1977" size="100,100">	(text-style:&quot;smear&quot;)[&quot;This is a sort of inbetween space between the realm of the living and the realm of the dead. Neither of us can stay here for very long since living or dead souls are not meant to stay here.&quot;]
 
 
-(if: $notmortal is true)[[[Who are you? -&gt; Forest6.2]]]
-[[How long can we stay here? -&gt; Forest7.3]]
-[[Why am I here anyways? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="33" name=" Forest7.1" tags="" position="855,2157" size="100,100">	&quot;I&#39;m not really sure. I assume because you are close to what would be considered death for a creature with a mortal soul is what allows you to meet me.&quot;
+(if: $notmortal is true)[[[&quot;Who are you?&quot; -&gt; Forest6.2]]]
+[[&quot;How long can we stay here?&quot; -&gt; Forest7.3]]
+[[&quot;Why am I here anyways?&quot; -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="33" name=" Forest7.1" tags="BlackRabbit" position="855,2157" size="100,100">	(text-style:&quot;smear&quot;)[&quot;I&#39;m not really sure. I assume because you are close to what would be considered death for a creature with a mortal soul is what allows you to meet me.&quot;]
 
 
-[[Why am I here anyways? -&gt; Forest8.2]]
-[[What is this place? -&gt; Forest6.3]]</tw-passagedata><tw-passagedata pid="34" name=" Forest7.2" tags="" position="722,2147" size="100,100">	&quot;They come with me to join my Owsla, there they no longer have to fight for survival, they are safe and protected by me for the rest of eterninty&quot;
+[[&quot;Why am I here anyways?&quot; -&gt; Forest8.2]]
+[[&quot;What is this place?&quot; -&gt; Forest6.3]]</tw-passagedata><tw-passagedata pid="34" name=" Forest7.2" tags="BlackRabbit" position="722,2147" size="100,100">	(text-style:&quot;smear&quot;)[&quot;They come with me to join my Owsla, there they no longer have to fight for survival, they are safe and protected by me for the rest of eterninty&quot;]
 
 
-[[How can you protect them? -&gt; Forest8.1]]
-[[So I can&#39;t join because I am not mortal? -&gt; Forest8.1]]
-[[How can I meet you if I am not mortal? -&gt; Forest8.1]]</tw-passagedata><tw-passagedata pid="35" name=" Forest8.1" tags="" position="771,2287" size="100,100">	&quot;I&#39;m not here to answer questions about my ability to protect the souls of the dead nor do I know why exactly you can meet me, I have something to tell you about our gifts, Rabbit Prince.&quot; 
+[[&quot;How can you protect them?&quot; -&gt; Forest8.1]]
+[[&quot;So I can&#39;t join because I am not mortal?&quot; -&gt; Forest8.1]]
+[[&quot;How can I meet you if I am not mortal?&quot; -&gt; Forest8.1]]</tw-passagedata><tw-passagedata pid="35" name=" Forest8.1" tags="BlackRabbit" position="772,2287" size="100,100">	(text-style:&quot;smear&quot;)[&quot;I&#39;m not here to answer questions about my ability to protect the souls of the dead nor do I know why exactly you can meet me, I have something to tell you about our gifts, Rabbit Prince.&quot;]
 
 
-[[What do you know? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="36" name=" Forest8.2" tags="" position="914,2293" size="100,100">	&quot;I am a rabbit, just as you are and I know what Lord Frith refuses to tell you about our gifts.&quot;
+[[&quot;What do you know?&quot; -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="36" name=" Forest8.2" tags="BlackRabbit" position="914,2293" size="100,100">	(text-style:&quot;smear&quot;)[&quot;I am a rabbit, just as you are and I know what Lord Frith refuses to tell you about our gifts.&quot;]
 
 
-[[Why couldn&#39;t you have told me before I was picked up by a bird? -&gt; Forest9.1]]
-[[Why does Lord Frith refuse to tell me about our gifts? -&gt; Forest9.2]]
-[[What do you know about our gifts? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="37" name=" Forest7.3" tags="" position="975,2132" size="100,100">	&quot;Time is hard in this place. I&#39;m not exactly sure how much longer we can stay here, but I imagine we don&#39;t have much longer.&quot;
+[[&quot;Why couldn&#39;t you have told me before I was picked up by a bird?&quot; -&gt; Forest9.1]]
+[[&quot;Why does Lord Frith refuse to tell me about our gifts?&quot; -&gt; Forest9.2]]
+[[&quot;What do you know about our gifts?&quot; -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="37" name=" Forest7.3" tags="BlackRabbit" position="976.6666666666666,2131" size="100,100">	(text-style:&quot;smear&quot;)[&quot;Time is hard in this place. I&#39;m not exactly sure how much longer we can stay here, but I imagine we don&#39;t have much longer.&quot;]
 
 
-[[Ok, so why am I here anyways? -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="38" name=" Forest9.1" tags="" position="793,2420" size="100,100">	&quot;I can only appear to those close to death. Also Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;
+[[&quot;Ok, so why am I here anyways?&quot; -&gt; Forest8.2]]</tw-passagedata><tw-passagedata pid="38" name=" Forest9.1" tags="BlackRabbit" position="793,2417.3333333333335" size="100,100">	(text-style:&quot;smear&quot;)[&quot;I can only appear to those close to death. Also Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;]
 
 
-[[Lord Frith was just jealous of my rabbits&#39; success -&gt; Forest10.2]]</tw-passagedata><tw-passagedata pid="39" name=" Forest9.2" tags="" position="917,2419" size="100,100">	&quot;Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;
+[[&quot;Lord Frith was just jealous of my rabbits&#39; success&quot; -&gt; Forest10.2]]</tw-passagedata><tw-passagedata pid="39" name=" Forest9.2" tags="BlackRabbit" position="917,2419" size="100,100">	(text-style:&quot;smear&quot;)[&quot;Lord Frith does not want you to get help, he is still angry with you for not listening to him when he told you to reign in the rabbit population.&quot;]
 
 
-[[We were the greatest species, why should our population be reigned in -&gt; Forest10.2]]
-[[Wait, what do you know about our gifts? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="40" name=" Forest9.3" tags="" position="1044,2395" size="100,100">	&quot;Well he gifted us improved abilities to run and jump, as you already know. But he gave use a couple other gifts as well&quot;
+[[&quot;We were the greatest species, why should our population be reigned in&quot; -&gt; Forest10.2]]
+[[&quot;Wait, what do you know about our gifts?&quot; -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="40" name=" Forest9.3" tags="BlackRabbit" position="1044,2395" size="100,100">	(text-style:&quot;smear&quot;)[&quot;Well he gifted us improved abilities to run and jump, as you already know. But he gave use a couple other gifts as well&quot;]
 
 
-[[Go on -&gt; Forest10.1]]</tw-passagedata><tw-passagedata pid="41" name=" Forest10.1" tags="" position="1039,2534" size="100,100">	&quot;He also granted up improved hearing and-,&quot; the Black Rabbit abruptly stops, &quot;We&#39;re out of time.&quot;
+[[&quot;Go on&quot; -&gt; Forest10.1]]</tw-passagedata><tw-passagedata pid="41" name=" Forest10.1" tags="BlackRabbit" position="1039,2534" size="100,100">	(text-style:&quot;smear&quot;)[&quot;He also granted up improved hearing and-,&quot; the Black Rabbit abruptly stops, &quot;We&#39;re out of time.&quot;]
 
 
-[[Wait! What other gifts did we get, tell me! -&gt; Forest11.1]]</tw-passagedata><tw-passagedata pid="42" name=" Forest11.1" tags="" position="938,2672" size="100,100">	But it is too late, the Black Rabbit fades into the shadows of your conciousness and you awake, falling. 
+[[&quot;Wait! What other gifts did we get, tell me!&quot; -&gt; Forest11.1]]</tw-passagedata><tw-passagedata pid="42" name=" Forest11.1" tags="Forest" position="938,2672" size="100,100">	But it is too late, the Black Rabbit fades into the shadows of your conciousness and you awake, falling. 
 	You cannot see the bird who must have dropped you, but you do see the ground rapidly apporaching. 
 
 
-[[Brace for impact -&gt; Forest12.1]]</tw-passagedata><tw-passagedata pid="43" name=" Forest10.2" tags="" position="916,2550" size="100,100">	&quot;...this is why Lord Frith doesn&#39;t like you&quot;
+[[Brace for impact -&gt; Forest12.1]]</tw-passagedata><tw-passagedata pid="43" name=" Forest10.2" tags="BlackRabbit" position="916,2550" size="100,100">	(text-style:&quot;smear&quot;)[&quot;...this is why Lord Frith doesn&#39;t like you&quot;]
 
 
-[[So, what were the gifts you wanted to tell me about? -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="44" name=" Forest12.1" tags="" position="915,2793" size="100,100">	You brace for impact, but it doesn&#39;t come. In front of you, you see Lord Frith again. 
+[[&quot;So, what were the gifts you wanted to tell me about?&quot; -&gt; Forest9.3]]</tw-passagedata><tw-passagedata pid="44" name=" Forest12.1" tags="Frith" position="915,2791.3333333333335" size="100,100">	(bg:white)[You brace for impact, but it doesn&#39;t come. In front of you, you see Lord Frith again.]
 
 
-[[&quot;What do you want&quot; -&gt; Forest13.1]]
-[[Oh! look who it is! -&gt; Forest13.1]] </tw-passagedata><tw-passagedata pid="45" name=" Forest13.1" tags="" position="1045,2835" size="100,100">	&quot;I know you talked to the Black Rabbit&quot;
+(bg:white)[[[&quot;What do you want&quot; -&gt; Forest13.1]]
+[[&quot;Oh! look who it is!&quot; -&gt; Forest13.1]]]</tw-passagedata><tw-passagedata pid="45" name=" Forest13.1" tags="Frith" position="1043.3333333333333,2833.3333333333335" size="100,100">	(bg:white)[&quot;I know you talked to the Black Rabbit&quot;]
 
-[[Why do you care? -&gt; Forest14.1]]
-[[They were much more helpful than you -&gt; Forest14.2]]
-[[...why are you really here? -&gt; Forest14.3]]</tw-passagedata><tw-passagedata pid="46" name=" Forest14.1" tags="" position="857,2927" size="100,100">	&quot;They weren’t supposed to help you&quot;
-
-
-[[I guess they like me better since they helped me -&gt; Forest15.1]]
-[[They were far more helpful than you&#39;ve ever been -&gt; Forest15.1]]</tw-passagedata><tw-passagedata pid="47" name=" Forest14.2" tags="" position="992,2956" size="100,100">	&quot;...I did help you, I told you about one of your gifts.&quot;
+(bg:white)[[[&quot;Why do you care?&quot; -&gt; Forest14.1]]
+[[&quot;They were much more helpful than you&quot; -&gt; Forest14.2]]
+[[&quot;...why are you really here?&quot; -&gt; Forest14.3]]]</tw-passagedata><tw-passagedata pid="46" name=" Forest14.1" tags="Frith" position="857,2925.3333333333335" size="100,100">	(bg:white)[&quot;They weren’t supposed to help you&quot;]
 
 
-[[Why couldn&#39;t you have told me about all of my gifts? -&gt; Forest15.1]]
-[[Why are you really here? -&gt; Forest14.3]]</tw-passagedata><tw-passagedata pid="48" name=" Forest14.3" tags="" position="1124,2950" size="100,100">	&quot;I need you to check on something.&quot;
+(bg:white)[[[&quot;I guess they like me better since they helped me&quot; -&gt; Forest15.1]]
+[[&quot;They were far more helpful than you&#39;ve ever been&quot; -&gt; Forest15.1]]]</tw-passagedata><tw-passagedata pid="47" name=" Forest14.2" tags="Frith" position="992,2956" size="100,100">	(bg:white)[&quot;...I did help you, I told you about one of your gifts.&quot;]
 
 
-[[What do you want me to check on? -&gt; Forest15.2]]</tw-passagedata><tw-passagedata pid="49" name=" Forest15.1" tags="" position="872,3056" size="100,100">	&quot;I&#39;m not here to debate with you. I need you to check on something.&quot;
+(bg:white)[[[&quot;Why couldn&#39;t you have told me about all of my gifts?&quot; -&gt; Forest15.1]]
+[[&quot;Why are you really here?&quot; -&gt; Forest14.3]]]</tw-passagedata><tw-passagedata pid="48" name=" Forest14.3" tags="Frith" position="1126,2951" size="100,100">	(bg:white)[&quot;I need you to check on something.&quot;]
 
 
-[[What do you want me to check on? -&gt; Forest15.2]]</tw-passagedata><tw-passagedata pid="50" name=" Forest15.2" tags="" position="1022,3076" size="100,100">	&quot;There are these larger 2-legged creatures that seem like they might upset the balance in the future. I need you to check them out, see what they’re up to.&quot;
+(bg:white)[[[&quot;What do you want me to check on?&quot; -&gt; Forest15.2]]]</tw-passagedata><tw-passagedata pid="49" name=" Forest15.1" tags="Frith" position="872,3056" size="100,100">	(bg:white)[&quot;I&#39;m not here to debate with you. I need you to check on something.&quot;]
 
 
-[[Why would I do that for you? -&gt; Forest16.1]]
-[[What makes you think I want to help you? -&gt; Forest16.2]]</tw-passagedata><tw-passagedata pid="51" name=" Forest16.1" tags="" position="957,3207" size="100,100">	&quot;Because if you don’t, you won’t learn about the rest of your gifts,&quot; Lord Frith continues, &quot;Your rabbits’ population will slowly dwindle until there are none left since they don’t know all the tools that are available to them to protect themselves.&quot;
+(bg:white)[[[&quot;What do you want me to check on?&quot; -&gt; Forest15.2]]]</tw-passagedata><tw-passagedata pid="50" name=" Forest15.2" tags="Frith" position="1022,3076" size="100,100">	(bg:white)[&quot;There are these larger 2-legged creatures that seem like they might upset the balance in the future. I need you to check them out, see what they’re up to.&quot;]
 
 
-[[You won&#39;t protect them for the sake of the balanced? -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="52" name=" Forest16.2" tags="" position="1159,3139" size="100,100">	&quot;You want to know what the rest of your gifts are so you can help your rabbits, I can tell you. But I won&#39;t if you don&#39;t check on the two-legged ones for me.&quot;
+(bg:white)[[[&quot;Why would I do that for you?&quot; -&gt; Forest16.1]]
+[[&quot;What makes you think I want to help you?&quot; -&gt; Forest16.2]]]</tw-passagedata><tw-passagedata pid="51" name=" Forest16.1" tags="Frith" position="957,3207" size="100,100">	(bg:white)[&quot;Because if you don’t, you won’t learn about the rest of your gifts,&quot; Lord Frith continues, &quot;Your rabbits’ population will slowly dwindle until there are none left since they don’t know all the tools that are available to them to protect themselves.&quot;]
 
 
-[[I can just ask the Black Rabbit -&gt; Forest17.2]]
-[[Why can&#39;t you check on them yourself? -&gt; Forest17.3]]</tw-passagedata><tw-passagedata pid="53" name=" Forest17.1" tags="" position="945,3338" size="100,100">	&quot;Do you really want to bank on that?&quot;
+(bg:white)[[[&quot;You won&#39;t protect them for the sake of the balanced?&quot; -&gt; Forest17.1]]]</tw-passagedata><tw-passagedata pid="52" name=" Forest16.2" tags="Frith" position="1159,3121" size="100,100">	(bg:white)[&quot;You want to know what the rest of your gifts are so you can help your rabbits, I can tell you. But I won&#39;t if you don&#39;t check on the two-legged ones for me.&quot;]
 
 
-[[... -&gt; Forest18.1]]</tw-passagedata><tw-passagedata pid="54" name=" Forest18.1" tags="" position="1052,3448" size="100,100">	&quot;So, will you do it?&quot;
+(bg:white)[[[&quot;I can just ask the Black Rabbit&quot; -&gt; Forest17.2]]
+[[&quot;Why can&#39;t you check on them yourself?&quot; -&gt; Forest17.3]]]</tw-passagedata><tw-passagedata pid="53" name=" Forest17.1" tags="Frith" position="945,3338" size="100,100">	(bg:white)[&quot;Do you really want to bank on that?&quot;]
 
 
-[[Fine -&gt; Forest19.1]]</tw-passagedata><tw-passagedata pid="55" name=" Forest19.1" tags="" position="1006,3572" size="100,100">	&quot;Good, I need you to go to the big red structure, I sense there are animals that have been trapped in there by the two-legged creatures.&quot;
+(bg:white)[[[&quot;...&quot; -&gt; Forest18.1]]]</tw-passagedata><tw-passagedata pid="54" name=" Forest18.1" tags="Frith" position="1052,3446.3333333333335" size="100,100">	(bg:white)[&quot;So, will you do it?&quot;]
 
 
-[[... -&gt; Forest20]]</tw-passagedata><tw-passagedata pid="56" name=" Forest17.2" tags="" position="1078,3253" size="100,100">	&quot;You had to get as close to death as you can get to see the Black Rabbit this time. Any attempts you make to see them now will be even harder for you.&quot;
+(bg:white)[[[&quot;Fine&quot; -&gt; Forest19.1]]]</tw-passagedata><tw-passagedata pid="55" name=" Forest19.1" tags="Frith" position="1006,3572" size="100,100">	(bg:white)[&quot;Good, I need you to go to the big red structure, I sense there are animals that have been trapped in there by the two-legged creatures.&quot;]
 
 
-[[Don&#39;t you need to protect my rabbits for the sake of the &quot;balance&quot; -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="57" name=" Forest17.3" tags="" position="1164,3363" size="100,100">	&quot;Just because I am an all powerful god does not mean I get to go where I want. There are certain locations that are harder for me to access and this is one of them.&quot;
+(bg:white)[[[&quot;...&quot; -&gt; Forest20]]]</tw-passagedata><tw-passagedata pid="56" name=" Forest17.2" tags="Frith" position="1079.6666666666667,3253" size="100,100">	(bg:white)[&quot;You had to get as close to death as you can get to see the Black Rabbit this time. Any attempts you make to see them now will be even harder for you.&quot;]
 
 
-[[Shouldn&#39;t you protect my rabbits for the sake of the &quot;balance&quot; -&gt; Forest17.1]]</tw-passagedata><tw-passagedata pid="58" name=" Forest20" tags="" position="1006,3706" size="100,100">	Lord Frith disappears and you are left sitting alone on a hill overlooking a farm. His light seems to taunt you from his place far above you. 
+(bg:white)[[[&quot;Don&#39;t you need to protect my rabbits for the sake of the &quot;balance&quot;&quot; -&gt; Forest17.1]]]</tw-passagedata><tw-passagedata pid="57" name=" Forest17.3" tags="Frith" position="1164,3363" size="100,100">	(bg:white)[&quot;Just because I am an all powerful god does not mean I get to go where I want. There are certain locations that are harder for me to access and this is one of them.&quot;]
+
+
+(bg:white)[[[&quot;Shouldn&#39;t you protect my rabbits for the sake of the &quot;balance&quot;&quot; -&gt; Forest17.1]]]</tw-passagedata><tw-passagedata pid="58" name=" Forest20" tags="Forest" position="1006,3705" size="100,100">	Lord Frith disappears and you are left sitting alone on a hill overlooking a farm. His light seems to taunt you from his place far above you. 
 
 
 
